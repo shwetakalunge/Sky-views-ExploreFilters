@@ -651,7 +651,7 @@ a:hover {
   color: #fff;
 }
 .navbar-expand-lg .navbar-nav .active-link {
-  border-bottom: 2px solid #fff;
+  /* border-bottom: 2px solid #fff; */
 }
 .map-arrow-buttons {
   display: flex;
@@ -1137,9 +1137,9 @@ input:checked + .slider {
   width: 100%;
   /* position: absolute; */
   background: #ffffff;
-  border: 1px solid #dadada;
+  /* border: 1px solid #dadada;
   box-sizing: border-box;
-  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .card-subgrids {
@@ -1205,7 +1205,7 @@ input:checked + .slider {
 .select-pref-dropdown-wrap {
   width: 100%;
   display: flex;
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 .nav-trial {
   display: flex;
@@ -1324,6 +1324,39 @@ input[type="checkbox"]:checked + label {
   width: 100%;
   height: 203px;
   /* background: teal; */
+}
+.navbar-nav {
+  margin-right: 25px;
+}
+
+.footer-pageColor {
+  color: #000;
+  background-color: transparent;
+  border: none;
+}
+/* ------------------------------------------------------------------------------------- */
+
+/* .nav-wrap .navbar .navbar-nav .nav-item .nav-link.active-link::before {
+  content: "";
+  position: absolute;
+  left: 51%;
+  top: 47%;
+  width: 5px;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(-3px);
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  -ms-transform: translateX(-3px);
+  transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  transform: rotate(90deg);
+} */
+
+.activeColor {
+  /* border-bottom: 2px solid #FFF; */
 }
 
 /* -------------------------------------------------------------------------------------------- */
@@ -1450,7 +1483,7 @@ input[type="checkbox"]:checked + label {
     -ms-transform: translateX(0%);
     transition: all 0.5s linear 0s;
     visibility: visible;
-    background-color: blue;
+    background-color:rgb(0 123 255);
     padding-top: 90px;
     color: #fff;
   }
@@ -1500,6 +1533,7 @@ input[type="checkbox"]:checked + label {
     z-index: 100;} */
 
   .header-wrap {
+    min-height: 30px;
     height: 45px;
   }
   .nav-link {
@@ -1570,7 +1604,10 @@ input[type="checkbox"]:checked + label {
     max-width: 277px;
   }
   .filter-buttons-wrap {
-    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
   }
   .my-card {
     flex: 1 100%;
@@ -1636,6 +1673,13 @@ input[type="checkbox"]:checked + label {
   .cus_trial_toggle {
     display: block;
     align-self: center;
+  }
+  .filter-buttons-wrap {
+    display: block;
+    text-align: center;
+  }
+  .cus_trial_toggle h6 {
+    margin-bottom: 8px;
   }
 }
 
@@ -1730,5 +1774,29 @@ input[type="checkbox"]:checked + label {
   .carasoul-overlap-stars {
     top: 20%;
     left: 81%;
+  }
+  .select_pref h6,
+  .lookingfor_wrap h6,
+  .my-card-body h5 {
+    font-size: 13px;
+  }
+  .btn-interested,
+  .lookingfor_grid span,
+  .note-section h6,
+  .grey-buttons,
+  .card-content span {
+    font-size: 12px;
+  }
+  .note-section h6 {
+    line-height: 17px;
+  }
+  .note-section {
+    padding: 7px;
+  }
+  .card-heading h6 {
+    font-size: 14px;
+  }
+  .card-content-list li {
+    font-size: 10px;
   }
 }
