@@ -1319,14 +1319,6 @@ input[type="checkbox"]:checked + label {
 }
 
 /* -------------------------------------------------------------------------------------------- */
-
-.dropdown-toggle::after {
-  background-image: url(../images/fav-heart.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
- appearance: none;
-}
 .narrow-search-wrap {
   display: flex;
   width: 100%;
@@ -1363,10 +1355,10 @@ input[type="checkbox"]:checked + label {
   border: none;
 }
 
-.wishlist-color {
+.wishlist-color{
   /* background-color: red;
   color: red; */
-  clip-path: path(
+   clip-path: path(
     "M10.001 1.52898C12.35 -0.58002 15.98 -0.51002 18.243 1.75698C20.505 4.02498 20.583 7.637 18.479 9.993L9.999 18.485L1.52101 9.993C-0.582994 7.637 -0.503994 4.01898 1.75701 1.75698C4.02201 -0.50702 7.64501 -0.58302 10.001 1.52898Z"
   );
 }
