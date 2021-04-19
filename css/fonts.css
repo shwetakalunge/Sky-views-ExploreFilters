@@ -30,3 +30,8 @@
   font-family: "Montserrat-ExtraBold";
   src: url("../fonts/Montserrat-ExtraBold.ttf");
 }
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.ttf");
+}

@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SkyViews | Explore Page</title>
+    <title>SkyViews |My Itinerary</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -180,10 +180,11 @@
 
 
 
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <ul class="navbar-nav ml-auto ">
+                                <li class="nav-item dropdown custom-nav-dropdown">
+                                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        style="background-color: transparent;color: white;border-radius: 0px;padding: 19px 0px;">
                                         Anguilla
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -193,12 +194,14 @@
                                         <a class="dropdown-item" href="#">Something else here</a>
                                     </div>
                                 </li>
-                                <li class="nav-item"><a class="nav-link  active-link">Explore</a></li>
-                                <li class="nav-item"><a class="nav-link ">Itinerary</a></li>
+                            </ul>
+                            <ul class="navbar-nav  navbar-nav-custom">
+                                <li class="nav-item"><a class="nav-link  ">Explore</a></li>
+                                <li class="nav-item"><a class="nav-link active">Itinerary</a></li>
                                 <li class="nav-item"><a class="nav-link">Events</a></li>
                                 <li class="nav-item"><a class="nav-link">Getting There</a></li>
                                 <li class="nav-item"><a class="nav-link">About</a></li>
-                                <li class="nav-item"><a class="nav-link">Login</a></li>
+                                <li class="nav-item login-btn-nav"><a class="nav-link">Login</a></li>
                             </ul>
 
 
@@ -228,9 +231,10 @@
 
     <div class="mobile-nav">
         <ul>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown custom-nav-dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"
+                    style="background-color: transparent;color: white;border-radius: 0px;">
                     Anguilla
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -240,12 +244,14 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </li>
-            <li class="nav-item"><a class="nav-link active-link">Explore</a></li>
-            <li class="nav-item"><a class="nav-link">Itinerary</a></li>
+        </ul>
+        <ul class="navbar-nav-custom">
+            <li class="nav-item"><a class="nav-link  ">Explore</a></li>
+            <li class="nav-item"><a class="nav-link active">Itinerary</a></li>
             <li class="nav-item"><a class="nav-link">Events</a></li>
             <li class="nav-item"><a class="nav-link">Getting There</a></li>
             <li class="nav-item"><a class="nav-link">About</a></li>
-            <li class="nav-item"><a class="nav-link selected-link">Login</a></li>
+            <li class="nav-item login-btn-nav"><a class="nav-link">Login</a></li>
         </ul>
     </div>
 
@@ -254,7 +260,7 @@
     /* -----------------------------------------------Select Pref Dropdown--------------------------------------------- */ -->
     <section class="section-main">
         <div class="left_wrap">
-            <div class="explore_content">
+            <div class="explore_content saved-itinerary-scrollable scroll">
                 <!-- 
                 <div class="map-arrow-buttons">
                     <a><img src="./images/map-left-arrow.png" alt="" class="map-arrow-prev"></a>
@@ -319,7 +325,8 @@
                             </div>
 
                             <div class="my-itirnerary-btn">
-                                <button type="button" class="new-itinerary-button blue-itinerary-btn">New
+                                <button type="button" class="new-itinerary-button blue-itinerary-btn"
+                                    data-toggle="modal" data-target="#AddNewItinerary">New
                                     Itinerary</button>
                             </div>
                         </div>
@@ -328,9 +335,28 @@
 
 
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="featured-itinerary-tab">
-                        <p>Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
-                            butcher retro
-                            keffiyeh.</p>
+
+                        <div class="row featured-itine-select-dropdown-wrap">
+                            <div class="col-6 col-md-5 col-lg-6 featured-itine-select-dropdown">
+                                <select id="days-wise-selection" name="days-wise-selection">
+                                    <option value="australia">Less Than 3 Days</option>
+                                    <option value="canada">Under 3 Weeks</option>
+                                    <option value="usa">More than 3 weeks</option>
+                                </select>
+                            </div>
+                            <div class="col-6 col-md-5 col-lg-6 featured-itine-select-dropdown">
+                                <select id="family-wise-selection" name="family">
+                                    <option value="business">Family</option>
+                                    <option value="traveller">Traveller</option>
+                                    <option value="family">Business</option>
+                                    <option value="family">Couple</option>
+                                    <option value="family">Group of friends</option>
+                                    <option value="family">Solo traveller</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        
                     </div>
 
                 </div>
@@ -341,7 +367,7 @@
                 <div class="modal fade" id="share-modal-Center" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered share-modal-dialogue" role="document">
-                        <div class="modal-content">
+                        <div class="modal-content itinerary-modal-content">
 
                             <div class="modal-header share-modal-close-btn">
 
@@ -440,6 +466,77 @@
                         </div>
                     </div>
                 </div>
+                <!-- ------------------------------------------------------------------------------------------------- -->
+                <!-- ------------------------------------------------------------------------------------------------- -->
+                <!-- ----------------------NEW ITINERARY  MODAL--------------------------------------------------------------------------- -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="AddNewItinerary" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered AddNewItinerary-modal-dia" role="document">
+                        <div class="modal-content itinerary-modal-content">
+
+                            <div class="modal-header itinerary-modal-close-btn">
+
+                                <div class="AddNewItinerary-modal-header-close">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0007 10.5857L16.9507 5.63574L18.3647 7.04974L13.4147 11.9997L18.3647 16.9497L16.9507 18.3637L12.0007 13.4137L7.05072 18.3637L5.63672 16.9497L10.5867 11.9997L5.63672 7.04974L7.05072 5.63574L12.0007 10.5857Z"
+                                                fill="#8E8E8E" />
+                                        </svg>
+
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class=" itinerary-header-div">
+                                <h5 class="modal-title text-center" id="exampleModalLongTitle">Create Itinerary</h5>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="create-itinerary-wrap1 text-center">
+                                    <div class="trip-name-div mr-b30">
+                                        <input type="text" placeholder="Trip Name" class="trip-name-div-input">
+                                    </div>
+                                    <div class="row date-day-mainwrap w-100 m-auto d-flex justify-content-center">
+                                        <div class="col-12 col-md-12 col-sm-12 col-lg-12 trip-name-div-calender-box">
+                                            <input type="date" placeholder="My placeholder" value=""
+                                                class="trip-name-input-calender" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-12 create-itinerary-wrap2">
+                                    <div class="create-itinerary-public-wrap">
+                                        <div class=" row toggle-div">
+                                            <div class="itinerary-toggle">
+
+                                                <h6>Make my itinerary public</h6>
+                                                <label class="switch mr-b0">
+                                                    <input type="checkbox" id="togBtn">
+                                                    <div class="slider round">
+
+                                                    </div>
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer create-itinerary-modal-footer">
+                                <button type="button"
+                                    class="modal-create-itinerary-btn blue-itinerary-btn">Create</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- ------------------------------------------------------------------------------------------------- -->
                 <!-- ------------------------------------------------------------------------------------------------- -->
                 <!-- ------------------------------------------------------------------------------------------------- -->
