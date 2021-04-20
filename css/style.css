@@ -1529,8 +1529,11 @@ input[type="checkbox"]:checked + label {
   font-family: "Montserrat-SemiBold";
 }
 .itinerary-share {
+  position: relative;
+}
+.itinerary-share button {
   position: absolute;
-  transform: translate(260px, 10px);
+  transform: translate(-120px, 30%);
   cursor: pointer;
 }
 .itinerary-share-btn {
@@ -1721,6 +1724,7 @@ input[type="checkbox"]:checked + label {
   font-size: 14px;
   line-height: 20px;
   font-family: "Lato-Regular";
+  background-color: transparent;
 }
 .featured-span-cards-wrap {
   font-family: "OpenSans-Bold";
@@ -1730,11 +1734,19 @@ input[type="checkbox"]:checked + label {
   padding: 15px 24px;
   margin-bottom: 16px;
 }
+.featured-span-cards-main a {
+  color: #000;
+}
+.featured-span-cards-main a:hover {
+  color: #000;
+}
 /* ----------------------------SAVED ITINERARY------------------------------------------------------------------------------------------------ */
 .saved-itinerary-scrollable {
   height: 100vh;
 }
-
+.plan-visit-canclebtn {
+  margin-top: 00px;
+}
 .AddNewItinerary-modal-header-close button {
   padding: 25px 15px 0px 10px !important;
 }
@@ -1862,7 +1874,7 @@ input[type="checkbox"]:checked + label {
 
 .plan-to-visit-main-wrap {
   /* background-color: rgb(113, 52, 148); */
-  border: 1px solid #dad5d5;
+  border: 1px solid #e6e6e6;
   padding: 20px 20px 21px 17px;
 }
 .calender-box {
@@ -1917,7 +1929,7 @@ input[type="date"] {
   line-height: 20px;
   color: #8e8e8e;
   display: flex;
-  padding: 18px;
+  padding: 18px 0px;
 }
 
 .download-itinerary span {
@@ -1932,7 +1944,7 @@ input[type="date"] {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
   padding: 25px 15px;
 }
-.saved-dates-display h6 {
+.saved-dates-display span {
   font-size: 16px;
   line-height: 20px;
   font-family: "OpenSans-Bold";
@@ -1941,7 +1953,9 @@ input[type="date"] {
 .my-itinerary-savedcard {
   margin-top: 0px !important;
 }
-
+.calender-box-plan-to-visit {
+  font-size: 14px;
+}
 .calender-box-plan-to-visit input[type="date"] {
   /* background-color: yellowgreen; */
   max-width: 233px;
@@ -1950,6 +1964,7 @@ input[type="date"] {
   box-sizing: border-box;
   border-radius: 4px;
   height: 58px;
+  /* color: #8e8e8e; */
 }
 .calender-box-plan-to-visit input[type="text"] {
   background-image: url(../images/calendar-icon.png);
@@ -2299,6 +2314,204 @@ input[type="date"] {
 .day-box {
   margin-bottom: 10px !important;
 }
+
+/* ----------------------------FEATURED ITINERARY ON CLICK---------------------------------------------------------------- */
+
+.open-menu-wrap,
+.planned-date-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.open-menu-wrap {
+  margin-bottom: 12px;
+}
+.planned-date-wrap {
+  margin-bottom: 30px;
+}
+.open-menu-sub-wrap h3 {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "Montserrat-Bold";
+}
+.open-menu-sub-wrap button {
+  background-color: transparent;
+  border: none;
+}
+.planned-date-subwrap span {
+  color: #393939;
+  font-size: 14px;
+  line-height: 20px;
+  background: #f8f8f8;
+  border: 1px solid #8e8e8e;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: "OpenSans-SemiBold";
+}
+.replicate-btn {
+  background: #1da1f2;
+  border-radius: 4px;
+  color: #ffffff;
+  border: none;
+  font-family: "OpenSans-ExtraBold";
+  font-size: 15px;
+  line-height: 20px;
+}
+.planned-date-btn {
+  width: 181px;
+  height: 58px;
+  padding: 15px;
+}
+.solo-card-wrap {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 65px 0px;
+}
+.solo-card-subwrap span {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "OpenSans-Bold";
+  text-align: center;
+}
+.full-width-map-btns {
+  position: relative;
+}
+.full-width-map-wrap {
+  position: absolute;
+  transform: translate(0px, 60px);
+  display: flex;
+}
+.full-width-subwrap button {
+  border: none;
+  background-color: #fff;
+  width: 35px;
+  height: 31px;
+  border-radius: 4px;
+}
+/* -------------------------------TRAVELLER PROFILE------------------------------------------------------------ */
+.traveller-profile-subwrap {
+  /* background-color: teal; */
+  height: 100%;
+}
+.fname-lname-block input[type="text"]::placeholder,
+.fname-lname-block input[type="email"]::placeholder {
+  color: #8e8e8e !important;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+}
+
+.fname-lname-block input[type="text"],
+.fname-lname-block input[type="email"],
+.fname-lname-block select {
+  max-width: 290px;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.traveller-pro-logout {
+  margin-right: 75px;
+}
+.traveller-profile-heading {
+  margin-left: 20px;
+}
+.traveller-profile-form{
+  margin-top: 40px;
+}
+.traveller-profile-main-wrap {
+  padding: 95px 00px;
+}
+.profile_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pro_img {
+  width: 100%;
+  object-fit: cover;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  text-decoration-line: underline;
+  color: #1da1f2;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+}
+.btn-file input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+.traveller-profile-heading h3 {
+  font-family: "Montserrat-Bold";
+  font-size: 30px;
+  line-height: 20px;
+  text-align: right;
+  color: #000000;
+}
+.traveller-pro-logout button {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "OpenSans-Regular";
+}
+.subhead-detail-block h5 {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.0034em;
+  color: #000000;
+  font-family: "OpenSans-Bold";
+}
+.pro-change-pw button {
+  border: none;
+  background-color: transparent;
+  color: #1da1f2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "OpenSans-Regular";
+}
+.pro-form-btns button {
+  background-color: #1da1f2;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-family: "OpenSans-Regular";
+  width: 150px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 12px;
+}
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -2317,6 +2530,12 @@ input[type="date"] {
 }
 
 @media (max-width: 1140px) {
+  .itinerary-share button {
+    position: absolute;
+    transform: translate(10%, -650%);
+    cursor: pointer;
+    left: 70%;
+  }
   .countriesMap {
     height: 420px;
   }
@@ -2397,6 +2616,9 @@ input[type="date"] {
 }
 
 @media (max-width: 991px) {
+  .full-width-map-wrap {
+    transform: translate(0px, 47px);
+  }
   .countriesMap {
     height: 370px;
   }
@@ -2615,9 +2837,28 @@ input[type="date"] {
   .plan-to-visit-wrap h4 {
     font-size: 14px;
   }
+  .plan-visit-canclebtn {
+    margin-top: -10px;
+  }
+  .planned-date-btn {
+    width: 141px;
+    padding: 5px;
+  }
+  .replicate-btn {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 768px) {
+  .saved-itinerary-scrollable {
+    height: 80vh;
+  }
+  .itinerary-share button {
+    position: absolute;
+    transform: translate(10%, -650%);
+    cursor: pointer;
+    left: 60%;
+  }
   .featured-itine-select-dropdown select {
     max-width: 100%;
   }
@@ -2720,6 +2961,9 @@ input[type="date"] {
   }
 }
 @media (max-width: 575px) {
+  .itinerary-share button {
+    left: 65%;
+  }
   .itinerary-modal-content {
     margin: 10px;
   }
@@ -2833,6 +3077,9 @@ input[type="date"] {
 }
 
 @media (max-width: 425px) {
+  .itinerary-share button {
+    left: 70%;
+  }
   .custom-nav-dropdown {
     background-position: 65% 50%;
   }
@@ -2884,13 +3131,16 @@ input[type="date"] {
   .countryFilters h3 {
     font-size: 15px;
   }
-  /* .grid-icons-row {
-    justify-content: start;
+  .open-menu-sub-wrap h3 {
+    font-size: 15px;
   }
-  .lookingfor-img {
-    width: 95%;
-    margin: auto;
-  } */
+  .planned-date-subwrap span {
+    font-size: 11px;
+  }
+  .planned-date-btn {
+    width: 97px;
+    padding: 0px;
+  }
 }
 
 @media (max-width: 386px) {
@@ -2903,6 +3153,9 @@ input[type="date"] {
 }
 
 @media (max-width: 375px) {
+  .planned-date-btn {
+    height: 43px;
+  }
   .itinerary-header-div h5 {
     font-size: 15px;
   }
@@ -2921,8 +3174,7 @@ input[type="date"] {
   .itinerary-toggle h6,
   .modal-header-div h5,
   .blue-itinerary-btn,
-  .share-button-Or h6,
-  .my-itinerary-card-body h4 {
+  .share-button-Or h6 {
     font-size: 11px;
   }
   .share-buttons-modal {
@@ -2931,8 +3183,11 @@ input[type="date"] {
   .itinerary-modal-content {
     margin: 20px;
   }
-  .itinerary-share {
-    transform: translate(227px, 10px);
+  .itinerary-share button {
+    position: absolute;
+    transform: translate(10%, -650%);
+    cursor: pointer;
+    left: 70%;
   }
   .banner_main_heading h1 {
     font-size: 20px;
@@ -3044,8 +3299,14 @@ input[type="date"] {
   .breadcrumb-item + .breadcrumb-item {
     padding-left: 2px;
   }
-  .breadcrumb-item+.breadcrumb-item::before{
+  .breadcrumb-item + .breadcrumb-item::before {
     padding-right: 2px;
+  }
+  .plan-to-visit-wrap h4 {
+    font-size: 12px;
+  }
+  .plan-visit-canclebtn {
+    margin-top: -10px;
   }
 }
 
