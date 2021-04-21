@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SkyViews |Traveller Profile</title>
+    <title>SkyViews | Sign Up</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -13,34 +13,13 @@
 
 
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        select {
-            color: #8e8e8e;
-            font-size: 14px;
-            line-height: 20px;
-            font-family: "OpenSans-Regular";
-
-        }
-
-
-
-
-        option:not(:first-of-type) {
-            color: black;
-        }
-
-        /* the modification */
-        option:first-of-type {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 </head>
 
 <body>
     <!-- ---------------NAV section--------------------------------- -->
-    <header class="header-wrap ">
+    <header class="signup-header-wrap  ">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
@@ -201,35 +180,6 @@
                             </a>
 
 
-
-
-                            <ul class="navbar-nav ml-auto   navbar-nav-custom">
-                                <li class="nav-item"><a class="nav-link  ">Explore</a></li>
-                                <li class="nav-item"><a class="nav-link ">Itinerary</a></li>
-                                <li class="nav-item"><a class="nav-link">Events</a></li>
-                                <li class="nav-item"><a class="nav-link">Getting There</a></li>
-                                <li class="nav-item"><a class="nav-link active"><span>John George</span></a></li>
-                                <li class="nav-item login-btn-nav" style="display: none;"><a class="nav-link">Login</a>
-                                </li>
-                            </ul>
-
-
-                            <button type="button" class="menu-toggle-btn">
-                                <svg class="toggle-icon" width="18" height="12" viewBox="0 0 18 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M17.05 5H0.95C0.42533 5 0 5.42533 0 5.95V6.05C0 6.57467 0.42533 7 0.95 7H17.05C17.5747 7 18 6.57467 18 6.05V5.95C18 5.42533 17.5747 5 17.05 5Z"
-                                        fill="white"></path>
-                                    <path
-                                        d="M17.05 10H0.95C0.42533 10 0 10.4253 0 10.95V11.05C0 11.5747 0.42533 12 0.95 12H17.05C17.5747 12 18 11.5747 18 11.05V10.95C18 10.4253 17.5747 10 17.05 10Z"
-                                        fill="white"></path>
-                                    <path
-                                        d="M17.05 0H0.95C0.42533 0 0 0.425329 0 0.95V1.05C0 1.57467 0.42533 2 0.95 2H17.05C17.5747 2 18 1.57467 18 1.05V0.95C18 0.425329 17.5747 0 17.05 0Z"
-                                        fill="white"></path>
-                                </svg>
-
-
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -238,220 +188,55 @@
 
     </header>
 
-    <div class="mobile-nav">
-
-        <ul class="navbar-nav-custom">
-            <li class="nav-item"><a class="nav-link  ">Explore</a></li>
-            <li class="nav-item"><a class="nav-link ">Itinerary</a></li>
-            <li class="nav-item"><a class="nav-link">Events</a></li>
-            <li class="nav-item"><a class="nav-link">Getting There</a></li>
-            <li class="nav-item"><a class="nav-link active"><span>John George</span> </a></li>
-            <li class="nav-item login-btn-nav" style="display: none;"><a class="nav-link">Login</a></li>
-        </ul>
-    </div>
 
 
-    <!-- /* ---------------------------------MAIN SECTIOn CONTENT----------------------------------------------------------- */
-    /* -----------------------------------------------Select Pref Dropdown--------------------------------------------- */ -->
-    <section class="section-main">
+    <!-- ------------------------------------------------------------------------ -->
 
-        <div class="traveller-profile-main-wrap w-100">
-            <div class="traveller-profile-subwrap">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
-
-                            <div class="traveller-profile-flex ">
-                                <div
-                                    class="traveller-profile-head-wrap d-flex justify-content-between align-items-center ">
-                                    <div class="traveller-profile-heading">
-                                        <h3>My Profile</h3>
-                                    </div>
-
-                                    <div class="traveller-pro-logout">
-                                        <button>
-                                            Logout
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- ------------------------------------------------------------------------------------------------- -->
-                                <!-- ------------------------------------------------------------------------------------------------- -->
-                                <!-- ------------------------------------------------------------------------------------------------- -->
-
-                                <div class="traveller-profile-form">
-                                    <div class="container-fluid">
-                                        <div class="row profile-upload-row">
-                                            <div class="col-12 col-md-3 col-lg-2 col-sm-12 profile-upload-wrap">
-                                                <div class="profile_image">
-                                                    <img src="./images/profile-pic.png" alt="" class="pro_img ">
-
-                                                </div>
-                                                <div class="profile-img-up">
-                                                    <span class="btn  btn-file">
-                                                        Change Picture
-                                                        <input type="file">
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-9 col-lg-7 col-sm-12 profile-upload-form">
-                                                <div class="row fname-lname-block">
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 fname-block mr-b15">
-                                                        <input type="text" placeholder="First Name">
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 lname-block mr-b15">
-                                                        <input type="text" placeholder="Last Name">
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 email-block mr-b15">
-                                                        <input type="email" placeholder="Email">
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-6 col-md-6 col-lg-6 traveller-type-block mr-b15">
-                                                        <select id="traveller-type-pro-form"
-                                                            name="traveller-type-pro-form">
-                                                            <option value="traveller-type">Traveller Type</option>
-                                                            <option value="business">Business Traveller</option>
-                                                            <option value="couple">Couple</option>
-                                                            <option value="family">Family</option>
-                                                            <option value="friends">Group of friends</option>
-                                                            <option value="solo">Solo Traveller</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 island-block mr-b15">
-                                                        <input type="text" placeholder="Island">
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 age-block mr-b15">
-                                                        <select id="age-pro-form" name="age-pro-form">
-                                                            <option value="">Age</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
-
-                                                        </select>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-6 col-md-6 col-lg-6 pref-type-block mr-b15">
-                                                        <select id="pref-pro-form" name="pref-type-pro-form">
-                                                            <option value="">Preferences</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
-
-                                                        </select>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-12 col-md-12 col-lg-12 subhead-detail-block mr-b15">
-                                                        <h5>Location Details</h5>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-6 col-md-6 col-lg-6 country-block mr-b15">
-                                                        <select id="country-pro-form" name="country-type-pro-form">
-                                                            <option value="">Country</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
-
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 state-block mr-b15">
-                                                        <select id="country-pro-form" name="state-pro-form">
-                                                            <option value="">State</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
-
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 city-block mr-b15">
-                                                        <select id="city-pro-form" name="city-pro-form">
-                                                            <option value="">City</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
-
-                                                        </select>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-12 col-md-12 col-lg-12 subhead-detail-block mr-b15">
-                                                        <h5>Budget Per Day</h5>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-6 col-md-6 col-lg-6 accomodatn-block mr-b15">
-                                                        <select id="city-pro-form" name="city-pro-form">
-                                                            <option value="">Accomodation Per Night</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
-
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 food-block mr-b15">
-                                                        <select id="city-pro-form" name="city-pro-form">
-                                                            <option value="">Food Per Day</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
-
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 exp-block mr-b30">
-                                                        <select id="city-pro-form" name="city-pro-form">
-                                                            <option value="">Experience Per Day</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
-
-                                                        </select>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-12 col-md-12 col-lg-12 pro-change-pw mr-b30">
-                                                        <button class=" pro-form-change-pw ">Change Password</button>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-12 col-md-12 col-lg-12 pro-form-btns  mr-b30">
-                                                        <button class="pro-save-change">Save Changes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- ------------------------------------------------------------------------------------------------- -->
-                                <!-- ------------------------------------------------------------------------------------------------- -->
-                                <!-- ------------------------------------------------------------------------------------------------- -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="sign-in-wrap">
+        <div class="sign-form">
+            <div class="form-head text-center">
+                <h4>Welcome to Skyviews</h4>
             </div>
+            <form action class="signup-form">
+                <div class="form-group white-input">
+                    <input type="email" placeholder="Email Address" class="custom-signup-inputs">
+                </div>
+                <div class="form-group white-input">
+                    <input type="text" placeholder="User Name">
+                </div>
+                <div class="form-group white-input">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="form-group white-input">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <div class="policycheck">
+                    <label for="r1">
+                        <input type="checkbox" id="r1" checked>
+                        <span>
+                        </span>
+                        I accept Skyviews Inc Terms of Service and Privacy Policy
+                    </label>
+                </div>
+                <div class="sign-up-button text-center mr-t20">
+                    <button class="signupbtn">
+                        Sign Up
+                    </button>
+                </div>
+                <div class="sign-up-here text-center mr-t10">
+                    <span>Already have an account? <a>Login Here</a></span>
+                </div>
+
+
+            </form>
         </div>
-        <!-- ------------------------------------------------------------------------------------------------- -->
-        <!-- ------------------------------------------------------------------------------------------------- -->
-        <!-- ------------------------------------------------------------------------------------------------- -->
-        <!-- ------------------------------------------------------------------------------------------------- -->
 
     </section>
 
 
 
+    <!-- -------------------------------------------------------------------------------------------------------------------------- -->
 
-    <!-- /* -------------------------------------------------------------------------------------------- */
-    /* -------------------------------------------------------------------------------------------- */ -->
-
-    <!-- Initialize the plugin: -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#example-getting-started').multiselect();
-        });
-    </script>
 
 
     <!-- Optional JavaScript -->
@@ -467,28 +252,9 @@
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <!-- Include the plugin's CSS and JS: -->
-    <!-- <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
-    <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 
-    <script>
-        $(document).ready(function () {
-            $(".menu-toggle-btn").click(function () {
-                $(".mobile-nav ").toggleClass("show-menu");
-                $(".menu-toggle-btn").toggleClass("t-change-btn");
-            });
-        });
-    </script>
 
-    <script>
-        $(".navbar-nav .nav-item").click(function () {
-            $(".navbar-nav .nav-item").removeClass('activeColor');
-            $(this).addClass('activeColor');
-        });
-    </script>
 
 </body>
 

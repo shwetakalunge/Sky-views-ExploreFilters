@@ -2410,7 +2410,7 @@ input[type="date"] {
 .fname-lname-block input[type="email"],
 .fname-lname-block select {
   max-width: 290px;
-  padding: 20px;
+  padding: 17px;
   width: 100%;
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
@@ -2423,11 +2423,11 @@ input[type="date"] {
 .traveller-profile-heading {
   margin-left: 20px;
 }
-.traveller-profile-form{
+.traveller-profile-form {
   margin-top: 40px;
 }
 .traveller-profile-main-wrap {
-  padding: 95px 00px;
+  padding: 95px 00px 0px 0px;
 }
 .profile_image {
   width: 100px;
@@ -2502,12 +2502,151 @@ input[type="date"] {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans-ExtraBold";
   width: 150px;
   color: #ffffff;
   font-size: 15px;
   line-height: 20px;
   padding: 12px;
+}
+.pref-type-block select,
+.traveller-type-block select,
+.age-block select,
+.country-block select,
+.state-block select,
+.city-block select,
+.accomodatn-block select,
+.food-block select,
+.exp-block select {
+  background-image: url(../images/drop-icon2.svg) !important;
+  background-position: 99% 50%;
+  background-repeat: no-repeat;
+  appearance: none;
+  cursor: pointer;
+}
+/* ----------------------------------------SIGN UP PAGE---------------------------------------------------- */
+.sign-in-wrap {
+  display: flex;
+  min-height: 100vh;
+  padding: 80px 0px 20px 0px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/Background-Image.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  /* background-attachment: fixed; */
+  background-position: 0 55px;
+}
+.sign-form {
+  max-width: 389px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+}
+.white-input input[type="email"],
+.white-input input[type="password"],
+.white-input input[type="text"] {
+  max-width: 335px;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.custom-signup-inputs {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+}
+.signup-form {
+  padding: 25px;
+}
+.sign-form h4 {
+  font-size: 22px;
+  line-height: 26px;
+  color: #030f09;
+  font-family: "Montserrat-Bold";
+  padding-top: 30px;
+}
+.sign-up-form-check span {
+  letter-spacing: -0.165px;
+  color: #5b5656;
+}
+.sign-up-button button {
+  border: none;
+  background: #1da1f2;
+  border-radius: 6.34594px;
+  max-width: 261px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-family: "OpenSans-Bold";
+}
+.sign-up-here span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #8e8e8e;
+  font-family: "OpenSans-Regular";
+}
+.sign-up-here a {
+  color: #1da1f2 !important;
+}
+.policycheck label {
+  margin: 0px;
+  font-family: "OpenSans-Regular";
+  font-size: 13px;
+  color: #5b5656 !important;
+  position: relative;
+  padding-left: 35px;
+}
+.policycheck label input {
+  display: none;
+}
+.policycheck label span {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #ececec;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  overflow: hidden;
+}
+.policycheck label input:checked ~ span {
+  background: #1da1f2;
+}
+.policycheck label input:checked ~ span::after {
+  content: "L";
+  width: 16px;
+  height: 12px;
+  position: absolute;
+  color: #ffffff;
+  transform: scaleX(-1) rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 4px;
+  left: 4px;
+  font-family: "OpenSans-Bold";
+}
+.signup-header-wrap {
+  background-color: #1da1f2;
+  /* min-height: 69px; */
+  max-height: 69px;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all 0.5s linear 0s;
 }
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -2847,9 +2986,25 @@ input[type="date"] {
   .replicate-btn {
     font-size: 13px;
   }
+  .traveller-profile-main-wrap {
+    padding: 65px 00px 0px 0px;
+  }
+  .traveller-pro-logout {
+    margin-right: 25px;
+  }
 }
 
 @media (max-width: 768px) {
+  .traveller-profile-heading h3 {
+    font-size: 20px;
+  }
+  .traveller-pro-logout button {
+    font-size: 17px;
+  }
+  .pro-change-pw,
+  .pro-form-btns {
+    text-align: center;
+  }
   .saved-itinerary-scrollable {
     height: 80vh;
   }
@@ -2959,8 +3114,34 @@ input[type="date"] {
   .carousel-add-day-btn {
     left: 42%;
   }
+  .traveller-profile-main-wrap {
+    padding: 25px 00px 0px 0px;
+  }
+  .profile-img-up {
+    text-align: center;
+  }
+  .profile_image {
+    margin: auto;
+  }
+  .profile-upload-form {
+    margin-top: 30px;
+  }
+  .fname-lname-block input[type="text"],
+  .fname-lname-block input[type="email"],
+  .fname-lname-block select {
+    max-width: 100%;
+  }
 }
 @media (max-width: 575px) {
+  .signup-header-wrap {
+    max-height: 50px;
+    
+  }
+  .sign-in-wrap {
+    background-image: none;
+    padding: 60px 0px 20px 0px;
+    min-height: 50px;
+  }
   .itinerary-share button {
     left: 65%;
   }
@@ -3077,6 +3258,20 @@ input[type="date"] {
 }
 
 @media (max-width: 425px) {
+  .sign-form h4 {
+    font-size: 17px;
+    padding-top: 0px;
+  }
+  .traveller-pro-logout button,
+  .traveller-profile-heading h3 {
+    font-size: 15px;
+  }
+  .traveller-pro-logout {
+    margin-right: 15px;
+  }
+  .subhead-detail-block h5 {
+    font-size: 12px;
+  }
   .itinerary-share button {
     left: 70%;
   }
