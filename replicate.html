@@ -325,7 +325,7 @@
                         </ol>
                     </div>
 
-                   <div class="download-itinerary-subwrap">
+                    <div class="download-itinerary-subwrap">
                         <div class="download-itinerary">
                             <button>
                                 <span>Download Itinerary</span>
@@ -431,7 +431,8 @@
 
                                     <div class="carasoul_fav-heart-savedItinerary">
                                         <div class="fav-icon">
-                                            <button class="wishlist-button">
+                                            <button class="wishlist-button" data-toggle="modal"
+                                                data-target="#wishlist-click-ModalCenter">
                                                 <svg class="wishlist-svg-cls" xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path
@@ -642,7 +643,7 @@
 
                                     <div class="carasoul_fav-heart-savedItinerary">
                                         <div class="fav-icon">
-                                            <button class="wishlist-button">
+                                            <button class="wishlist-button"data-toggle="modal" data-target="#wishlist-click-ModalCenter">
                                                 <svg class="wishlist-svg-cls" xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path
@@ -846,7 +847,7 @@
 
                                     <div class="carasoul_fav-heart-savedItinerary">
                                         <div class="fav-icon">
-                                            <button class="wishlist-button">
+                                            <button class="wishlist-button"data-toggle="modal" data-target="#wishlist-click-ModalCenter">
                                                 <svg class="wishlist-svg-cls" xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path
@@ -1057,7 +1058,7 @@
 
                                     <div class="carasoul_fav-heart-savedItinerary">
                                         <div class="fav-icon">
-                                            <button class="wishlist-button">
+                                            <button class="wishlist-button"data-toggle="modal" data-target="#wishlist-click-ModalCenter">
                                                 <svg class="wishlist-svg-cls" xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path
@@ -1268,7 +1269,7 @@
 
                                     <div class="carasoul_fav-heart-savedItinerary">
                                         <div class="fav-icon">
-                                            <button class="wishlist-button">
+                                            <button class="wishlist-button"data-toggle="modal" data-target="#wishlist-click-ModalCenter">
                                                 <svg class="wishlist-svg-cls" xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path
@@ -1472,7 +1473,7 @@
 
                                     <div class="carasoul_fav-heart-savedItinerary">
                                         <div class="fav-icon">
-                                            <button class="wishlist-button">
+                                            <button class="wishlist-button"data-toggle="modal" data-target="#wishlist-click-ModalCenter">
                                                 <svg class="wishlist-svg-cls" xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path
@@ -1604,7 +1605,41 @@
                 </div>
 
 
+                <!-- -------------------------Wishlist Icon Clickable Model------------------------------------------------------------------------ -->
+                <!-- ------------------------------------------------------------------------------------------------- -->
 
+                <!-- Modal -->
+                <div class="modal fade" id="wishlist-click-ModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered wishlist-modal-dia" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header wishlist-modal-header">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body wishlist-modal-cards-body">
+                                <div class="wishlist-heading-main">
+                                    <h5 class="wishlist-title" id="">Save to My Itinerary</h5>
+                                </div>
+                                <div class="wishlist-card-lists-wrap">
+                                    <div class="wishlist-card-lists-images">
+                                        <img src="./images/wishlist-cards.png" alt="" class="wishlist-card-img">
+                                    </div>
+                                    <div class="wishlist-card-lists-details mr-l10">
+                                        <h4>Anguilla Trip</h4>
+                                        <span>20 Aug 2020 to 23 Aug 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer wishlist-modal-cards-footer justify-content-center">
+                                <a href="#" class="wishlist-footer">Create a New Itinerary</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------------- -->
 
                 <!-- ------------------------------------------------------------------------------------------------- -->
                 <!-- ------------------------------------------------------------------------------------------------- -->
@@ -1613,7 +1648,7 @@
             </div>
         </div>
 
-   
+
 
 
         <!-- ------------------------------------------------------------------------------------------------- -->

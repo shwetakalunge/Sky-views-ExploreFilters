@@ -2648,6 +2648,284 @@ input[type="date"] {
   transition: all 0.5s linear 0s;
   -webkit-transition: all 0.5s linear 0s;
 }
+/* ------------------------------------------LOG IN PAGE-------------------------------------------------------- */
+
+.log-in-wrap {
+  display: flex;
+  min-height: 100vh;
+  padding: 40px 0px 50px 0px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/login-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.log-in-form {
+  max-width: 436px;
+  width: 100%;
+}
+.login-radio label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8e8e8e;
+  font-family: "OpenSans-Regular";
+  cursor: pointer;
+}
+.login-radio input[type="radio"] {
+  display: none;
+}
+
+.login-radio input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  margin-right: 3px;
+  background-clip: content-box;
+  border: 2px solid #8e8e8e;
+  background-color: #8e8e8e;
+  border-radius: 50%;
+}
+
+.login-radio input[type="radio"]:checked + label:before {
+  background-color: #1da1f2;
+  border: 2px solid #1da1f2;
+}
+.login-radio input[type="radio"]:checked + label {
+  color: #1da1f2;
+  font-family: "OpenSans-Bold";
+}
+.login-radio label {
+}
+
+.main-login-inputs {
+  background-color: #fff;
+  padding: 18px 40px 40px 40px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.login-form-div h4 {
+  color: #1da1f2;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Montserrat-Bold";
+  margin-bottom: 40px;
+}
+.login-radio {
+  max-width: 220px;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.remember-me-sub-wrap {
+  font-family: "OpenSans-Regular";
+  font-size: 12px;
+  line-height: 20px;
+  color: #8e8e8e;
+  margin-bottom: 40px;
+}
+.login-radio-flex h6 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+  font-family: "OpenSans-Regular";
+  margin-bottom: 20px;
+}
+.log-in button {
+  border: none;
+  background: #1da1f2;
+  border-radius: 6.34594px;
+  max-width: 142px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 38px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: "OpenSans-Bold";
+}
+
+.login-radio-types label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8e8e8e;
+  font-family: "OpenSans-Regular";
+  cursor: pointer;
+}
+.login-radio-types input[type="radio"] {
+  display: none;
+}
+.login-radio-types input[type="radio"]:checked + label {
+  color: #1da1f2;
+  font-family: "OpenSans-Bold";
+}
+.login-radio-types input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  margin-right: 3px;
+  background-clip: content-box;
+  border: 2px solid #8e8e8e;
+  background-color: #8e8e8e;
+  border-radius: 50%;
+}
+
+.login-radio-types input[type="radio"]:checked + label:before {
+  background-color: #1da1f2;
+  border: 2px solid #1da1f2;
+}
+
+.remember-me label {
+  margin: 0px;
+  font-family: "OpenSans-Regular";
+  font-size: 12px;
+  color: #8e8e8e !important;
+  position: relative;
+  padding-left: 25px;
+}
+.remember-me label input {
+  display: none;
+}
+.remember-me label span {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  overflow: hidden;
+  border: 1px solid #8e8e8e;
+  box-sizing: border-box;
+}
+.remember-me label input:checked ~ span {
+  background: #1da1f2;
+}
+.remember-me label input:checked ~ span::after {
+  content: "L";
+  width: 16px;
+  height: 12px;
+  position: absolute;
+  color: #ffffff;
+  transform: scaleX(-1) rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 3px;
+  left: 3px;
+  font-family: "OpenSans-Bold";
+}
+.forget-pw-block a {
+  font-size: 12px;
+  line-height: 20px;
+  color: #8e8e8e;
+  font-family: "OpenSans-Regular";
+}
+.login-white-input input[type="email"],
+.login-white-input input[type="password"] {
+  max-width: 350px;
+  width: 100%;
+  padding: 17px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.custom-signup-inputs::placeholder {
+  color: #8e8e8e;
+  opacity: 1; /* Firefox */
+}
+
+.custom-signup-inputs:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #8e8e8e;
+}
+
+.custom-signup-inputs::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #8e8e8e;
+}
+/* ------------------------------------------------------------------------------------------ */
+.wishlist-heading-main h5 {
+  font-size: 20px;
+  line-height: 141.84%;
+  text-align: center;
+  color: #000000;
+  font-family: "Montserrat-Bold";
+  margin-bottom: 50px;
+}
+.wishlist-card-lists-details h4 {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "OpenSans-SemiBold";
+  color: #000000;
+}
+.wishlist-card-lists-details span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+  font-family: "OpenSans-Regular";
+}
+.wishlist-modal-header {
+  padding: 8px 20px;
+  border-bottom: none;
+}
+.wishlist-modal-cards-body {
+  padding: 10px 42px;
+}
+.wishlist-card-lists-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.wishlist-card-lists-images {
+  width: 67px;
+  height: 67px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.wishlist-card-img {
+  width: 100%;
+  object-fit: cover;
+  max-width: 67px;
+  max-height: 67px;
+}
+.wishlist-modal-cards-footer a {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1da1f2;
+  font-family: "OpenSans-Bold";
+}
+.wishlist-modal-dia {
+  width: 470px;
+  max-width: 100%;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: auto;
+}
+.wishlist-modal-cards-footer {
+  padding: 30px;
+}
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+.banner-wrap{
+  
+}
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -3135,7 +3413,6 @@ input[type="date"] {
 @media (max-width: 575px) {
   .signup-header-wrap {
     max-height: 50px;
-    
   }
   .sign-in-wrap {
     background-image: none;
