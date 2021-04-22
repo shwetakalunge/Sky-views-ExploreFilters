@@ -35,3 +35,8 @@
   font-family: "Lato-Regular";
   src: url("../fonts/Lato-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Lato-ExtraBold";
+  src: url("../fonts/Lato-ExtraBold.ttf");
+}
