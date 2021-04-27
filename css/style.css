@@ -678,7 +678,7 @@ a:hover {
   position: absolute;
   transform: translate(0%, -37%);
   top: 73px;
-  left: 50%;
+  /* left: 50%; */
   justify-content: center;
 }
 .map-arrow-right-buttons {
@@ -688,9 +688,9 @@ a:hover {
   background: #ffffff;
   border-radius: 4px;
   position: absolute;
-  transform: translate(0%, 77%);
+  transform: translate(20%, 77%);
   top: 38px;
-  left: 53%;
+  left: 4%;
   justify-content: center;
 }
 
@@ -748,7 +748,9 @@ a:hover {
   border-radius: 4px;
   width: 100%;
 }
-
+.iternary-my-card-carasol {
+  position: relative;
+}
 /* ------------------------------------------------------------------------------------------- */
 .lookingfor_wrap h6 {
   font-family: "Montserrat-SemiBold";
@@ -1530,10 +1532,11 @@ input[type="checkbox"]:checked + label {
 }
 .itinerary-share {
   position: relative;
+  width: 100%;
 }
 .itinerary-share button {
   position: absolute;
-  transform: translate(-120px, 30%);
+  transform: translate(-170%, 30%);
   cursor: pointer;
 }
 .itinerary-share-btn {
@@ -1778,7 +1781,7 @@ input[type="checkbox"]:checked + label {
   position: absolute;
   transform: translate(0%, 25%);
   top: 0;
-  left: 36%;
+  left: 86%;
 }
 
 .card-iternary-subgrids-wrap {
@@ -1824,8 +1827,8 @@ input[type="checkbox"]:checked + label {
 
 .carousel-add-day-btn {
   position: absolute;
-  top: 33%;
-  left: 11%;
+  top: 43%;
+  left: 31%;
 }
 .carousel-add-day-btn button {
   border: none;
@@ -1958,13 +1961,13 @@ input[type="date"] {
 }
 .calender-box-plan-to-visit input[type="date"] {
   /* background-color: yellowgreen; */
-  max-width: 233px;
+  /* max-width: 233px; */
   width: 100%;
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
   height: 58px;
-  /* color: #8e8e8e; */
+  color: #8e8e8e;
 }
 .calender-box-plan-to-visit input[type="text"] {
   background-image: url(../images/calendar-icon.png);
@@ -2597,6 +2600,9 @@ input[type="date"] {
 .sign-up-here a {
   color: #1da1f2 !important;
 }
+.policycheck {
+  margin-top: 20px;
+}
 .policycheck label {
   margin: 0px;
   font-family: "OpenSans-Regular";
@@ -2604,6 +2610,7 @@ input[type="date"] {
   color: #5b5656 !important;
   position: relative;
   padding-left: 35px;
+  cursor: pointer;
 }
 .policycheck label input {
   display: none;
@@ -2613,11 +2620,13 @@ input[type="date"] {
   width: 22px;
   height: 22px;
   background: #ececec;
-  border-radius: 2px;
+  border-radius: 4px;
   position: absolute;
   left: 0;
   top: 2px;
   overflow: hidden;
+  border: 1px solid #7d8082;
+  cursor: pointer;
 }
 .policycheck label input:checked ~ span {
   background: #1da1f2;
@@ -2633,7 +2642,7 @@ input[type="date"] {
   align-items: center;
   justify-content: center;
   top: 4px;
-  left: 4px;
+  left: 3px;
   font-family: "OpenSans-Bold";
 }
 .signup-header-wrap {
@@ -2648,8 +2657,160 @@ input[type="date"] {
   transition: all 0.5s linear 0s;
   -webkit-transition: all 0.5s linear 0s;
 }
+
+.traveller-pay-pal-modal-close {
+  padding: 10px;
+  border-bottom: none;
+}
+.membership-header {
+  padding: 0px 10px;
+  border-bottom: none;
+}
+.traveller-pay-pal-header {
+  border-bottom: none;
+  padding: 0px !important;
+}
+.traveller-membership-body {
+  padding: 00px 35px;
+}
+.traveller-membership-body h5 {
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  line-height: 141.84%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.traveller-membership-modal-content {
+  width: 100%;
+  max-width: 470px;
+  margin: auto;
+}
+.traveller-pay-pal-modal-content {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+.traveller-memebership-footer {
+  justify-content: center;
+  border-top: none;
+  padding: 0px 0px 10px 0px;
+}
+.traveller-member-btns {
+  width: 144px;
+  border: 1px solid #1da1f2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 7px;
+  font-family: "OpenSans-ExtraBold";
+  font-size: 15px;
+  line-height: 20px;
+  color: #1da1f2;
+}
+.traveller-member-confirm,
+.traveller-paypal-pay {
+  background: #1da1f2;
+  border-radius: 4px;
+  color: #fff;
+}
+.traveller-member-cancel:hover,
+.traveller-paypal-cancel:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+.traveller-member-confirm:hover,
+.traveller-paypal-pay:hover {
+  background-color: #fff;
+  color: #1da1f2;
+}
+.amount-due-header h6 {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "OpenSans-Bold";
+  width: 100%;
+}
+.amount-due-header h5 {
+  font-size: 18px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #686868;
+  font-family: "OpenSans-Regular";
+  width: 100%;
+}
+
+.traveller-paypal-para p {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "OpenSans-Regular";
+  color: #000000;
+}
+.amount-due-span h5,
+.payble-due-span {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "OpenSans-Regular";
+  color: #686868;
+}
+/* .payble-due-span {
+  width: 170px;
+  display: flex;
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  align-items: center;
+} */
+.payble-due-span-block {
+  background: #dcdcdc;
+  /* height: 43px; */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.traveller-pay-pal-body {
+  padding: 00px 40px;
+}
+
+.traveller-paypal-footer {
+  justify-content: center;
+  border-top: none;
+  padding-bottom: 35px;
+}
+.traveller-paypal-header svg {
+  /* height: 40px; */
+  width: 100%;
+}
+.payble-due-span-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  width: 170px;
+  margin-right: 40px;
+}
+.payble-due-span-grey span {
+  width: 111px;
+}
+.amount-due-header,
+.payble-due-span {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  /* background-color: yellowgreen; */
+}
+.payble-due-h5 h5 {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "OpenSans-Bold";
+  width: 100%;
+}
 /* ------------------------------------------LOG IN PAGE-------------------------------------------------------- */
 
+.log-in-main-logo {
+  margin-bottom: 20px;
+}
 .log-in-wrap {
   display: flex;
   min-height: 100vh;
@@ -2808,6 +2969,7 @@ input[type="date"] {
   overflow: hidden;
   border: 1px solid #8e8e8e;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .remember-me label input:checked ~ span {
   background: #1da1f2;
@@ -2854,6 +3016,36 @@ input[type="date"] {
 .custom-signup-inputs::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #8e8e8e;
+}
+.forgot-pw-header {
+  padding: 5px 10px;
+  border-bottom: none;
+}
+.forgot-password-body {
+  padding: 10px;
+}
+.forgot-password-body h5 {
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  line-height: 141.84%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.forgot-password-footer {
+  border-top: none;
+  padding: 10px;
+  justify-content: center;
+}
+.forgot-password-footer button {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "OpenSans-ExtraBold";
+  width: 144px;
+}
+.forgot-pw-modal-content {
+  max-width: 436px;
+  width: 100%;
+  margin: auto;
 }
 /* ------------------------------------------------------------------------------------------ */
 .wishlist-heading-main h5 {
@@ -2933,14 +3125,295 @@ input[type="date"] {
   box-sizing: border-box;
   background-position: center;
 }
+
 .banner-text h1 {
   font-size: 70px;
   line-height: 84px;
   color: #ffffff;
 }
-.trial-tabs{
-  background-color: teal;
-  height: 100vh;
+.events-tabs-subwrap {
+  margin-bottom: 25px;
+}
+.trial-tabs {
+  background-color: #e5e5e5;
+}
+.events-wrap-main {
+  margin-top: -70px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 26px 30px 35px 35px;
+  margin-bottom: 20px;
+}
+.events-nav-tab {
+  border-bottom: none;
+}
+.event-searchbar-block,
+.event-type-filter-block,
+.sub-filter-event-filter-block,
+.search-event-filter-block,
+.event-sort-date-day-mainwrap {
+  width: 224px;
+}
+.event-searchbar {
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.event-subfilter,
+.event-type-inner {
+  padding: 17px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.events-filter {
+  justify-content: space-between;
+}
+.event-search span {
+  letter-spacing: 0.02em;
+  font-family: "Lato-ExtraBold";
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+}
+.event-search {
+  width: 153px;
+  background: #1da1f2;
+  border: 1px solid #1da1f2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px;
+}
+.calender-box-event-filter input[type="text"] {
+  background-image: url(../images/calendar-icon.png);
+  background-repeat: no-repeat;
+  padding: 15px;
+  /* background-color: chartreuse; */
+  width: 100%;
+  background-position: 85% 50%;
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 58px;
+  width: 224px;
+  font-size: 14px;
+}
+.calender-box-event-filter input[type="date"] {
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 224px;
+  height: 58px;
+  background-position: 85% 50%;
+  padding: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #8e8e8e;
+}
+.nav-tabs .ongoing-event-class.active,
+.nav-tabs .annual-event-class.active {
+  font-size: 20px;
+  line-height: 27px;
+  font-family: "OpenSans-Bold";
+  color: #ffffff;
+  background-color: #1da1f2;
+  padding: 16px;
+  margin: 0;
+  height: 55px;
+  text-align: center;
+}
+.ongoing-event-class,
+.annual-event-class {
+  width: 245px;
+  border-radius: 4px;
+  border: 1px solid #1da1f2 !important;
+  margin: 0;
+  height: 55px;
+  padding: 16px;
+  text-align: center;
+  font-family: "OpenSans-Bold";
+  color: #1da1f2;
+  font-size: 20px;
+  line-height: 27px;
+}
+.ongoing-event-class:hover,
+.annual-event-class:hover {
+  color: #1da1f2;
+}
+.events-placeholder-common::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+}
+
+.events-placeholder-common:-ms-input-placeholder {
+  color: #8e8e8e;
+}
+
+.events-placeholder-common::placeholder {
+  color: #8e8e8e !important;
+}
+.event-head-filter option {
+  display: block !important;
+}
+.ongoing-header-wrap {
+  justify-content: space-between;
+  width: 100%;
+  background: yellowgreen;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.event-head-filter {
+  width: 305px;
+  padding: 17px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.event-header-text h3 {
+  font-size: 30px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "Montserrat-Bold";
+}
+.events-main-tab-content {
+  padding: 16px;
+}
+.card-imges-subwrap {
+  overflow: hidden;
+  width: 358px;
+  height: 257px;
+}
+.event-card-img {
+  max-width: 358px;
+  max-height: 257px;
+  object-fit: cover;
+  width: 100%;
+}
+.ongoing-events-card {
+  width: 358px;
+}
+.ongoing-events-card-title {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-Bold";
+  color: #000000;
+}
+.ongoing-eventslist ul {
+  list-style: none;
+}
+.ongoing-eventslist li {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+  font-family: "OpenSans-Regular";
+  margin: 12px;
+}
+.ongoing-eventslist li svg {
+  margin-right: 13px;
+}
+.map-trial-btn {
+  position: relative;
+}
+.ongoing-eventslist ul li:nth-child(5) {
+  border-bottom: 1px dashed #8e8e8e;
+}
+
+.login-radio-types-plan-member input[type="radio"] {
+  display: none;
+}
+
+.login-radio-types-plan-member input[type="radio"]:checked + label span {
+  color: #1da1f2;
+  font-family: "OpenSans-Bold";
+}
+.login-radio-types-plan-member label {
+  display: flex;
+  /* align-items: center; */
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+  font-family: "OpenSans-Bold";
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 16px;
+  transform: matrix(1, -0.01, -0.01, 1, 0, 0);
+  margin-bottom: 5px;
+}
+
+.login-radio-types-plan-member input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  margin-right: 3px;
+  background-clip: content-box;
+  border: 2px solid #8e8e8e;
+  background-color: #8e8e8e;
+  border-radius: 50%;
+}
+.login-radio-types-plan-member input[type="radio"]:checked + label:before {
+  background-color: #1da1f2;
+  border: 2px solid #1da1f2;
+}
+.login-radio-types-plan-member input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  margin-right: 3px;
+  background-clip: content-box;
+  border: 2px solid #8e8e8e;
+  background-color: #8e8e8e;
+  border-radius: 50%;
+}
+
+.radio-content-plan p {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.radio-content-plan {
+  padding: 0px 10px;
+}
+.login-radio-types-plan-member {
+  justify-content: space-between;
+}
+
+/* -----------------------------SERVICE DETAILS PAGE--------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+.service-deatilcontent-main {
+  margin-top: 70px;
+ 
+}
+.backbutton-wrap span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #000000;
+}
+.backbutton-wrap {
+  padding: 10px 30px;
+}
+.servicedetails-carousel-indicators {
+  bottom: -15px;
+}
+.service-card-sliderwrap {
+  margin-top: 10px;
+}
+.service-deatilcontent-sub-content{
+  padding: 30px;
 }
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -3040,15 +3513,36 @@ input[type="date"] {
   }
   .carousel-add-day-btn {
     position: absolute;
-    top: 18%;
-    left: 35%;
+    top: 38%;
+    left: 38%;
   }
   .carasoul_fav-heart-savedItinerary {
     left: 90%;
   }
+  .planned-date-subwrap span {
+    font-size: 11px;
+  }
+  .calender-box-plan-to-visit {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 991px) {
+  .saved-itinerary-back-button {
+    margin-bottom: 10px;
+  }
+  .open-menu-sub-wrap h3 {
+    font-size: 11px;
+  }
+  .planned-date-subwrap span {
+    font-size: 11px;
+  }
+  .planned-date-wrap {
+    display: block;
+  }
+  .planned-date-subwrap {
+    margin-top: 30px;
+  }
   .full-width-map-wrap {
     transform: translate(0px, 47px);
   }
@@ -3289,6 +3783,15 @@ input[type="date"] {
 }
 
 @media (max-width: 768px) {
+  .calender-box-plan-to-visit input[type="text"] {
+    background-position: 95% 50%;
+  }
+  .open-menu-sub-wrap h3 {
+    font-size: 16px;
+  }
+  .planned-date-wrap {
+    display: flex;
+  }
   .traveller-profile-heading h3 {
     font-size: 20px;
   }
@@ -3427,13 +3930,62 @@ input[type="date"] {
   }
 }
 @media (max-width: 575px) {
+  .traveller-membership-body h5 {
+    font-family: "Montserrat-Bold";
+    font-size: 16px;
+    line-height: 95.84%;
+  }
+  .traveller-member-btns {
+    width: 95px;
+  }
+  .traveller-paypal-footer {
+    padding-bottom: 65px;
+  }
+  .radio-content-plan p {
+    margin-bottom: 2px;
+  }
+  .login-radio-types-plan-member label {
+    padding: 5px;
+  }
+  .traveller-membership-body {
+    padding: 0px 18px;
+  }
+  .traveller-membership-modal-content {
+    max-width: 360px;
+  }
+  .traveller-pay-pal-modal-content {
+    max-width: 360px;
+  }
+  .login-radio-types-plan-member {
+    justify-content: center;
+  }
+  .amount-due-header h6,
+  .payble-due-h5 h5,
+  .amount-due-header h5,
+  .payble-due-span-block h5,
+  .payble-due-span-grey span {
+    font-size: 14px;
+  }
+  .traveller-paypal-para p {
+    font-size: 16px;
+  }
+  .login-radio-types label {
+    font-size: 14px;
+  }
+  .main-login-inputs {
+    margin: 0px 10px;
+  }
   .signup-header-wrap {
     max-height: 50px;
   }
   .sign-in-wrap {
-    background-image: none;
+    /* background-image: none; */
     padding: 60px 0px 20px 0px;
-    min-height: 50px;
+    /* min-height: 50px; */
+    background-position: -20px 45px;
+  }
+  .sign-form {
+    margin: 20px;
   }
   .itinerary-share button {
     left: 65%;
@@ -3551,9 +4103,22 @@ input[type="date"] {
 }
 
 @media (max-width: 425px) {
+  .payble-due-span-wrap {
+    margin-right: 0px;
+  }
+  .login-radio-types input[type="radio"] + label:before,
+  .login-radio input[type="radio"] + label:before {
+    width: 12px;
+    height: 12px;
+    padding: 1px;
+  }
+
+  .replicate-breadcrumb li {
+    line-height: 12px;
+  }
   .sign-form h4 {
     font-size: 17px;
-    padding-top: 0px;
+    padding-top: 20px;
   }
   .traveller-pro-logout button,
   .traveller-profile-heading h3 {
@@ -3641,6 +4206,40 @@ input[type="date"] {
 }
 
 @media (max-width: 375px) {
+  .remember-me label span {
+    width: 18px;
+    height: 18px;
+  }
+  .remember-me label input:checked ~ span::after {
+    top: 1px;
+    left: 1px;
+  }
+  .log-in-main-logo svg {
+    width: 160px;
+  }
+  .login-form-div h4 {
+    font-size: 19px;
+  }
+  .login-radio label,
+  .custom-signup-inputs,
+  .remember-me label,
+  .forget-pw-block a,
+  .login-radio-types label {
+    font-size: 13px;
+  }
+  .wishlist-heading-main h5 {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .replicate-breadcrumb {
+    margin-left: 5px;
+  }
+  .planned-date-wrap {
+    display: block;
+  }
+  .planned-date-subwrap {
+    margin-top: 30px;
+  }
   .planned-date-btn {
     height: 43px;
   }

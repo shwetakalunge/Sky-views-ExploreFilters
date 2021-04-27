@@ -396,7 +396,7 @@
 
             </div>
 
-            <form action class="main-login-inputs mr-t20">
+            <form action class="main-login-inputs">
                 <div class="login-form-div text-center">
                     <h4>Login</h4>
                 </div>
@@ -405,6 +405,7 @@
                     <div class="login-radio d-flex ">
                         <input type="radio" name="radio" id="traveller" />
                         <label class="radio" for="traveller">Traveller</label>
+
                         <input type="radio" name="radio" id="Business-head" checked="true" />
                         <label for="Business-head">Business</label>
                     </div>
@@ -428,26 +429,27 @@
                             </label>
                         </div>
                         <div class="forget-pw-block">
-                            <a> Forgot Password?</a>
+                            <a data-toggle="modal" data-target="#forgot-password-modal"> Forgot Password?</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="login-radio-flex">
                     <h6>Business Type</h6>
 
                     <div class="row login-radio-types d-flex justify-content-between m-0">
-                        <input type="radio" name="radio" id="business" class="col-md-4 " />
+                        <input type="radio" name="business-radio" id="business" class="col-md-4 " checked="true" />
                         <label class="radio" for="business">Business</label>
 
-                        <input type="radio" name="radio" id="association" class="col-md-4 " />
+                        <input type="radio" name="business-radio" id="association" class="col-md-4 " />
                         <label for="association">Association</label>
 
-                        <input type="radio" name="radio" id="indigeneous" class="col-md-4 " />
+                        <input type="radio" name="business-radio" id="indigeneous" class="col-md-4 " />
                         <label for="indigeneous">Indigeneous</label>
                     </div>
                 </div>
                 <div class="log-in text-center mr-t40">
-                    <button class="loginbtn">
+                    <button type="submit" class="loginbtn">
                         Log In
                     </button>
                 </div>
@@ -462,6 +464,36 @@
 
 
     <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="forgot-password-modal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content forgot-pw-modal-content">
+                <div class="modal-header forgot-pw-header">
+
+                    <button type="button" class="close forgot-pw-close-btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body forgot-password-body">
+                    <h5 class="forgot-password-title text-center" id="exampleModalLongTitle">Reset Password</h5>
+                    <div class="form-group login-white-input mr-b30 text-center">
+                        <input type="email" placeholder="Enter Email Address" class="custom-signup-inputs">
+                    </div>
+                </div>
+                <div class="modal-footer forgot-password-footer">
+
+                    <button type="button forgot-password-btn" class="btn btn-primary">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
 
 
 
