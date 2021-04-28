@@ -40,3 +40,11 @@
   font-family: "Lato-ExtraBold";
   src: url("../fonts/Lato-ExtraBold.ttf");
 }
+@font-face {
+  font-family: "Montserrat-SemiBoldItalic";
+  src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: url("../fonts/OpenSans-Italic.ttf");
+}

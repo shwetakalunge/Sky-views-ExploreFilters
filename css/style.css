@@ -548,7 +548,7 @@ a:hover {
   left: 10%;
 }
 .countriesMap {
-  height: 480px;
+  /* height: 480px; */
   overflow: hidden;
   margin: 0 auto;
   background: #223949;
@@ -563,6 +563,7 @@ a:hover {
   /* transition: all 3s 4.3s cubic-bezier(0.19, 1, 0.22, 1); */
   opacity: 1;
   transform: translate3d(0, 0, 0);
+  transform: translate(00%, 25%);
 }
 
 .countryFilters h3 {
@@ -3395,7 +3396,7 @@ input[type="date"] {
 
 .service-deatilcontent-main {
   margin-top: 70px;
- 
+  height: 100vh;
 }
 .backbutton-wrap span {
   font-size: 14px;
@@ -3412,8 +3413,169 @@ input[type="date"] {
 .service-card-sliderwrap {
   margin-top: 10px;
 }
-.service-deatilcontent-sub-content{
+.service-deatilcontent-sub-content {
   padding: 30px;
+}
+.card-head-name h4 {
+  font-family: "Montserrat-SemiBold";
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+.card-ratings-star span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+}
+.card-ratings-star .est-span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBoldItalic";
+  color: #000000;
+}
+.member-ass-names h6 {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "OpenSans-Italic";
+  letter-spacing: 0.34px;
+  color: #767676;
+}
+.member-ass-names h5 {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "OpenSans-SemiBold";
+  letter-spacing: 0.34px;
+  color: #000000;
+}
+.beaches-names h6 {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "OpenSans-SemiBold";
+  letter-spacing: 0.34px;
+  color: #000000;
+}
+.service-card-content-list {
+  display: flex;
+  justify-content: space-between;
+}
+.service-card-content-ul {
+  width: 100%;
+  /* margin: 0px; */
+}
+.service-card-content-list li {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 1px 7px;
+  margin: 10px 20px;
+}
+.service-card-content-list li::marker {
+  color: #1da1f2;
+}
+.service-card-content-list li:nth-child(odd)::marker {
+  color: transparent;
+}
+.service-card-content-list li:nth-child(1) {
+  margin: 10px 0px;
+}
+.association-flex-wrap,
+.member-association,
+.beaches-card-wrap {
+  padding: 8px 25px;
+}
+.service-card-content-list {
+  padding: 0 12px;
+}
+.serviceCard-btn button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.serviceCard-head h6 {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #1da1f2;
+  margin-left: 8px;
+}
+.service-card-btn-wrap {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.association-icon,
+.service-cards-contact-main {
+  padding: 0px 10px;
+}
+.social-media-content,
+.service-desription-head,
+.service-desription-para {
+  padding: 0 20px;
+}
+.association-icon-text-main {
+  padding: 15px 0px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.service-cards-contact-main-wrap span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+}
+.service-detail-contacts svg {
+  margin-right: 30px;
+}
+.social-media-btns-wrap button {
+  border-radius: 5px;
+  width: 38px;
+  height: 38px;
+  border: none;
+}
+.serviceCard-fb-btn button {
+  background: #3b5998;
+}
+.serviceCard-twitter-btn button {
+  background: #1da1f2;
+}
+.serviceCard-insta-btn button {
+  background: #c13584;
+}
+.serviceCard-youtube-btn button {
+  background: #ff0000;
+}
+.serviceCard-WBg-btn button {
+  background: #34e0a1;
+}
+.serviceCard-printerest-btn button {
+  background: #bd081c;
+}
+.social-btns-head h3 {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.34px;
+  color: #000000;
+  font-family: "OpenSans-SemiBold";
+}
+.service-desription-head h3 {
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.34px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+}
+.service-desription-para p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "OpenSans-Regular";
+  letter-spacing: 0.0034em;
+  color: #000000;
+}
+.service-card-description {
+  border-top: 1px solid #e6e6e6;
 }
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -3436,6 +3598,9 @@ input[type="date"] {
 }
 
 @media (max-width: 1140px) {
+  .countriesMap .countryFilters {
+    transform: translate(00%, 5%);
+  }
   .itinerary-share button {
     position: absolute;
     transform: translate(10%, -650%);
@@ -3443,7 +3608,7 @@ input[type="date"] {
     left: 70%;
   }
   .countriesMap {
-    height: 420px;
+    height: 100%;
   }
   .filter-res-btn,
   .reset-all-btn {
@@ -3528,6 +3693,17 @@ input[type="date"] {
 }
 
 @media (max-width: 991px) {
+  .countryFilters h3 {
+    font-size: 16px;
+    padding: 8px;
+    line-height: 10px;
+  }
+  .countriesMap .countryFilters {
+    top: 60px;
+  }
+  .footer-logo-image {
+    width: 150px;
+  }
   .saved-itinerary-back-button {
     margin-bottom: 10px;
   }
@@ -3780,6 +3956,9 @@ input[type="date"] {
   .traveller-pro-logout {
     margin-right: 25px;
   }
+  .countryFilters ul li a {
+    margin: 8px 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3846,7 +4025,7 @@ input[type="date"] {
     font-size: 14px;
   }
   .countriesMap {
-    height: 364px;
+    /* height: 415px; */
   }
   .section-main {
     display: block;
@@ -4017,11 +4196,11 @@ input[type="date"] {
     font-size: 15px;
   }
   .countriesMap {
-    height: 429px;
+    height: 460px;
   }
   .countriesMap .countryFilters {
     left: 3%;
-    top: 84%;
+    top: 80%;
   }
   .countryFilters ul {
     display: flex;
@@ -4145,7 +4324,7 @@ input[type="date"] {
     line-height: 20px;
   }
   .countriesMap {
-    height: 337px;
+    height: 370px;
   }
   .countryFilters ul li {
     margin: 10px 0px;
@@ -4179,7 +4358,7 @@ input[type="date"] {
   }
   .countriesMap .countryFilters {
     left: 2%;
-    top: 77%;
+    top: 75%;
   }
   .countryFilters h3 {
     font-size: 15px;
@@ -4198,10 +4377,10 @@ input[type="date"] {
 
 @media (max-width: 386px) {
   .countriesMap .countryFilters {
-    top: 79%;
+    /* top: 79%; */
   }
   .countryFilters ul li a {
-    line-height: 11px;
+    /* line-height: 11px; */
   }
 }
 
@@ -4297,7 +4476,7 @@ input[type="date"] {
   }
   .countriesMap .countryFilters {
     left: 1%;
-    top: 80%;
+    top: 72%;
   }
   .countryFilters h3 {
     font-size: 10px;
@@ -4357,7 +4536,7 @@ input[type="date"] {
     font-size: 8px;
   }
   .countriesMap {
-    height: 250px;
+    height: 260px;
   }
   #map-menu {
     width: 154%;
