@@ -545,7 +545,7 @@ a:hover {
 /* ----------------------------------------MAP SELECTION-------------------------------------------------- */
 #map-menu {
   position: relative;
-  left: 10%;
+  /* left: 10%; */
 }
 .countriesMap {
   /* height: 480px; */
@@ -1362,6 +1362,25 @@ input[type="checkbox"]:checked + label {
 .scroll2::-webkit-scrollbar-thumb {
   background: #e8e8e8;
   border-radius: 4px;
+}
+.scroll3 {
+  overflow-y: scroll;
+  z-index: 999;
+  overflow-x: hidden;
+}
+.scroll3::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  background-color: white;
+}
+.scroll3::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+  z-index: 999;
+}
+.scroll3::-webkit-scrollbar-thumb {
+  background: #e8e8e8;
+  border-radius: 4px;
+  height: 450px;
 }
 /* -------------------------------------------------------------------------------------------- */
 .custom-nav-dropdown {
@@ -2181,6 +2200,11 @@ input[type="date"] {
 /* -------------------------------------------------------------------------------------------- */
 .carasol-trial-star {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carasol-trial-star .rate:not(:checked) > label {
 }
 .rate {
   float: left;
@@ -2188,16 +2212,48 @@ input[type="date"] {
   padding: 0 00px;
   background-color: #fff;
   border-radius: 40px;
-
   position: absolute;
   transform: translate(0%, -148%);
   top: 0%;
-  left: 80%;
+  left: 79%;
 }
+.nearby-bsns-star {
+  float: none;
+  height: 17px;
+  padding: 0 00px;
+  background-color: transparent;
+  border-radius: 40px;
+  position: relative !important;
+  transform: translate(0%, 0%) !important;
+  top: 0% !important;
+  left: 00% !important;
+  padding: 0 11px;
+  margin-bottom: 10px;
+}
+
+.service-cardStar {
+  float: none;
+  height: 40px;
+  padding: 0 00px;
+  background-color: transparent;
+  width: 100%;
+  position: relative;
+  transform: translate(-0%, 0%);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.service-cardStar .rate:not(:checked) > label {
+  float: none;
+}
+
 .rate:not(:checked) > input {
   position: absolute;
   top: -9999px;
 }
+
 .rate:not(:checked) > label {
   float: right;
   width: 1em;
@@ -3434,14 +3490,14 @@ input[type="date"] {
   font-family: "Montserrat-SemiBoldItalic";
   color: #000000;
 }
-.member-ass-names h6 {
+.member-assoo-names h6 {
   font-size: 14px;
   line-height: 26px;
   font-family: "OpenSans-Italic";
   letter-spacing: 0.34px;
   color: #767676;
 }
-.member-ass-names h5 {
+.member-assoo-names h5 {
   font-size: 14px;
   line-height: 26px;
   font-family: "OpenSans-SemiBold";
@@ -3460,7 +3516,7 @@ input[type="date"] {
   justify-content: space-between;
 }
 .service-card-content-ul {
-  width: 100%;
+  /* width: 100%; */
   /* margin: 0px; */
 }
 .service-card-content-list li {
@@ -3487,7 +3543,7 @@ input[type="date"] {
   padding: 8px 25px;
 }
 .service-card-content-list {
-  padding: 0 12px;
+  padding: 0 30px;
 }
 .serviceCard-btn button {
   border: none;
@@ -3505,6 +3561,7 @@ input[type="date"] {
   cursor: pointer;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 .association-icon,
 .service-cards-contact-main {
@@ -3512,13 +3569,26 @@ input[type="date"] {
 }
 .social-media-content,
 .service-desription-head,
-.service-desription-para {
+.service-desription-para,
+.service-booking-seasonwise,
+.season-wise-sort-main,
+.service-booking-buttons,
+.amenity-list ul,
+.entertainment-list-ul,
+.facility-list-ul,
+.speciality-content {
   padding: 0 20px;
 }
 .association-icon-text-main {
   padding: 15px 0px;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
+}
+.awards-icons {
+  margin-bottom: 35px;
+}
+.award-img {
+  margin-bottom: 20px;
 }
 .service-cards-contact-main-wrap span {
   font-size: 14px;
@@ -3534,6 +3604,7 @@ input[type="date"] {
   width: 38px;
   height: 38px;
   border: none;
+  margin-bottom: 10px;
 }
 .serviceCard-fb-btn button {
   background: #3b5998;
@@ -3560,7 +3631,8 @@ input[type="date"] {
   color: #000000;
   font-family: "OpenSans-SemiBold";
 }
-.service-desription-head h3 {
+.service-desription-head h3,
+.service-booking-seasonwise h3 {
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.34px;
@@ -3576,6 +3648,609 @@ input[type="date"] {
 }
 .service-card-description {
   border-top: 1px solid #e6e6e6;
+}
+.amenities-awards-mainblock,
+.speciality-mainblock {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.amenities-mainblock {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.season-wise-sort-wrap h6 {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "OpenSans-SemiBold";
+  letter-spacing: 0.34px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.season-wise-sort-wrap p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  letter-spacing: 0.34px;
+  color: #606060;
+}
+.service-card-booking-details {
+  border-top: 1px solid #e6e6e6;
+}
+.service-detail-contacts span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+}
+.hotel-booking-btns button {
+  width: 38px;
+  height: 38px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+.airbnb-booking-btn button {
+  background: #fe5b5f;
+}
+.bookingCom-btn button {
+  color: #fff;
+  background: #0896ff;
+  border-radius: 5px;
+  font-size: 5px;
+  font-family: "OpenSans-Bold";
+}
+.expedia-booking-btn button {
+  background: #00355f;
+}
+.hotel-booking-BookNow button {
+  width: 105px;
+  background: #1da1f2;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "OpenSans-Bold";
+  color: #ffffff;
+  padding: 8px;
+}
+.service-booking-buttons h6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "OpenSans-SemiBold";
+  letter-spacing: 0.34px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.amenity-list ul,
+.entertainment-list ul,
+.facility-list-ul ul {
+  list-style: none;
+}
+/* .amenity-list ul li,
+.entertainment-list ul li,
+.facility-list-ul li {
+  padding: 10px;
+} */
+.amenity-list ul li {
+  margin-bottom: 15px;
+}
+.amenities-mainblock-wrap h3,
+.entertain-head h3,
+.facility-head h3,
+.awards-head h3,
+.speciality-head h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+}
+.amenities-other-features-wrap,
+.award-specialty-wrap,
+.speciality-mainblock-wrap {
+  margin: 0 20px;
+}
+
+.amenity-list ul li span,
+.facility-list-ul li span,
+.facility-list-ul li span,
+.entertainment-list-ul li span {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 5px;
+  color: #ffffff;
+  font-family: "OpenSans-Regular";
+}
+.facility-list-ul ul li,
+.entertainment-list-ul ul li,
+.amenity-list ul li {
+  margin-bottom: 15px;
+  padding: 0px 5px;
+}
+.awards-names h6 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "OpenSans-Regular";
+  letter-spacing: 0.0034em;
+  color: #000000;
+}
+.speciality-names span {
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: 0.34px;
+  color: #606060;
+  font-family: "OpenSans-Regular";
+}
+.reviews-subhead1 h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+  text-align: left;
+}
+
+.reviews-subhead2 h3 {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "OpenSans-SemiBold";
+  text-align: right;
+  color: #1da1f2;
+}
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 8px 15px 20px;
+}
+.service-card-progress {
+  background: #c4c4c4;
+  border-radius: 4px;
+  height: 5px;
+  width: 100%;
+}
+.service-card-progress-bar1 {
+  width: 100%;
+}
+.service-card-progress-bar2 {
+  width: 25%;
+}
+.service-card-progress-bar3 {
+  width: 75%;
+}
+.service-card-progress-bar4 {
+  width: 15%;
+}
+/* .reviews-progressBar-subwrap {
+  background-color: teal;
+}
+.review-progress-cols {
+  background-color: yellow;
+}
+.review-rating-wrap {
+  background-color: yellowgreen;
+} */
+.review-stars-btn {
+  width: 100%;
+}
+.Servicereview-star {
+  position: relative;
+}
+
+.rating-satr-head h4 {
+  font-size: 50px;
+  line-height: 61px;
+  color: #000000;
+  font-family: "Montserrat-SemiBold";
+}
+.service-cardStar:not(:checked) > label:before {
+  content: "★ ";
+  -webkit-text-stroke: 1.5px #1da1f2;
+}
+.service-cardStar:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 25px;
+  color: transparent;
+}
+.rating-satr-head h6 {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  text-decoration-line: underline;
+  color: #8e8e8e;
+  margin-top: -35px;
+}
+.Sevicereviews-bar-block {
+  margin-bottom: 35px;
+  position: relative;
+}
+.rating-satr-head {
+  text-align: center;
+}
+.write-review-serviceCard {
+  margin-top: 10px;
+}
+.review-count h6 {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  color: #8e8e8e;
+}
+.personal-review {
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.personal-review-pic {
+  width: 100%;
+  object-fit: cover;
+  max-width: 56px;
+  max-height: 56px;
+}
+.reviews-service span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #000000;
+}
+.progress-rwo {
+  border-bottom: 1px solid #e6e6e6;
+  max-height: 200px;
+  height: 100%;
+  margin: 0 5px;
+}
+.write-review-serviceCard button {
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.ServiceCard-review-btn {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+  font-family: "OpenSans-Regular";
+  padding: 10px;
+}
+.live-event-head h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+}
+.live-events-mainblock {
+  margin-top: 70px;
+}
+.service-events-card {
+}
+.service-events-card-content {
+  background: #ffffff;
+  border-radius: 8px;
+  margin: 37px 10px;
+  padding: 5px 10px 10px 8px;
+}
+.service-events-card-content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+}
+.service-events-bgcard {
+  width: 260px;
+  flex: 0 0 48%;
+  border: 1px solid #8e8e8e;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-image: url(../images/live-events.png);
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.service-events-card-content h6 {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+}
+.service-card-event-data span,
+.service-card-event-social-link a {
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+}
+.events-cards-subwrap {
+  justify-content: space-between;
+  margin: 0px;
+}
+.live-events-mainblock {
+  border-bottom: 1px solid #e6e6e6;
+}
+.live-events-card {
+  margin-bottom: 25px;
+}
+.near-business-head h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+}
+.carousel-service-icon-next {
+  background-image: url(../images/carousel-next.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 1;
+  height: 25px;
+  margin: auto;
+}
+.carousel-service-icon-prev {
+  background-image: url(../images/carousel-prev.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 1;
+  height: 25px;
+  margin: auto;
+}
+.carousel-service-prev,
+.carousel-service-next {
+  opacity: 2;
+}
+.nearby-bsns-star {
+  /* float: left; */
+  /* height: 25px;
+  padding: 0 00px;
+  background-color: transparent;
+  border-radius: 40px;
+  position: absolute;
+  position: absolute;
+  transform: translate(0%, 92%) !important;
+  top: 0%;
+  left: 9%; */
+}
+.nearby-bsns-star:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 16px;
+  color: transparent;
+}
+.trail-stars-span span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+}
+.stars-span-col {
+  padding-right: 0px;
+}
+.stars-span-col2 {
+  padding-left: 0px;
+}
+.trail-stars-span {
+  padding: 0 10px;
+}
+.card-newbsns-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0;
+}
+.header-likebtn-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.header-likebtn-wrap button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;
+}
+.videos-header h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+}
+.video-content {
+  cursor: pointer;
+}
+.awards-names {
+  text-align: center;
+}
+.video-content video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.review-popup-body h5 {
+  font-size: 20px;
+  line-height: 141.84%;
+  font-family: "Montserrat-Bold";
+  color: #000000;
+}
+.reviewer-pro-name {
+  width: 100%;
+}
+.reviewer-profile {
+  width: 68px;
+  height: 68px;
+  overflow: hidden;
+}
+.reviwer-pic {
+  object-fit: contain;
+  width: 100%;
+}
+.reviewer-pro-name span {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "OpenSans-SemiBold";
+  color: #000000;
+  margin-left: 15px;
+}
+.reviwer-btn-star {
+  float: left;
+  height: 40px;
+  padding: 0 00px;
+  background-color: transparent;
+  border-radius: 40px;
+  position: relative !important;
+  transform: translate(0%, 0%) !important;
+  top: 0% !important;
+  left: 00% !important;
+  padding: 0 0px;
+  margin-bottom: 10px;
+}
+.reviwer-btn-star:not(:checked) > label {
+  float: right;
+  width: 28px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 28px;
+  color: transparent;
+}
+.reviwer-btn-star:not(:checked) > label::before {
+  content: "★ ";
+  -webkit-text-stroke: 0.5px #8e8e8e;
+}
+.reviewer-input-box textarea {
+  resize: none;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 100px;
+  padding: 10px;
+}
+.review-upload-photo input[type="file"],
+.review-upload-video input[type="file"] {
+  color: transparent;
+}
+
+.image-upload > input,
+.video-upload > input {
+  display: none;
+  cursor: pointer;
+}
+.image-upload,
+.video-upload {
+  width: 106px;
+  border: 1px solid #8e8e8e;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 10px 10px 0px 0px;
+}
+.review-popup-footer {
+  border-top: none;
+  padding: 10px;
+  margin: 0px;
+}
+.review-popup-footer button {
+  width: 144px;
+  border: none;
+}
+.review-post-btn {
+  background: #1da1f2;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 12px;
+  color: #ffffff;
+  font-family: "OpenSans-ExtraBold";
+}
+.review-popup-header {
+  border-bottom: none;
+  padding: 5px 10px;
+}
+.review-popup-content {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+.reviewtextarea-cls::placeholder {
+  color: #8e8e8e;
+  opacity: 1;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.reviewtextarea-cls:-ms-input-placeholder {
+  color: #8e8e8e;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.reviewtextarea-cls::-ms-input-placeholder {
+  color: #8e8e8e;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.share-input-box input[type="text"] {
+  background-image: url(../images/copy-clipbrd.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  max-width: 350px;
+  margin: auto;
+  width: 100%;
+  padding: 10px 15px;
+}
+.share-link-modal-body h5 {
+  font-size: 20px;
+  line-height: 141.84%;
+  font-family: "Montserrat-Bold";
+  text-align: center;
+  color: #000000;
+}
+.share-link-clipboard {
+  width: 470px;
+  margin: auto 10px;
+  height: 400px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.share-link-clipboard-header {
+  border-bottom: none;
+}
+
+.input-link-share::placeholder {
+  color: #8e8e8e;
+  opacity: 1;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.input-link-share:-ms-input-placeholder {
+  color: #8e8e8e;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.input-link-share::-ms-input-placeholder {
+  color: #8e8e8e;
+  font-size: 14px;
+  padding: 10px;
 }
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -3598,6 +4273,24 @@ input[type="date"] {
 }
 
 @media (max-width: 1140px) {
+  .service-events-bgcard {
+    max-width: 100%;
+    width: 100%;
+    flex: 100%;
+  }
+  .service-cardStar:not(:checked) > label {
+    font-size: 21px;
+  }
+  .reviews-service span {
+    font-size: 12px;
+  }
+  .service-card-btn-wrap {
+    display: block;
+    text-align: center;
+  }
+  .serviceCard-head h6 {
+    margin-left: 0px;
+  }
   .countriesMap .countryFilters {
     transform: translate(00%, 5%);
   }
@@ -3693,6 +4386,28 @@ input[type="date"] {
 }
 
 @media (max-width: 991px) {
+  .amenity-list ul li span,
+  .facility-list-ul li span,
+  .facility-list-ul li span,
+  .entertainment-list-ul li span {
+    font-size: 9px;
+  }
+  .card-head-name h4 {
+    font-size: 16px;
+  }
+  .member-assoo-names h5,
+  .beaches-names h6 {
+    font-size: 12px;
+  }
+  .write-review-serviceCard {
+    margin-bottom: 30px;
+  }
+  .service-cardStar:not(:checked) > label {
+    font-size: 17px;
+  }
+  .progress-rwo {
+    max-height: 100%;
+  }
   .countryFilters h3 {
     font-size: 16px;
     padding: 8px;
@@ -3962,6 +4677,18 @@ input[type="date"] {
 }
 
 @media (max-width: 768px) {
+  .serviceCard-head h6 {
+    margin-left: 8px;
+  }
+  .service-deatilcontent-main {
+    margin-top: 0px;
+  }
+  .service-card-btn-wrap {
+    display: flex;
+  }
+  .Servicereview-star .rate {
+    left: 0%;
+  }
   .calender-box-plan-to-visit input[type="text"] {
     background-position: 95% 50%;
   }
@@ -4107,8 +4834,32 @@ input[type="date"] {
   .fname-lname-block select {
     max-width: 100%;
   }
+  .nearby-bsns-star {
+    left: 10%;
+    top: -10%;
+  }
+  .nearby-bsns-star:not(:checked) > label {
+    /* font-size: 18px; */
+  }
 }
 @media (max-width: 575px) {
+  .serviceCard-head h6 {
+    margin-left: 0px;
+  }
+  .hotel-booking-BookNow button {
+    width: 75px;
+    font-size: 11px;
+  }
+  .carasol-trial-star .rate {
+    left: 10%;
+    top: -10%;
+  }
+  .nearby-bsns-star:not(:checked) > label {
+    /* font-size: 21px; */
+  }
+  .service-card-btn-wrap {
+    display: block;
+  }
   .traveller-membership-body h5 {
     font-family: "Montserrat-Bold";
     font-size: 16px;
@@ -4180,6 +4931,9 @@ input[type="date"] {
   } */
   .rate {
     left: 80%;
+  }
+  .Servicereview-star .rate {
+    left: 0%;
   }
   .carasoul-overlap-stars {
     top: 27%;
@@ -4282,8 +5036,86 @@ input[type="date"] {
 }
 
 @media (max-width: 425px) {
+  .share-input-box input[type="text"] {
+    padding: 10px 35px 10px 10px;
+  }
+  .service-detail-contacts svg {
+    margin-right: 10px;
+    width: 18px;
+  }
+  .card-head-name h4 {
+    font-size: 16px;
+  }
+  .rating-satr-head h4 {
+    font-size: 30px;
+  }
+  .member-assoo-names h6,
+  .service-desription-para p,
+  .season-wise-sort-wrap p,
+  .service-booking-buttons h6,
+  .awards-names h6,
+  .speciality-names span,
+  .rating-satr-head h6,
+  .serviceCard-head h6 {
+    font-size: 12px;
+  }
+  .season-wise-sort-wrap h6,
+  .service-events-card-content h6,
+  .header-likebtn-wrap h5 {
+    font-size: 13px;
+  }
+  .service-detail-contacts span,
+  .service-card-event-data span,
+  .service-card-event-social-link a,
+  .reviewer-pro-name span {
+    font-size: 11px;
+  }
+  .association-flex-wrap,
+  .member-association,
+  .beaches-card-wrap {
+    padding: 8px 10px;
+  }
+  .social-btns-head h3,
+  .service-desription-head h3,
+  .service-booking-seasonwise h3,
+  .amenities-mainblock-wrap h3,
+  .entertain-head h3,
+  .facility-head h3,
+  .awards-head h3,
+  .speciality-head h3,
+  .reviews-subhead1 h3,
+  .live-event-head h3,
+  .near-business-head h3,
+  .videos-header h3,
+  .reviews-subhead2 h3 {
+    font-size: 15px;
+  }
+  .review-popup-body h5 {
+    font-size: 14px;
+  }
+  .member-assoo-names h5,
+  .beaches-names h6,
+  .card-ratings-star .est-span,
+  .service-card-content-list li,
+  .card-ratings-star span,
+  .backbutton-wrap span {
+    font-size: 10px;
+  }
+  .backbutton-wrap img {
+    width: 15px;
+  }
+  .nearby-bsns-star:not(:checked) > label {
+    font-size: 12px;
+  }
+  .nearby-bsns-star {
+    margin-bottom: 0px;
+  }
   .payble-due-span-wrap {
     margin-right: 0px;
+  }
+  .carasol-trial-star .rate {
+    left: 14%;
+    top: 10%;
   }
   .login-radio-types input[type="radio"] + label:before,
   .login-radio input[type="radio"] + label:before {
