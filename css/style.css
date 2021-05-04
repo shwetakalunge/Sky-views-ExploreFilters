@@ -410,13 +410,15 @@ a:hover {
 }
 .banner_main_heading {
   margin-bottom: 40px;
+  margin-left: 85px;
+  padding: 0 0 0 80px;
 }
 
 .banner_main_heading h1 {
   /* font-family: "OpenSans-ExtraBold"; */
   font-size: 62px;
   line-height: 82px;
-  text-align: center;
+  /* text-align: center; */
   color: #ffffff;
   font-weight: 800;
 }
@@ -542,6 +544,13 @@ a:hover {
 .loaction-icon svg {
   margin-right: 15px;
 }
+.copyright-footer li {
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
 /* ----------------------------------------MAP SELECTION-------------------------------------------------- */
 #map-menu {
   position: relative;
@@ -558,25 +567,25 @@ a:hover {
 }
 .countriesMap .countryFilters {
   position: absolute;
-  top: 50px;
-  left: 15%;
-  /* transition: all 3s 4.3s cubic-bezier(0.19, 1, 0.22, 1); */
+  top: 52%;
+  left: 23%;
   opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transform: translate(00%, 25%);
+  transform: translate(00%, -50%);
 }
 
 .countryFilters h3 {
   /* font-family: "OpenSans-SemiBold" !important; */
   font-size: 20px;
-  line-height: 32px;
+  line-height: 10px;
   color: #ffffff;
 }
-.countryFilters ul li a {
-  /* color: #CACACA !important; */
-}
+
 .countryFilters ul {
   list-style: none;
+  margin-top: 25px;
+}
+.countryFilters ul li {
+  margin: 20px 0px;
 }
 .countryFilters ul li a {
   /* font-family: "OpenSans-SemiBold"; */
@@ -586,15 +595,16 @@ a:hover {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
-  margin: 20px 0px;
+  margin: 10px 0px;
   height: 32px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   cursor: pointer;
   color: #cacaca;
   text-decoration: none;
   font-weight: 600;
+  padding: 5px 10px;
 }
 
 .countryFilters ul li a:hover {
@@ -1151,7 +1161,7 @@ input:checked + .slider {
   position: absolute;
   transform: translate(0%, 30%);
   top: 0;
-  left: 89%;
+  left: 90%;
 }
 
 .selected-iceland {
@@ -2227,7 +2237,7 @@ input[type="date"] {
   transform: translate(0%, 0%) !important;
   top: 0% !important;
   left: 00% !important;
-  padding: 0 11px;
+  padding: 0 5px;
   margin-bottom: 10px;
 }
 
@@ -2604,6 +2614,14 @@ input[type="date"] {
   background: #ffffff;
   border-radius: 20px;
 }
+.sign-form h6 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: red;
+  font-family: "OpenSans-Regular";
+}
 .white-input input[type="email"],
 .white-input input[type="password"],
 .white-input input[type="text"] {
@@ -2932,7 +2950,23 @@ input[type="date"] {
   font-size: 22px;
   line-height: 30px;
   font-family: "Montserrat-Bold";
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+.login-alert {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+.login-alert h6 {
+  color: red;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  padding: 10px 30px;
+}
+.login-alert-link {
+  color: red;
+  font-size: 14px;
+  font-family: "OpenSans-Bold";
 }
 .login-radio {
   max-width: 220px;
@@ -3104,6 +3138,17 @@ input[type="date"] {
   width: 100%;
   margin: auto;
 }
+.login-form-div h6 {
+  font-size: 16px;
+  line-height: 20px;
+  color: red;
+  font-family: "OpenSans-Regular";
+  padding: 10px 25px;
+}
+.login-form-div h6 a {
+  color: red;
+  font-family: "OpenSans-Bold";
+}
 /* ------------------------------------------------------------------------------------------ */
 .wishlist-heading-main h5 {
   font-size: 20px;
@@ -3181,6 +3226,9 @@ input[type="date"] {
   padding: 80px 70px;
   box-sizing: border-box;
   background-position: center;
+}
+.ongoing-eventslist .ongoing-event-ul2 li span:last-child {
+  border-bottom: 1px solid #1da1f2;
 }
 
 .banner-text h1 {
@@ -3283,11 +3331,15 @@ input[type="date"] {
   margin: 0;
   height: 55px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .ongoing-event-class,
 .annual-event-class {
   width: 245px;
-  border-radius: 4px;
+  /* border: 4px; */
   border: 1px solid #1da1f2 !important;
   margin: 0;
   height: 55px;
@@ -3297,6 +3349,9 @@ input[type="date"] {
   color: #1da1f2;
   font-size: 20px;
   line-height: 27px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ongoing-event-class:hover,
 .annual-event-class:hover {
@@ -3321,7 +3376,13 @@ input[type="date"] {
 .ongoing-header-wrap {
   justify-content: space-between;
   width: 100%;
-  background: yellowgreen;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.annual-header-wrap {
+  justify-content: flex-end;
+  width: 100%;
   display: flex;
   align-items: center;
   margin-bottom: 40px;
@@ -3345,18 +3406,16 @@ input[type="date"] {
 }
 .card-imges-subwrap {
   overflow: hidden;
-  width: 358px;
+  width: 100%;
   height: 257px;
 }
 .event-card-img {
-  max-width: 358px;
+  
   max-height: 257px;
   object-fit: cover;
   width: 100%;
 }
-.ongoing-events-card {
-  width: 358px;
-}
+
 .ongoing-events-card-title {
   font-size: 20px;
   line-height: 20px;
@@ -3445,6 +3504,54 @@ input[type="date"] {
 }
 .login-radio-types-plan-member {
   justify-content: space-between;
+}
+.month-card-body h5 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-Bold";
+  color: #000000;
+}
+.calender-sub-wrap span,
+.month-card-body p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+}
+.month-cards-events {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 100%;
+}
+.months-nav-link {
+  color: #8e8e8e;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  margin: 0 2px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px !important;
+  width: 92px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.months-nav-link:hover {
+  color: #fff;
+  background-color: #1da1f2;
+}
+.month-card-body {
+  padding: 55px 18px 45px 19px;
+}
+.nav-tabs .months-nav-link.active {
+  color: #fff;
+  background-color: #1da1f2;
 }
 
 /* -----------------------------SERVICE DETAILS PAGE--------------------------------------------------------------- */
@@ -3878,9 +3985,8 @@ input[type="date"] {
   width: 100%;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 143% */
-
   color: #8e8e8e;
+  margin-right: 5px;
 }
 .personal-review {
   width: 56px;
@@ -3895,7 +4001,8 @@ input[type="date"] {
   max-width: 56px;
   max-height: 56px;
 }
-.reviews-service span {
+.reviews-service span,
+.review-span span {
   font-size: 14px;
   line-height: 20px;
   font-family: "OpenSans-Regular";
@@ -3903,7 +4010,13 @@ input[type="date"] {
 }
 .progress-rwo {
   border-bottom: 1px solid #e6e6e6;
-  max-height: 200px;
+  max-height: 290px;
+  height: 100%;
+  margin: 0 5px;
+}
+.review-page-progress {
+  border-bottom: none;
+  max-height: 100%;
   height: 100%;
   margin: 0 5px;
 }
@@ -3949,6 +4062,20 @@ input[type="date"] {
   box-sizing: border-box;
   border-radius: 4px;
   background-image: url(../images/live-events.png);
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.service-events-bgcard2 {
+  width: 260px;
+  flex: 0 0 48%;
+  border: 1px solid #8e8e8e;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-image: url(../images/live-events2.png);
   display: flex;
   justify-content: center;
   height: 200px;
@@ -4054,6 +4181,7 @@ input[type="date"] {
   border: none;
   background-color: transparent;
   display: flex;
+  margin-right: 15px;
 }
 
 video::-webkit-media-controls-panel {
@@ -4213,7 +4341,8 @@ video::-webkit-media-controls-panel {
   max-width: 350px;
   margin: auto;
   width: 100%;
-  padding: 10px 15px;
+  padding: 10px 23px;
+  color: #8e8e8e;
 }
 .share-link-modal-body h5 {
   font-size: 20px;
@@ -4252,6 +4381,60 @@ video::-webkit-media-controls-panel {
   font-size: 14px;
   padding: 10px;
 }
+.prog-review-block {
+  border-bottom: none;
+  max-height: 100%;
+  height: 100%;
+  margin: 0 5px;
+}
+.reviewer-pics-wrap {
+  position: relative;
+  margin: 20px 0px 0px 0px;
+}
+.revier-last-img span {
+  position: absolute;
+}
+.reviewer-pics img {
+  width: 100%;
+  /* max-width: 188px; */
+}
+.reviewer-pics span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "OpenSans-Bold";
+  color: #ffffff;
+}
+.reviewer-last-img {
+  cursor: pointer;
+}
+.reviewer-pics {
+  padding: 0 5px !important;
+}
+.reviewer-page-wrap-block {
+  padding: 10px 0px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.review-page-main {
+  padding: 0 15px;
+}
+.carousel-custom-prev {
+}
+.carousel-custom-next {
+}
+.countriesMap .mapMask {
+  height: 700px;
+  width: 43%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(180deg, #223949 0%, rgba(34, 57, 73, 0) 100%);
+  filter: drop-shadow(10px 4px 4px rgba(34, 57, 73, 0.15));
+}
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -4273,6 +4456,9 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 1140px) {
+  .countryFilters ul li {
+    margin: 10px 0px;
+  }
   .service-events-bgcard {
     max-width: 100%;
     width: 100%;
@@ -4292,7 +4478,7 @@ video::-webkit-media-controls-panel {
     margin-left: 0px;
   }
   .countriesMap .countryFilters {
-    transform: translate(00%, 5%);
+    /* transform: translate(00%, -35%); */
   }
   .itinerary-share button {
     position: absolute;
@@ -4409,12 +4595,13 @@ video::-webkit-media-controls-panel {
     max-height: 100%;
   }
   .countryFilters h3 {
-    font-size: 16px;
-    padding: 8px;
-    line-height: 10px;
+    font-size: 12px;
+    /* padding: 8px; */
+    line-height: 00px;
   }
   .countriesMap .countryFilters {
-    top: 60px;
+    top: 50%;
+    /* left: 10%; */
   }
   .footer-logo-image {
     width: 150px;
@@ -4673,12 +4860,30 @@ video::-webkit-media-controls-panel {
   }
   .countryFilters ul li a {
     margin: 8px 0px;
+    font-size: 9px;
+  }
+  .countryFilters ul li a {
+    height: 23px;
   }
 }
 
 @media (max-width: 768px) {
+  .banner_main_heading {
+    margin-left: 0px;
+    padding: 0px;
+  }
+  .banner_main_heading {
+    text-align: center;
+  }
   .serviceCard-head h6 {
     margin-left: 8px;
+  }
+  .countriesMap .mapMask {
+    width: 38%;
+  }
+  .countriesMap .countryFilters {
+    left: 10%;
+    top: 50%;
   }
   .service-deatilcontent-main {
     margin-top: 0px;
@@ -4740,7 +4945,7 @@ video::-webkit-media-controls-panel {
     margin-bottom: 0px;
   }
   .banner_main_heading h1 {
-    font-size: 35px;
+    font-size: 28px;
   }
   .guides_grid1 h6,
   .guides_grid2 h6,
@@ -4843,6 +5048,24 @@ video::-webkit-media-controls-panel {
   }
 }
 @media (max-width: 575px) {
+  .banner_main_heading h3 {
+    font-size: 15px;
+  }
+  .association-content {
+    margin-top: 25px;
+  }
+  .countriesMap .mapMask {
+    width: 0%;
+  }
+  .service-deatilcontent-sub-content {
+    padding: 10px;
+  }
+  .live-events-mainblock {
+    margin-top: 30px;
+  }
+  .review-page-main {
+    padding: 0 10px;
+  }
   .serviceCard-head h6 {
     margin-left: 0px;
   }
@@ -4954,7 +5177,7 @@ video::-webkit-media-controls-panel {
   }
   .countriesMap .countryFilters {
     left: 3%;
-    top: 80%;
+    top: 87%;
   }
   .countryFilters ul {
     display: flex;
@@ -4984,8 +5207,11 @@ video::-webkit-media-controls-panel {
     /* display: block; */
   }
   .banner_main_heading h1 {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 42px;
+  }
+  ..banner_main_heading h3 {
+    font-size: 15px;
   }
   .cus_trial_toggle {
     display: block;
@@ -5005,7 +5231,7 @@ video::-webkit-media-controls-panel {
   }
   #map-menu {
     width: 180%;
-    left: -63%;
+    left: -50%;
   }
   .modal-header-div {
     margin-bottom: 10px;
@@ -5028,7 +5254,7 @@ video::-webkit-media-controls-panel {
 @media (max-width: 485px) {
   .countriesMap .countryFilters {
     left: 3%;
-    top: 78%;
+    /* top: 78%; */
   }
   .countriesMap {
     height: 389px;
@@ -5036,6 +5262,18 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 425px) {
+  .sign-form h6 {
+    font-size: 12px;
+  }
+  .carasoul_fav-heart {
+    left: 88%;
+  }
+  .header-likebtn-wrap button {
+    margin-right: 5px;
+  }
+  .reviews-header {
+    margin: 10px 8px 15px 20px;
+  }
   .share-input-box input[type="text"] {
     padding: 10px 35px 10px 10px;
   }
@@ -5048,6 +5286,21 @@ video::-webkit-media-controls-panel {
   }
   .rating-satr-head h4 {
     font-size: 30px;
+  }
+  .personal-review-pic,
+  .personal-review {
+    width: 46px;
+    height: 46px;
+    max-width: 46px;
+    max-height: 46px;
+  }
+  .reviews-service span {
+    font-size: 9px;
+    line-height: 20px;
+  }
+  .review-span span {
+    font-size: 9px;
+    line-height: 15px !important;
   }
   .member-assoo-names h6,
   .service-desription-para p,
@@ -5148,18 +5401,18 @@ video::-webkit-media-controls-panel {
     background-position: 65% 50%;
   }
   .banner_main_heading h1 {
-    font-size: 25px;
+    font-size: 19px;
     line-height: 42px;
   }
   .banner_main_heading h3 {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 20px;
   }
   .countriesMap {
     height: 370px;
   }
   .countryFilters ul li {
-    margin: 10px 0px;
+    margin: -10px 0px;
   }
   .countryFilters ul li,
   .countryFilters h3 {
@@ -5190,7 +5443,7 @@ video::-webkit-media-controls-panel {
   }
   .countriesMap .countryFilters {
     left: 2%;
-    top: 75%;
+    top: 85%;
   }
   .countryFilters h3 {
     font-size: 15px;
@@ -5204,15 +5457,6 @@ video::-webkit-media-controls-panel {
   .planned-date-btn {
     width: 97px;
     padding: 0px;
-  }
-}
-
-@media (max-width: 386px) {
-  .countriesMap .countryFilters {
-    /* top: 79%; */
-  }
-  .countryFilters ul li a {
-    /* line-height: 11px; */
   }
 }
 
@@ -5288,7 +5532,7 @@ video::-webkit-media-controls-panel {
     left: 70%;
   }
   .banner_main_heading h1 {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
   .banner_main_heading h3,
   .about_head h6,
@@ -5308,11 +5552,11 @@ video::-webkit-media-controls-panel {
   }
   .countriesMap .countryFilters {
     left: 1%;
-    top: 72%;
+    /* top: 82%; */
   }
   .countryFilters h3 {
     font-size: 10px;
-    line-height: 10px;
+    line-height: 00px;
   }
   .countryFilters ul li {
     font-size: 8px;
@@ -5372,7 +5616,7 @@ video::-webkit-media-controls-panel {
   }
   #map-menu {
     width: 154%;
-    left: -55%;
+    left: -35%;
   }
   .download-itinerary span,
   .custom-breadcrumb li {
