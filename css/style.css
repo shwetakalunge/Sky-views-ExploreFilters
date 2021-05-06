@@ -2967,6 +2967,7 @@ input[type="date"] {
   font-size: 14px;
   padding: 10px 30px;
 }
+
 .login-alert-link {
   color: red;
   font-size: 14px;
@@ -3265,7 +3266,7 @@ input[type="date"] {
   margin-bottom: 25px;
 }
 .trial-tabs {
-  background-color: #e5e5e5;
+  background-color: #fafbfc;
 }
 .events-wrap-main {
   margin-top: -70px;
@@ -3628,6 +3629,7 @@ input[type="date"] {
   /* background-color: yellow; */
   width: 100%;
   margin: auto;
+  border-bottom: none;
 }
 .months-nav-item {
   /* margin: 0 10px; */
@@ -4646,23 +4648,76 @@ video::-webkit-media-controls-panel {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 180px 0px 20px 0px;
 }
-.reset-pw-content{
+.reset-pw-content {
   padding: 50px 0px;
   max-width: 436px;
   width: 100%;
   margin: auto;
 }
-.reset-password-body{
- background: #FFFFFF;
-border: 1px solid #E6E6E6;
-box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 4px;
-width: 436px;
-margin: auto;
+.reset-password-body {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 436px;
+  margin: auto;
 }
 
+.reset-in-wrap {
+  display: flex;
+  min-height: 100vh;
+  padding: 80px 0px 20px 0px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #fafbfc;
+}
+.reset-in-form {
+  max-width: 436px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin: 0 20px;
+  background-color: #fff;
+}
+.reset-in-white-input input[type="password"] {
+  /* max-width: 350px; */
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.reset-in-button button {
+  border: none;
+  background: #1da1f2;
+  border-radius: 6.34594px;
+  max-width: 142px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-family: "OpenSans-Bold";
+}
+.reset-in-form h4 {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Montserrat-Bold";
+  color: #1da1f2;
+  margin-top: 20px;
+}
+.resetpw-form {
+  padding: 25px 40px;
+}
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
