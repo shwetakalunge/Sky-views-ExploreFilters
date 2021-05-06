@@ -568,11 +568,15 @@ a:hover {
 .countriesMap .countryFilters {
   position: absolute;
   top: 52%;
-  left: 23%;
+  left: 0%;
   opacity: 1;
   transform: translate(00%, -50%);
+  width: 100%;
 }
-
+.countryFilters-subwrap {
+  padding: 0 160px;
+  width: 100%;
+}
 .countryFilters h3 {
   /* font-family: "OpenSans-SemiBold" !important; */
   font-size: 20px;
@@ -3113,7 +3117,7 @@ input[type="date"] {
   border-bottom: none;
 }
 .forgot-password-body {
-  padding: 10px;
+  padding: 8px;
 }
 .forgot-password-body h5 {
   font-family: "Montserrat-Bold";
@@ -3127,11 +3131,32 @@ input[type="date"] {
   padding: 10px;
   justify-content: center;
 }
-.forgot-password-footer button {
+/* {
   font-size: 15px;
   line-height: 20px;
   font-family: "OpenSans-ExtraBold";
   width: 144px;
+  background: #1da1f2;
+  border-radius: 4px;
+  height: 38px;
+} */
+.forgot-password-footer button,
+.forgot-pw-email-footer button {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "OpenSans-ExtraBold";
+  width: 144px;
+  background: #1da1f2;
+  border-radius: 4px;
+  height: 38px;
+  color: #fff;
+}
+.forgot-password-footer button:hover,
+.forgot-pw-email-footer button:hover {
+  color: #fff;
+}
+.forgot-password-footer .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgb(249 249 249 / 25%);
 }
 .forgot-pw-modal-content {
   max-width: 436px;
@@ -3261,12 +3286,16 @@ input[type="date"] {
 .search-event-filter-block,
 .event-sort-date-day-mainwrap {
   width: 224px;
+  padding: 0px;
+  /* max-width: 100%; */
 }
 .event-searchbar {
   padding: 15px;
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
+  width: 224px;
+  max-width: 100%;
 }
 .event-subfilter,
 .event-type-inner {
@@ -3274,6 +3303,8 @@ input[type="date"] {
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
+  max-width: 100%;
+  width: 224px;
 }
 .events-filter {
   justify-content: space-between;
@@ -3284,6 +3315,10 @@ input[type="date"] {
   color: #ffffff;
   font-size: 15px;
   line-height: 20px;
+  margin-left: 10px;
+}
+.ongoing-event-class {
+  border-radius: 4px 0px 0px 4px !important;
 }
 .event-search {
   width: 153px;
@@ -3292,19 +3327,28 @@ input[type="date"] {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-tab-wrap {
+  display: flex;
+  /* border: 1px solid #1da1f2; */
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .calender-box-event-filter input[type="text"] {
   background-image: url(../images/calendar-icon.png);
   background-repeat: no-repeat;
   padding: 15px;
   /* background-color: chartreuse; */
-  width: 100%;
+  max-width: 100%;
   background-position: 85% 50%;
   cursor: pointer;
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
-  height: 58px;
+  height: 56px;
   width: 224px;
   font-size: 14px;
 }
@@ -3320,6 +3364,9 @@ input[type="date"] {
   cursor: pointer;
   color: #8e8e8e;
 }
+.nav-tabs .annual-event-class.active {
+  border-color: transparent transparent transparent !important;
+}
 .nav-tabs .ongoing-event-class.active,
 .nav-tabs .annual-event-class.active {
   font-size: 20px;
@@ -3331,11 +3378,18 @@ input[type="date"] {
   margin: 0;
   height: 55px;
   text-align: center;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
+  border-color: #1da1f2 #1da1f2 #1da1f2;
+  border-top-left-radius: 0;
 }
-
+.events-nav-tab .annual-event-class {
+  border: 1px solid #1da1f2 !important;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0px;
+}
 .ongoing-event-class,
 .annual-event-class {
   width: 245px;
@@ -3347,9 +3401,9 @@ input[type="date"] {
   text-align: center;
   font-family: "OpenSans-Bold";
   color: #1da1f2;
-  font-size: 20px;
+  font-size: 20px !important;
   line-height: 27px;
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -3407,41 +3461,66 @@ input[type="date"] {
 .card-imges-subwrap {
   overflow: hidden;
   width: 100%;
-  height: 257px;
+  height: 100%;
 }
 .event-card-img {
-  
   max-height: 257px;
   object-fit: cover;
   width: 100%;
 }
+.eventlist-phase2 .events-map-li span {
+  text-decoration: underline;
+  color: #1da1f2;
 
+  cursor: pointer;
+}
+.eventlist-phase1 ul li a span {
+  color: #8e8e8e;
+}
+.ongoing-eventslist ul li a:hover {
+  color: #1da1f2;
+}
 .ongoing-events-card-title {
   font-size: 20px;
   line-height: 20px;
   font-family: "Montserrat-Bold";
   color: #000000;
+  padding: 10px 20px;
+  margin-bottom: 0px;
 }
 .ongoing-eventslist ul {
   list-style: none;
+  margin-bottom: 0px;
+  padding: 00px 20px;
 }
 .ongoing-eventslist li {
+  position: relative;
   font-size: 14px;
   line-height: 20px;
   color: #8e8e8e;
   font-family: "OpenSans-Regular";
-  margin: 12px;
+  margin: 12px 0px;
 }
 .ongoing-eventslist li svg {
   margin-right: 13px;
+  position: absolute;
+}
+.ongoing-eventslist li span {
+  padding-left: 25px;
 }
 .map-trial-btn {
   position: relative;
 }
 .ongoing-eventslist ul li:nth-child(5) {
-  border-bottom: 1px dashed #8e8e8e;
+  /* border-bottom: 1px dashed #8e8e8e; */
 }
 
+.eventlist-phase1 {
+  border-bottom: 1px dashed #8e8e8e;
+}
+.ongoing-events-card-body {
+  padding: 0px;
+}
 .login-radio-types-plan-member input[type="radio"] {
   display: none;
 }
@@ -3527,13 +3606,12 @@ input[type="date"] {
 }
 .months-nav-link {
   color: #8e8e8e;
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans-Regular" !important;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 600;
+  border: 1px solid #e6e6e6 !important;
   margin: 0 2px;
   background: #ffffff;
-  border: 1px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px !important;
   width: 92px;
@@ -3546,6 +3624,14 @@ input[type="date"] {
   color: #fff;
   background-color: #1da1f2;
 }
+.month-nav-tabs {
+  /* background-color: yellow; */
+  width: 100%;
+  margin: auto;
+}
+.months-nav-item {
+  /* margin: 0 10px; */
+}
 .month-card-body {
   padding: 55px 18px 45px 19px;
 }
@@ -3553,7 +3639,54 @@ input[type="date"] {
   color: #fff;
   background-color: #1da1f2;
 }
+.search-eve-common {
+  margin-bottom: 15px;
+  padding: 0px;
+}
 
+.ongoing-events-card {
+  height: 100%;
+}
+.events-grid-card-cols {
+  margin-bottom: 20px;
+}
+
+.calender-box-event-filter input[type="text"]::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+}
+
+.calender-box-event-filter input[type="text"]:-ms-input-placeholder {
+  color: #8e8e8e;
+}
+
+.calender-box-event-filter input[type="text"]::placeholder {
+  color: #8e8e8e !important;
+}
+
+.event-searchbar::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+}
+
+.event-searchbar:-ms-input-placeholder {
+  color: #8e8e8e;
+}
+
+.event-searchbar::placeholder {
+  color: #8e8e8e !important;
+}
+.event-type-inner option:not(:first-of-type) {
+  color: black;
+}
+.event-type-inner option:first-of-type {
+  display: none;
+}
+.event-subfilter option:first-of-type {
+  display: none;
+}
 /* -----------------------------SERVICE DETAILS PAGE--------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 
@@ -4435,6 +4568,101 @@ video::-webkit-media-controls-panel {
   background: linear-gradient(180deg, #223949 0%, rgba(34, 57, 73, 0) 100%);
   filter: drop-shadow(10px 4px 4px rgba(34, 57, 73, 0.15));
 }
+
+.search-eve-common select,
+.ongoing-header-filter select {
+  color: #8e8e8e;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  background-image: url(../images/dropicon.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  appearance: none;
+  cursor: pointer;
+}
+
+.login-alert a:hover {
+  color: red;
+}
+.months-nav-item {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.forgot-pw-email {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "OpenSans-Bold";
+  text-align: center;
+  color: #000000;
+}
+.forgot-pw-email-header {
+  border-bottom: none;
+  padding: 15px;
+}
+.forgot-pw-email-body h5 {
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  line-height: 141.84%;
+  color: #1da1f2;
+  margin-bottom: 20px;
+}
+.forgot-pw-email-footer {
+  border-top: none;
+  padding: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+.forgot-password-modal-dialogue {
+  /* margin: 5px; */
+}
+.forgot-pw-email-modal-content {
+  max-width: 436px;
+  width: 100%;
+  margin: auto;
+}
+.reset-password-body h5 {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Montserrat-Bold";
+  color: #1da1f2;
+  margin-bottom: 40px;
+}
+.reset-pw-modal-content {
+  max-width: 436px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.reset-password-body {
+  padding: 10px;
+}
+.reset-pw-block {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reset-pw-content{
+  padding: 50px 0px;
+  max-width: 436px;
+  width: 100%;
+  margin: auto;
+}
+.reset-password-body{
+ background: #FFFFFF;
+border: 1px solid #E6E6E6;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 4px;
+width: 436px;
+margin: auto;
+}
+
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -4456,6 +4684,9 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 1140px) {
+  .events-filter {
+    /* width: 100%; */
+  }
   .countryFilters ul li {
     margin: 10px 0px;
   }
@@ -4572,6 +4803,31 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 991px) {
+  .ongoing-events-fav-card .carasoul_fav-heart {
+    left: 85%;
+  }
+  .months-nav-link {
+    display: flex !important;
+    width: 100%;
+  }
+  .ongoing-events-card-title {
+    font-size: 15px;
+  }
+  ..ongoing-eventslist li {
+    font-size: 13px;
+  }
+  .event-searchbar-block,
+  .event-type-filter-block,
+  .sub-filter-event-filter-block,
+  .search-event-filter-block,
+  .event-sort-date-day-mainwrap,
+  .search-eve-common {
+    /* width: 100%; */
+    margin: 0 00px 10px 10px;
+  }
+  .events-filter {
+    justify-content: flex-start;
+  }
   .amenity-list ul li span,
   .facility-list-ul li span,
   .facility-list-ul li span,
@@ -4868,9 +5124,39 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 768px) {
+  .nav-tabs .ongoing-event-class.active,
+  .nav-tabs .annual-event-class.active,
+  .ongoing-event-class,
+  .annual-event-class {
+    padding: 12px;
+  }
+  .ongoing-event-class,
+  .annual-event-class {
+    width: 210px;
+  }
+  .event-search {
+    margin: auto;
+    margin-top: 25px;
+  }
+  .events-wrap-main {
+    padding: 26px 30px 15px 35px;
+  }
+  .event-header-text h3 {
+    font-size: 20px;
+  }
+  .ongoing-eventslist li {
+    font-size: 12px;
+  }
+  .events-nav-tab {
+    justify-content: center;
+  }
+  .events-filter {
+    justify-content: center;
+    text-align: center;
+  }
   .banner_main_heading {
     margin-left: 0px;
-    padding: 0px;
+    /* padding: 0px; */
   }
   .banner_main_heading {
     text-align: center;
@@ -4879,11 +5165,14 @@ video::-webkit-media-controls-panel {
     margin-left: 8px;
   }
   .countriesMap .mapMask {
-    width: 38%;
+    width: 40%;
   }
   .countriesMap .countryFilters {
-    left: 10%;
+    /* left: 10%; */
     top: 50%;
+  }
+  .countryFilters-subwrap {
+    padding: 0 60px;
   }
   .service-deatilcontent-main {
     margin-top: 0px;
@@ -4946,6 +5235,7 @@ video::-webkit-media-controls-panel {
   }
   .banner_main_heading h1 {
     font-size: 28px;
+    line-height: 72px;
   }
   .guides_grid1 h6,
   .guides_grid2 h6,
@@ -4956,9 +5246,7 @@ video::-webkit-media-controls-panel {
   .footer1 h4 {
     font-size: 14px;
   }
-  .countriesMap {
-    /* height: 415px; */
-  }
+
   .section-main {
     display: block;
   }
@@ -5016,7 +5304,7 @@ video::-webkit-media-controls-panel {
   }
   #map-menu {
     position: relative;
-    left: -20%;
+    left: -18%;
     width: 130%;
   }
   .carousel-add-day-btn {
@@ -5043,11 +5331,56 @@ video::-webkit-media-controls-panel {
     left: 10%;
     top: -10%;
   }
-  .nearby-bsns-star:not(:checked) > label {
-    /* font-size: 18px; */
+  .annual-header-wrap {
+    margin-bottom: 30px;
+  }
+  .months-nav-item {
+    margin-bottom: 5px;
   }
 }
 @media (max-width: 575px) {
+  .ongoing-events-fav-card .carasoul_fav-heart {
+    left: 90%;
+  }
+  .month-card-body {
+    padding: 35px 18px 15px 19px;
+  }
+  .login-alert h6 {
+    padding: 0px;
+  }
+  .event-searchbar,
+  .event-subfilter,
+  .event-type-inner,
+  .calender-box-event-filter input[type="text"],
+  .calender-box-event-filter input[type="date"] {
+    width: 100%;
+  }
+  .calender-box-event-filter input[type="text"] {
+    background-position: 95% 50%;
+  }
+  .banner_main_heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .countryFilters-subwrap {
+    padding: 0px;
+  }
+  .banner-text h1 {
+    font-size: 60px;
+  }
+  .ongoing-event-class,
+  .annual-event-class {
+    width: 180px;
+    font-size: 15px !important;
+  }
+
+  .ongoing-header-wrap {
+    display: block;
+    text-align: center;
+  }
+  .event-header-text {
+    margin-bottom: 20px;
+  }
   .banner_main_heading h3 {
     font-size: 15px;
   }
@@ -5176,8 +5509,8 @@ video::-webkit-media-controls-panel {
     height: 460px;
   }
   .countriesMap .countryFilters {
-    left: 3%;
-    top: 87%;
+    left: 0%;
+    top: 88%;
   }
   .countryFilters ul {
     display: flex;
@@ -5208,7 +5541,7 @@ video::-webkit-media-controls-panel {
   }
   .banner_main_heading h1 {
     font-size: 20px;
-    line-height: 42px;
+    line-height: 32px;
   }
   ..banner_main_heading h3 {
     font-size: 15px;
@@ -5225,7 +5558,7 @@ video::-webkit-media-controls-panel {
     margin-bottom: 8px;
   }
   .countryFilters ul li a {
-    padding: 5px;
+    padding: 3px;
     font-size: 10px;
     display: table-cell;
   }
@@ -5254,7 +5587,7 @@ video::-webkit-media-controls-panel {
 @media (max-width: 485px) {
   .countriesMap .countryFilters {
     left: 3%;
-    /* top: 78%; */
+    top: 88%;
   }
   .countriesMap {
     height: 389px;
@@ -5262,6 +5595,36 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 425px) {
+  .calender-sub-wrap span,
+  .month-card-body p {
+    font-size: 13px;
+  }
+  .forgot-pw-email {
+    font-size: 15px;
+  }
+  .forgot-password-body h5,
+  .forgot-pw-email-body h5,
+  .month-card-body h5 {
+    font-size: 18px;
+  }
+  .events-main-tab-content {
+    padding: 15px 0px;
+  }
+  .banner_main_heading h3 .events-wrap-main {
+    padding: 26px 7px 15px 0px;
+  }
+  .event-head-filter,
+  .ongoing-header-filter {
+    width: 100%;
+  }
+  .ongoing-event-class,
+  .annual-event-class {
+    width: 120px;
+    font-size: 12px !important;
+  }
+  .banner-text h1 {
+    font-size: 50px;
+  }
   .sign-form h6 {
     font-size: 12px;
   }
@@ -5400,10 +5763,7 @@ video::-webkit-media-controls-panel {
   .custom-nav-dropdown {
     background-position: 65% 50%;
   }
-  .banner_main_heading h1 {
-    font-size: 19px;
-    line-height: 42px;
-  }
+
   .banner_main_heading h3 {
     font-size: 12px;
     line-height: 20px;
@@ -5461,6 +5821,17 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 375px) {
+  .banner_main_heading {
+    padding: 0px;
+  }
+  .banner_main_heading h1 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .banner_main_heading h3 {
+    font-size: 12px;
+    line-height: 20px;
+  }
   .remember-me label span {
     width: 18px;
     height: 18px;
@@ -5531,10 +5902,7 @@ video::-webkit-media-controls-panel {
     cursor: pointer;
     left: 70%;
   }
-  .banner_main_heading h1 {
-    /* font-size: 20px; */
-  }
-  .banner_main_heading h3,
+
   .about_head h6,
   .we-do-text p {
     font-size: 13px;

@@ -403,7 +403,12 @@
                         <br> <a href="">Lost your Password?</a> </h6> -->
                 </div>
                 <div class="alert alert-primary login-alert text-center" role="alert">
-                    <h6>This Email is already registered.Please choose another one.</h6>
+                    <h6>Error:The Password you entered for the email address manish@elsner.in is incorrect.
+                    </h6>
+                    <!-- <a href="#" class="login-alert-link" data-toggle="modal" data-target="#lost-password-modal">Lost
+                        your
+                        Password?</a> -->
+
                 </div>
 
                 <div class="login-radio-flex">
@@ -459,7 +464,7 @@
                     </button>
                 </div>
                 <div class="sign-up-here text-center mr-t10">
-                    <span>Not a Member? <a><b>SignUp Here</b></a></span>
+                    <span>Not a Member? <a href="./signup.html"><b>SignUp Here</b></a></span>
                 </div>
             </form>
 
@@ -474,6 +479,59 @@
 
     <!-- Modal -->
     <div class="modal fade" id="forgot-password-modal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered forgot-password-modal-dialogue" role="document">
+            <div class="modal-content forgot-pw-modal-content">
+                <div class="modal-header forgot-pw-header">
+
+                    <button type="button" class="close forgot-pw-close-btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body forgot-password-body">
+                    <h5 class="forgot-password-title text-center" id="exampleModalLongTitle">Reset Password</h5>
+                    <div class="form-group login-white-input mr-b30 text-center">
+                        <input type="email" placeholder="Enter Email Address" class="custom-signup-inputs">
+                    </div>
+                </div>
+                <div class="modal-footer forgot-password-footer">
+
+                    <button type="button forgot-password-btn" class="btn " data-toggle="modal"
+                        data-target="#type-forgot-password-modal">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="type-forgot-password-modal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content forgot-pw-email-modal-content">
+                <div class="modal-header forgot-pw-email-header">
+
+                </div>
+                <div class="modal-body forgot-pw-email-body">
+                    <h5 class="forgot-password-title text-center" id="exampleModalLongTitle">Email Sent</h5>
+
+                    <p class="forgot-pw-email">An email has been sent to you, to reset your password</p>
+                </div>
+                <div class="modal-footer forgot-pw-email-footer">
+
+                    <button type="button forgot-password-btn" class="btn" data-dismiss="modal"
+                        aria-label="Close">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="lost-password-modal" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content forgot-pw-modal-content">
@@ -491,12 +549,11 @@
                 </div>
                 <div class="modal-footer forgot-password-footer">
 
-                    <button type="button forgot-password-btn" class="btn btn-primary">Confirm</button>
+                    <button type="button forgot-password-btn" class="btn ">Confirm</button>
                 </div>
             </div>
         </div>
-    </div>
-
+    </div> -->
 
     <!-- ------------------------------------------------------------------------------------------------------------------------- -->
 
