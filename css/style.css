@@ -1132,7 +1132,7 @@ input:checked + .slider {
 
   color: #ffffff;
   padding: 1px 7px;
-  margin: 10px 10px;
+  margin: 10px 10px 10px 10px;
 }
 .card-content-list li::marker {
   color: #1da1f2;
@@ -3240,6 +3240,12 @@ input[type="date"] {
 .wishlist-modal-cards-footer {
   padding: 30px;
 }
+
+.service-card-subgrids-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0;
+}
 /* -------------------------------------------------------------------------------------------- */
 /* ------------------------------EVENTS & FESTIVS-------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -3782,10 +3788,10 @@ input[type="date"] {
 .association-flex-wrap,
 .member-association,
 .beaches-card-wrap {
-  padding: 8px 25px;
+  padding: 8px 00px;
 }
 .service-card-content-list {
-  padding: 0 30px;
+  padding: 0 17px;
 }
 .serviceCard-btn button {
   border: none;
@@ -3822,9 +3828,22 @@ input[type="date"] {
   padding: 0 20px;
 }
 .association-icon-text-main {
-  padding: 15px 0px;
+  padding: 25px 0px 0px 0px;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
+}
+.service3videos-mainblock {
+  border-top: 1px solid #e6e6e6;
+}
+.service3video-wrap-section {
+  padding: 0 20px;
+}
+.service3video-header h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+  padding: 0 20px;
 }
 .awards-icons {
   margin-bottom: 35px;
@@ -4338,8 +4357,30 @@ video::-webkit-media-controls-panel {
 .video-content video {
   width: 100%;
   object-fit: cover;
+  border-radius: 4px 4px 0px 0px;
 }
-
+.service3card-ratings-star {
+  padding: 0 00px;
+}
+.service3card-ratings-star span,
+.service3card-info p,
+.service4card-info p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+}
+.live-events-service4 {
+  margin-top: 15px;
+}
+.service4-cards-contact-main {
+  padding: 0px 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.service5-cards-contact-main {
+  padding: 0px 00px;
+  border-bottom: 1px solid #e6e6e6;
+}
 .review-popup-body h5 {
   font-size: 20px;
   line-height: 141.84%;
@@ -4349,6 +4390,7 @@ video::-webkit-media-controls-panel {
 .reviewer-pro-name {
   width: 100%;
 }
+
 .reviewer-profile {
   width: 68px;
   height: 68px;
@@ -4558,9 +4600,27 @@ video::-webkit-media-controls-panel {
 .review-page-main {
   padding: 0 15px;
 }
-.carousel-custom-prev {
+.service-card-subgrids {
+  border-top: 1px solid #e6e6e6;
+  padding: 0 0px 200px;
 }
-.carousel-custom-next {
+.service-deatil2sub-content {
+  padding: 30px;
+}
+.servicecard2-head-name p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+  margin-top: 13px;
+}
+.service-card-subgrids h6 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .countriesMap .mapMask {
   height: 700px;
@@ -4582,6 +4642,33 @@ video::-webkit-media-controls-panel {
   background-position: 95% 50%;
   appearance: none;
   cursor: pointer;
+}
+.recommended-btn span,
+.recommended-btn h6 {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #1da1f2;
+}
+.service4-card-content-ul {
+  margin-bottom: 0px;
+}
+.recommended-btn button {
+  background-color: transparent;
+  border: none;
+}
+.recomm-logo {
+  margin-right: 8px;
+}
+.recommended-spans {
+  justify-content: space-between;
+}
+.recommended-count h6 {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "OpenSans-SemiBold";
+  color: #1da1f2;
+  margin-left: 5px;
 }
 
 .login-alert a:hover {
@@ -4717,6 +4804,44 @@ video::-webkit-media-controls-panel {
 }
 .resetpw-form {
   padding: 25px 40px;
+}
+
+/* ------------------------------------SERVICE-CARD 5-------------------------------------------------------- */
+.service5-card-content-list li:nth-child(1) {
+  margin: 10px 15px;
+  padding: 3px 8px;
+}
+.service5-card-content-list li {
+  background: #1da1f2;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 1px 7px;
+  margin: 10px 5px;
+  font-family: "OpenSans-Regular";
+}
+.service5-card-content-list li:nth-child(even) {
+  background-color: transparent;
+  color: #1da1f2;
+  padding: 3px 0px;
+  font-family: "OpenSans-SemiBold";
+  font-size: 12px;
+}
+.service5-card-content-list li:nth-child(odd)::marker {
+  color: transparent;
+}
+.service5-card-content-list li::marker {
+  color: #1da1f2;
+}
+.Service5recommended-btn span {
+  font-size: 8px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #1da1f2;
+}
+.service5-deatilcontent-sub-content {
+  padding: 20px;
 }
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -5185,6 +5310,9 @@ video::-webkit-media-controls-panel {
   .annual-event-class {
     padding: 12px;
   }
+  .service-card-subgrids {
+    padding: 0px;
+  }
   .ongoing-event-class,
   .annual-event-class {
     width: 210px;
@@ -5397,6 +5525,10 @@ video::-webkit-media-controls-panel {
   .ongoing-events-fav-card .carasoul_fav-heart {
     left: 90%;
   }
+
+  .social-media-content {
+    margin-bottom: 15px !important;
+  }
   .month-card-body {
     padding: 35px 18px 15px 19px;
   }
@@ -5470,6 +5602,7 @@ video::-webkit-media-controls-panel {
   }
   .service-card-btn-wrap {
     display: block;
+    margin-bottom: 20px;
   }
   .traveller-membership-body h5 {
     font-family: "Montserrat-Bold";
