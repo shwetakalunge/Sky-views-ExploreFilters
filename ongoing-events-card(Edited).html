@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SkyViews | Service Details Page 3</title>
+    <title>SkyViews |Edited Ongoing Events Details Page</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -178,7 +178,7 @@
                                 </div>
                             </a>
 
-
+                            <!-- 
 
                             <ul class="navbar-nav ml-auto ">
                                 <li class="nav-item dropdown custom-nav-dropdown">
@@ -194,14 +194,14 @@
                                         <a class="dropdown-item" href="#">Something else here</a>
                                     </div>
                                 </li>
-                            </ul>
-                            <ul class="navbar-nav  navbar-nav-custom">
-                                <li class="nav-item"><a class="nav-link  active">Explore</a></li>
-                                <li class="nav-item"><a class="nav-link ">Itinerary</a></li>
-                                <li class="nav-item"><a class="nav-link">Events</a></li>
-                                <li class="nav-item"><a class="nav-link">Getting There</a></li>
+                            </ul> -->
+                            <ul class="navbar-nav navbar-nav-edited-cards ml-auto  navbar-nav-custom">
+                                <li class="nav-item"><a class="nav-link  ">My Invoice</a></li>
+                                <li class="nav-item"><a class="nav-link ">My Analytics</a></li>
+                                <li class="nav-item"><a class="nav-link ">Profile</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link">Getting There</a></li>
                                 <li class="nav-item"><a class="nav-link">About</a></li>
-                                <li class="nav-item login-btn-nav"><a class="nav-link">Login</a></li>
+                                <li class="nav-item login-btn-nav"><a class="nav-link">Login</a></li> -->
                             </ul>
 
 
@@ -250,28 +250,12 @@
             <li class="nav-item"><a class="nav-link">About</a></li>
             <li class="nav-item"><a class="nav-link selected-link">Login</a></li>
         </ul> -->
-        <ul>
-            <li class="nav-item dropdown custom-nav-dropdown">
-                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"
-                    style="background-color: transparent;color: white;border-radius: 0px;">
-                    Anguilla
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-        </ul>
+
         <ul class="navbar-nav-custom">
-            <li class="nav-item"><a class="nav-link  active">Explore</a></li>
-            <li class="nav-item"><a class="nav-link ">Itinerary</a></li>
-            <li class="nav-item"><a class="nav-link">Events</a></li>
-            <li class="nav-item"><a class="nav-link">Getting There</a></li>
-            <li class="nav-item"><a class="nav-link">About</a></li>
-            <li class="nav-item login-btn-nav"><a class="nav-link">Login</a></li>
+            <li class="nav-item"><a class="nav-link  ">My Invoice</a></li>
+            <li class="nav-item"><a class="nav-link ">My Analytics</a></li>
+            <li class="nav-item"><a class="nav-link">Profile</a></li>
+
         </ul>
     </div>
 
@@ -280,13 +264,35 @@
     /* -----------------------------------------------Select Pref Dropdown--------------------------------------------- */ -->
     <section class="section-main">
         <div class="left_wrap">
-            <div class="service-deatilcontent-main scroll3">
+            <div class="editedservice-deatilcontent-main ">
                 <!-- ----------------------------------------------------- -->
                 <div class="backbutton-wrap">
-                    <a href="">
-                        <img src="./images/back-btn.png" alt="back-btn">
-                        <span>Back to Results</span>
-                    </a>
+                    <div class="backbutton-subwrap d-flex justify-content-between align-items-center">
+                        <div class="goback-button">
+                            <a href="">
+                                <img src="./images/back-btn.png" alt="back-btn">
+                                <span>Back to Results</span>
+                            </a>
+                        </div>
+                        <div class="edited-button">
+                            <button>
+                                <div class="editing-header-wrap d-flex align-items-center">
+                                    <div class="edited-header">
+                                        <h6>Edit</h6>
+                                    </div>
+                                    <div class="edited-span">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.728 6.68608L11.314 5.27208L2 14.5861V16.0001H3.414L12.728 6.68608ZM14.142 5.27208L15.556 3.85808L14.142 2.44408L12.728 3.85808L14.142 5.27208ZM4.242 18.0001H0V13.7571L13.435 0.322083C13.6225 0.134612 13.8768 0.0292969 14.142 0.0292969C14.4072 0.0292969 14.6615 0.134612 14.849 0.322083L17.678 3.15108C17.8655 3.33861 17.9708 3.59292 17.9708 3.85808C17.9708 4.12325 17.8655 4.37756 17.678 4.56508L4.243 18.0001H4.242Z"
+                                                fill="black" />
+                                        </svg>
+
+                                    </div>
+
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- ---------------------------------------------------------- -->
@@ -301,14 +307,14 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <a href="">
-                                    <img class="d-block w-100" src="./images/service-carasoul-1.png" alt="First slide">
+                                    <img class="d-block w-100" src="./images/ongoingEventsCards.png" alt="First slide">
                                 </a>
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/service-carasoul-1.png" alt="Second slide">
+                                <img class="d-block w-100" src="./images/ongoingEventsCards.png" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/service-carasoul-1.png" alt="Second slide">
+                                <img class="d-block w-100" src="./images/ongoingEventsCards.png" alt="Second slide">
                             </div>
 
                         </div>
@@ -328,143 +334,44 @@
 
                 <!-- ------------------------------------------------------------------------------------------------- -->
                 <!-- ------------------------------------------------------------------------------------------------- -->
-                <div class="service-deatilcontent-sub-content">
+                <div class="service5-deatilcontent-sub-content">
                     <!-- ------------------------------------------------------------------------------------------------- -->
                     <!-- ------------------------------------------------------------------------------------------------- -->
                     <div class="association-content">
-                        <div class="association-flex-wrap d-flex">
-                            <div class="association-flex-subwrap">
-                                <div class="logo mr-r10">
-                                    <img src="./images/cards-logo.png" alt="logo">
-                                </div>
-
-                            </div>
+                        <div class="ongoing-events-title-wrap d-flex">
 
                             <div class="association-card-data">
-                                <div class="card-head-name">
-                                    <h4>Barberry Chinaberry Villas</h4>
+                                <div class="card-head-name d-flex align-items-center">
 
+                                    <h4 class="">Annual Festival Del Mar</h4>
+
+                                </div>
+
+
+                                <div class="service4card-info mr-t20">
+                                    <p>Celebrating all things of the sea in the beautiful fishing village of Island
+                                        Harbour.  Deep Sea fishing competition,
+                                        swimming races, crab races and culinary competition, and live string band music
+                                        are all part of the activities including
+                                        an A class and B-Class boatrace during this 2 day event</p>
                                 </div>
 
 
                             </div>
                         </div>
 
-                        <div class="service3card-ratings-star">
-                            <span>5</span>
-                            <span><img src="./images/card-star.png" alt="rating"></span>
-                            <span>(19)</span>
-
-                        </div>
-
-                        <div class="service3card-info mr-t20">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                Ipsum has been the industry's standard
-                                dummy text ever since the 1500s, when an unknown printer took a galley of type
-                                and scrambled it to make a type specimen
-                                book.</p>
-                        </div>
-
-                        <div class="service-card-content-list">
-                            <ul class="row service-card-content-ul">
-                                <li class="col-auto col-sm-auto"><span>Apartment</span> </li>
-                                <li class="col-auto col-sm-auto"><span>Boutique Hotels</span> </li>
 
 
-
-                            </ul>
-                        </div>
                     </div>
                     <!-- ------------------------------------------------------------------------------------------------- -->
                     <!-- ------------------------------------------------------------------------------------------------- -->
-                    <div class="association-icon-text-main">
-                        <div class="row association-icon">
-                            <div class="col-3 col-md-3 col-lg-3 col-sm-3 navigate-icon-wrap service-cards-icon">
-                                <div class="service-card-btn-wrap">
-                                    <div class="serviceCard-btn">
-                                        <button>
-                                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="28.5" cy="28.5" r="28" stroke="#1DA1F2" />
-                                                <path
-                                                    d="M29.0013 19.5154L20.5163 28.0004L29.0013 36.4854L37.4863 28.0004L29.0013 19.5154ZM29.7083 17.3934L39.6083 27.2934C39.7958 27.4809 39.9011 27.7352 39.9011 28.0004C39.9011 28.2655 39.7958 28.5198 39.6083 28.7074L29.7083 38.6074C29.5208 38.7948 29.2665 38.9002 29.0013 38.9002C28.7362 38.9002 28.4819 38.7948 28.2943 38.6074L18.3943 28.7074C18.2069 28.5198 18.1016 28.2655 18.1016 28.0004C18.1016 27.7352 18.2069 27.4809 18.3943 27.2934L28.2943 17.3934C28.4819 17.2059 28.7362 17.1006 29.0013 17.1006C29.2665 17.1006 29.5208 17.2059 29.7083 17.3934ZM30.0013 26.0004V23.5004L33.5013 27.0004L30.0013 30.5004V28.0004H27.0013V31.0004H25.0013V27.0004C25.0013 26.7352 25.1067 26.4808 25.2942 26.2933C25.4818 26.1057 25.7361 26.0004 26.0013 26.0004H30.0013Z"
-                                                    fill="#1DA1F2" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                    <div class="serviceCard-head">
-                                        <h6>Navigate</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 col-md-3 col-lg-3 col-sm-3 review-icon-wrap service-cards-icon"
-                                data-toggle="modal" data-target="#write-reviewModal">
 
-                                <div class="service-card-btn-wrap">
-                                    <div class="serviceCard-btn">
-                                        <button>
-                                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="28.5" cy="28.5" r="28" stroke="#1DA1F2" />
-                                                <path
-                                                    d="M28.9989 34.26L21.9459 38.208L23.5209 30.28L17.5859 24.792L25.6129 23.84L28.9989 16.5L32.3849 23.84L40.4119 24.792L34.4769 30.28L36.0519 38.208L28.9989 34.26ZM28.9989 31.968L33.2459 34.345L32.2969 29.572L35.8699 26.267L31.0369 25.694L28.9989 21.275L26.9609 25.695L22.1279 26.267L25.7009 29.572L24.7519 34.345L28.9989 31.968Z"
-                                                    fill="#1DA1F2" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                    <div class="serviceCard-head">
-                                        <h6>Review</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 col-md-3 col-lg-3 col-sm-3 save-icon-wrap service-cards-icon">
-                                <div class="service-card-btn-wrap">
-                                    <div class="serviceCard-btn">
-                                        <button>
-                                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="28.5" cy="28.5" r="28" stroke="#1DA1F2" />
-                                                <path
-                                                    d="M29.001 20.529C31.35 18.42 34.98 18.49 37.243 20.757C39.505 23.025 39.583 26.637 37.479 28.993L28.999 37.485L20.521 28.993C18.417 26.637 18.496 23.019 20.757 20.757C23.022 18.493 26.645 18.417 29.001 20.529ZM35.827 22.17C34.327 20.668 31.907 20.607 30.337 22.017L29.002 23.215L27.666 22.018C26.091 20.606 23.676 20.668 22.172 22.172C20.682 23.662 20.607 26.047 21.98 27.623L29 34.654L36.02 27.624C37.394 26.047 37.319 23.665 35.827 22.17Z"
-                                                    fill="#1DA1F2" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                    <div class="serviceCard-head">
-                                        <h6>Save</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 col-md-3 col-lg-3 col-sm-3 share-icon-wrap service-cards-icon"
-                                data-toggle="modal" data-target="#link-clip-modal">
-                                <div class="service-card-btn-wrap">
-                                    <div class="serviceCard-btn">
-                                        <button>
-                                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="28.5" cy="28.5" r="28" stroke="#1DA1F2" />
-                                                <path
-                                                    d="M30.1202 33.0227L25.9212 30.7327C25.373 31.3188 24.6612 31.7264 23.8783 31.9026C23.0954 32.0788 22.2776 32.0154 21.5311 31.7208C20.7847 31.4261 20.1442 30.9137 19.6928 30.2502C19.2414 29.5867 19 28.8027 19 28.0002C19 27.1977 19.2414 26.4138 19.6928 25.7503C20.1442 25.0868 20.7847 24.5744 21.5311 24.2797C22.2776 23.985 23.0954 23.9216 23.8783 24.0978C24.6612 24.274 25.373 24.6817 25.9212 25.2677L30.1212 22.9777C29.8828 22.0338 29.9968 21.0353 30.4418 20.1694C30.8869 19.3035 31.6325 18.6297 32.5389 18.2742C33.4452 17.9187 34.4501 17.906 35.3652 18.2384C36.2803 18.5709 37.0427 19.2256 37.5095 20.08C37.9764 20.9343 38.1156 21.9296 37.9011 22.8793C37.6866 23.8289 37.1332 24.6678 36.3444 25.2385C35.5557 25.8093 34.5859 26.0728 33.6168 25.9797C32.6477 25.8866 31.7458 25.4432 31.0802 24.7327L26.8802 27.0227C27.0414 27.6641 27.0414 28.3354 26.8802 28.9767L31.0792 31.2667C31.7448 30.5562 32.6467 30.1128 33.6158 30.0197C34.5849 29.9266 35.5547 30.1901 36.3434 30.7609C37.1322 31.3317 37.6856 32.1705 37.9001 33.1202C38.1146 34.0698 37.9754 35.0651 37.5085 35.9195C37.0417 36.7738 36.2793 37.4286 35.3642 37.761C34.4491 38.0934 33.4442 38.0807 32.5379 37.7252C31.6315 37.3697 30.8859 36.6959 30.4408 35.83C29.9958 34.9641 29.8818 33.9656 30.1202 33.0217V33.0227ZM23.0002 29.9997C23.5306 29.9997 24.0393 29.789 24.4144 29.4139C24.7895 29.0389 25.0002 28.5301 25.0002 27.9997C25.0002 27.4693 24.7895 26.9606 24.4144 26.5855C24.0393 26.2104 23.5306 25.9997 23.0002 25.9997C22.4698 25.9997 21.9611 26.2104 21.586 26.5855C21.2109 26.9606 21.0002 27.4693 21.0002 27.9997C21.0002 28.5301 21.2109 29.0389 21.586 29.4139C21.9611 29.789 22.4698 29.9997 23.0002 29.9997ZM34.0002 23.9997C34.5306 23.9997 35.0393 23.789 35.4144 23.4139C35.7895 23.0389 36.0002 22.5301 36.0002 21.9997C36.0002 21.4693 35.7895 20.9606 35.4144 20.5855C35.0393 20.2104 34.5306 19.9997 34.0002 19.9997C33.4698 19.9997 32.9611 20.2104 32.586 20.5855C32.2109 20.9606 32.0002 21.4693 32.0002 21.9997C32.0002 22.5301 32.2109 23.0389 32.586 23.4139C32.9611 23.789 33.4698 23.9997 34.0002 23.9997ZM34.0002 35.9997C34.5306 35.9997 35.0393 35.789 35.4144 35.4139C35.7895 35.0389 36.0002 34.5301 36.0002 33.9997C36.0002 33.4693 35.7895 32.9606 35.4144 32.5855C35.0393 32.2104 34.5306 31.9997 34.0002 31.9997C33.4698 31.9997 32.9611 32.2104 32.586 32.5855C32.2109 32.9606 32.0002 33.4693 32.0002 33.9997C32.0002 34.5301 32.2109 35.0389 32.586 35.4139C32.9611 35.789 33.4698 35.9997 34.0002 35.9997Z"
-                                                    fill="#1DA1F2" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                    <div class="serviceCard-head">
-                                        <h6>Share</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- ----------------------------CONTACTS--------------------------------------------------------------------- -->
                     <!-- ------------------------------------------------------------------------------------------------- -->
-                    <div class="service-cards-contact-main mr-t30">
+                    <div class="service5-cards-contact-main mr-t30">
                         <div class="service-cards-contact-main">
                             <div
-                                class="service-detail-contacts service-detail-location d-flex align-items-center mr-b20">
+                                class="service5-detail-contacts service-detail-location d-flex align-items-center mr-b20">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -474,9 +381,8 @@
                                 <span>Willow Lane Rendezvous Bay, 2640, Anguilla</span>
 
                             </div>
-
                             <div
-                                class="service-detail-contacts  service-detail-phoneNum d-flex align-items-center mr-b20">
+                                class="service5-detail-contacts  service-detail-phoneNum d-flex align-items-center mr-b20">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0)">
@@ -494,11 +400,9 @@
                                 <span>+1 264-497-6061</span>
 
                             </div>
-
-
                             <a href="">
                                 <div
-                                    class="service-detail-contacts  service-detail-phoneNum d-flex align-items-center mr-b20">
+                                    class="service5-detail-contacts  service-detail-phoneNum d-flex align-items-center mr-b20">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0)">
@@ -515,170 +419,128 @@
                                     <span>www.ang-greatresort.com</span>
                                 </div>
                             </a>
-                        </div>
-                    </div>
 
+                            <div class="ongoing-event-detail-cal-wrap d-flex">
+                                <div
+                                    class="service5-detail-contacts  service-detail-phoneNum d-flex align-items-center mr-b20">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 1V3H15V1H17V3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H7V1H9ZM20 10H4V19H20V10ZM15.036 11.136L16.45 12.55L11.5 17.5L7.964 13.964L9.38 12.55L11.501 14.672L15.037 11.136H15.036ZM7 5H4V8H20V5H17V6H15V5H9V6H7V5Z"
+                                            fill="#1DA1F2" />
+                                    </svg>
 
-                    <!-- ------------------------------------------------------------------------------------------------- -->
-                    <!-- -------------------------------------Our Videos--------------------------------------- -->
-
-                    <div class="videos-mainblock service3videos-mainblock">
-                        <div class="videos-header service3video-header h3 mr-b20 mr-t20">
-                            <h3>Our Videos</h3>
-                        </div>
-                        <div class="videos-wrap-section service3video-wrap-section">
-                            <div class="row videos-subwrap justify-content-between">
-                                <div class="col-md-6 col-sm-6 col-lg-6 col-12 video-content">
-                                    <video width="275" height="167" controls="false">
-                                        <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
-                                        <source src="movie.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-lg-6 col-12 video-content">
-                                    <video width="275" height="167" controls="false">
-                                        <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
-                                        <source src="movie.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ------------------------------------------------------------------------------------------------- -->
-                    <!-- ------------------------SHare Model---------------------------------------------------------- -->
-
-                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
-
-
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="link-clip-modal" tabindex="-1" role="dialog"
-                        aria-labelledby="link-clip-modalTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered share-modal-dialogue" role="document">
-                            <div class="modal-content share-link-clipboard">
-                                <div class="modal-header share-link-clipboard-header">
-
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body share-link-modal-body">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Share Link</h5>
-
-                                    <div class="share-input-box text-center mr-b70 mr-t30">
-                                        <input type="text" placeholder="
-https://goo.gl/maps/y4QkwnP6BQKTr6Kt8 " value="https://goo.gl/maps/y4QkwnP6BQKTr6Kt8 " class="input-link-share">
-                                    </div>
-
-                                    <div class="share-buttons-modal">
-
-                                        <button type="button" class="share-button fb-btn">
-                                            <img src="./images/facebook 1.png" alt="">
-                                        </button>
-                                        <button type="button" class="share-button insta-btn">
-                                            <img src="./images/instagram.png" alt="">
-                                        </button>
-                                        <button type="button" class="share-button twitter-btn">
-                                            <img src="./images/twitter 1.png" alt="">
-                                        </button>
-                                    </div>
+                                    <span>11 Apr 2021 - 12 Apr 2021</span>
 
                                 </div>
+                                <div
+                                    class="service5-detail-contacts  service-detail-phoneNum d-flex align-items-center mr-l30 mr-b20">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84286 14.1217 4 12 4C9.87827 4 7.84344 4.84286 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM13 12H17V14H11V7H13V12Z"
+                                            fill="#1DA1F2" />
+                                    </svg>
 
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ------------------------------------------------------------------------------------------------- -->
-                    <!-- ------------------------------------------------------------------------------------------------- -->
-
-
-
-                    <!-- ------------------------------------------------------------------------------------------------- -->
-                    <!-- ------------------------------------       WRITE REVIEW------------------------------------------------------------- -->
-                    <!-- Modal -->
-                    <div class="modal fade" id="write-reviewModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content review-popup-content">
-                                <div class="modal-header review-popup-header">
-
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body review-popup-body m-auto">
-                                    <h5 class="modal-title review-popup-title text-center mr-b20" id="">Anguilla Great
-                                        House
-                                        Resort</h5>
-                                    <div class="reviewer-pro-name d-flex align-items-center">
-                                        <div class="reviewer-profile">
-                                            <img src="./images/profile-pic.png" alt="" class="reviwer-pic">
-                                        </div>
-                                        <span>John George</span>
-                                    </div>
-                                    <div class="reviewer-stars">
-                                        <div class="card-content-service-details">
-                                            <div class="row trail-reviewer-star">
-
-                                                <div
-                                                    class="col-md-12 col-lg-12 col-sm-12 col-xl-12 col-12 reviewer-star reviewer-star">
-                                                    <div class="rate reviwer-btn-star ">
-                                                        <input type="radio" id="star5f" name="rate" value="5" />
-                                                        <label for="star5f" title="text">5 stars</label>
-                                                        <input type="radio" id="star4f" name="rate" value="4" />
-                                                        <label for="star4f" title="text">4 stars</label>
-                                                        <input type="radio" id="star3f" name="rate" value="3" />
-                                                        <label for="star3f" title="text">3 stars</label>
-                                                        <input type="radio" id="star2f" name="rate" value="2" />
-                                                        <label for="star2f" title="text">2 stars</label>
-                                                        <input type="radio" id="star1f" name="rate" value="1" />
-                                                        <label for="star1f" title="text">1 star</label>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="reviewer-input-box">
-                                        <textarea rows="" cols="" placeholder="What you like the most about this place?"
-                                            class="reviewtextarea-cls"></textarea>
-                                    </div>
-                                    <div class="reviewer-upload">
-                                        <div class="review-upload-box d-flex">
-                                            <div class="image-upload">
-                                                <label for="file-input">
-                                                    <img src="images/pic-upload.svg" />
-                                                </label>
-
-                                                <input id="file-input" type="file" />
-                                            </div>
-
-                                            <div class="video-upload">
-                                                <label for="file-input">
-                                                    <img src="images/video-upload.svg" />
-                                                </label>
-
-                                                <input id="file-input" type="file" />
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-                                <div class="modal-footer review-popup-footer justify-content-center">
-
-                                    <button type="button" class="review-post-btn">Post</button>
+                                    <span>04:00PM - 06:00PM</span>
 
                                 </div>
                             </div>
+
+
+                            <a href="">
+                                <div
+                                    class="service5-detail-contacts  service-detail-phoneNum d-flex align-items-center mr-b20">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.6626 6.72422C16.6015 6.47415 16.4278 6.28534 16.2291 6.22744C15.8777 6.12422 14.1647 5.88926 10.5459 5.88926C6.92698 5.88926 5.21565 6.12422 4.861 6.22744C4.66478 6.2845 4.49107 6.47331 4.42915 6.72422C4.34149 7.08003 4.1123 8.57122 4.1123 10.9242C4.1123 13.2772 4.34149 14.7676 4.42915 15.1251C4.49027 15.3743 4.66398 15.5631 4.86181 15.6202C5.21565 15.7242 6.92698 15.9592 10.5459 15.9592C14.1647 15.9592 15.8769 15.7242 16.2307 15.621C16.4269 15.5639 16.6007 15.3751 16.6626 15.1242C16.7502 14.7684 16.9794 13.2739 16.9794 10.9242C16.9794 8.57457 16.7502 7.08087 16.6626 6.72422ZM18.2203 6.30716C18.5878 7.80255 18.5878 10.9242 18.5878 10.9242C18.5878 10.9242 18.5878 14.0459 18.2203 15.5413C18.016 16.3679 17.4185 17.0182 16.6618 17.2381C15.2874 17.6375 10.5459 17.6375 10.5459 17.6375C10.5459 17.6375 5.80674 17.6375 4.42996 17.2381C3.66999 17.0149 3.07328 16.3653 2.87142 15.5413C2.50391 14.0459 2.50391 10.9242 2.50391 10.9242C2.50391 10.9242 2.50391 7.80255 2.87142 6.30716C3.07569 5.48059 3.67321 4.83024 4.42996 4.61038C5.80674 4.21094 10.5459 4.21094 10.5459 4.21094C10.5459 4.21094 15.2874 4.21094 16.6618 4.61038C17.4217 4.83359 18.0185 5.48311 18.2203 6.30716ZM8.93747 13.8613V7.98716L13.7626 10.9242L8.93747 13.8613Z"
+                                            fill="#1DA1F2" />
+                                    </svg>
+
+                                    <span>https://www.youtube.com/watch?v=8DTF3RU1h6c</span>
+                                </div>
+                            </a>
+                            <div class="events-details-daywise-wrap">
+                                <div class="row events-details-daywise">
+                                    <div class="col-6 col-md-6 col-sm-4 col-lg-4 mr-b20">
+                                        <div class="daywise-svg-span-events d-flex">
+                                            <div class="events-details-daywise-svg">
+
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 4H21C21.2652 4 21.5196 4.10536 21.7071 4.29289C21.8946 4.48043 22 4.73478 22 5V12H20V6H6V9L1 5L6 1V4ZM18 20H3C2.73478 20 2.48043 19.8946 2.29289 19.7071C2.10536 19.5196 2 19.2652 2 19V12H4V18H18V15L23 19L18 23V20Z"
+                                                        fill="#1DA1F2" />
+                                                </svg>
+                                            </div>
+                                            <div class="events-details-daywise-span">
+                                                <span>Annually</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-6 col-md-6 col-sm-4 col-lg-4  mr-b20">
+                                        <div class="daywise-svg-span-events d-flex">
+                                            <div class="events-details-daywise-svg">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8 20.0002V21.9322C8.00015 22.0273 7.97319 22.1205 7.92227 22.2008C7.87134 22.2811 7.79858 22.3452 7.7125 22.3856C7.62642 22.426 7.53061 22.4411 7.43629 22.4289C7.34197 22.4168 7.25307 22.3781 7.18 22.3172L3.06 18.8842C2.98098 18.8183 2.92421 18.7296 2.89744 18.6303C2.87067 18.5309 2.8752 18.4257 2.91042 18.3291C2.94563 18.2324 3.00982 18.1489 3.09421 18.0901C3.17861 18.0312 3.27911 17.9998 3.382 18.0002H18C18.5304 18.0002 19.0391 17.7895 19.4142 17.4144C19.7893 17.0393 20 16.5306 20 16.0002V8.0002H22V16.0002C22 17.0611 21.5786 18.0785 20.8284 18.8286C20.0783 19.5788 19.0609 20.0002 18 20.0002H8ZM16 2.0682C15.9998 1.9731 16.0268 1.87994 16.0777 1.79963C16.1287 1.71932 16.2014 1.6552 16.2875 1.61479C16.3736 1.57437 16.4694 1.55934 16.5637 1.57146C16.658 1.58358 16.7469 1.62234 16.82 1.6832L20.94 5.1162C21.019 5.18204 21.0757 5.27062 21.1025 5.36987C21.1293 5.46912 21.1248 5.57422 21.0898 5.67086C21.0547 5.76749 20.9906 5.85096 20.9064 5.90989C20.8222 5.96882 20.7218 6.00036 20.619 6.0002H6C5.46957 6.0002 4.96086 6.21091 4.58579 6.58598C4.21071 6.96106 4 7.46976 4 8.0002V16.0002H2V8.0002C2 6.93933 2.42143 5.92191 3.17157 5.17177C3.92172 4.42162 4.93913 4.0002 6 4.0002H16V2.0682ZM11 8.0002H13V16.0002H11V10.0002H9V9.0002L11 8.0002Z"
+                                                        fill="#1DA1F2" />
+                                                </svg>
+
+                                            </div>
+                                            <div class="events-details-daywise-span">
+                                                <span>1 week</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-6 col-md-6 col-sm-4 col-lg-4 mr-b20">
+                                        <div class="daywise-svg-span-events d-flex">
+                                            <div class="events-details-daywise-svg">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 1V3H15V1H17V3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H7V1H9ZM20 10H4V19H20V10ZM15.036 11.136L16.45 12.55L11.5 17.5L7.964 13.964L9.38 12.55L11.501 14.672L15.037 11.136H15.036ZM7 5H4V8H20V5H17V6H15V5H9V6H7V5Z"
+                                                        fill="#1DA1F2" />
+                                                </svg>
+
+                                            </div>
+                                            <div class="events-details-daywise-span">
+                                                <span>Wednesday</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
+
+
+
+
                     <!-- ------------------------------------------------------------------------------------------------- -->
                     <!-- ------------------------------------------------------------------------------------------------- -->
+
+
+
+                    <!-- ------------------------------------------------------------------------------------------------- -->
+                    <!-- --------------------------------------Nearby Businesses------------------------------------------- -->
+
+
+
+                    <!-- ------------------------------------------------------------------------------------------------- -->
+                    <!-- -------------------------------------LIVE EVENTS------------------------------------------------------------ -->
+
+
+
+
+
+
 
                     <!-- ------------------------------------------------------------------------------------------------- -->
                 </div>

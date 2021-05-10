@@ -3537,6 +3537,8 @@ input[type="date"] {
   font-family: "OpenSans-Bold";
 }
 .login-radio-types-plan-member label {
+  width: 100%;
+  max-width: 210px;
   display: flex;
   /* align-items: center; */
   font-size: 14px;
@@ -3548,8 +3550,16 @@ input[type="date"] {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 16px;
-  transform: matrix(1, -0.01, -0.01, 1, 0, 0);
+  /* transform: matrix(1, -0.01, -0.01, 1, 0, 0); */
   margin-bottom: 5px;
+}
+
+.events-details-daywise span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+  margin-left: 25px;
 }
 
 .login-radio-types-plan-member input[type="radio"] + label:before {
@@ -3699,7 +3709,7 @@ input[type="date"] {
 /* -------------------------------------------------------------------------------------------- */
 
 .service-deatilcontent-main {
-  margin-top: 70px;
+  margin-top: 60px;
   height: 100vh;
 }
 .backbutton-wrap span {
@@ -3709,7 +3719,7 @@ input[type="date"] {
   color: #000000;
 }
 .backbutton-wrap {
-  padding: 10px 30px;
+  padding: 20px 30px;
 }
 .servicedetails-carousel-indicators {
   bottom: -15px;
@@ -3763,10 +3773,7 @@ input[type="date"] {
   display: flex;
   justify-content: space-between;
 }
-.service-card-content-ul {
-  /* width: 100%; */
-  /* margin: 0px; */
-}
+
 .service-card-content-list li {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 4px;
@@ -4364,7 +4371,8 @@ video::-webkit-media-controls-panel {
 }
 .service3card-ratings-star span,
 .service3card-info p,
-.service4card-info p {
+.service4card-info p,
+.service5card-info p {
   font-size: 14px;
   line-height: 20px;
   font-family: "OpenSans-Regular";
@@ -4607,6 +4615,12 @@ video::-webkit-media-controls-panel {
 .service-deatil2sub-content {
   padding: 30px;
 }
+.servicecard2-head-name h4 {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+}
 .servicecard2-head-name p {
   font-size: 14px;
   line-height: 20px;
@@ -4808,7 +4822,7 @@ video::-webkit-media-controls-panel {
 
 /* ------------------------------------SERVICE-CARD 5-------------------------------------------------------- */
 .service5-card-content-list li:nth-child(1) {
-  margin: 10px 15px;
+  /* margin: 0px 15px 10px 15px; */
   padding: 3px 8px;
 }
 .service5-card-content-list li {
@@ -4818,7 +4832,7 @@ video::-webkit-media-controls-panel {
   line-height: 16px;
   color: #ffffff;
   padding: 1px 7px;
-  margin: 10px 5px;
+  margin: 4px 8px 10px 12px;
   font-family: "OpenSans-Regular";
 }
 .service5-card-content-list li:nth-child(even) {
@@ -4843,6 +4857,338 @@ video::-webkit-media-controls-panel {
 .service5-deatilcontent-sub-content {
   padding: 20px;
 }
+.Service5my-card-body {
+  padding: 11px 5px 10px 10px;
+}
+.header-likebtn-wrap h5 {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+}
+.association-content {
+  border-bottom: 1px solid #e6e6e6;
+}
+.ongoing-events-title-wrap {
+  padding: 8px 10px;
+}
+.service5-detail-contacts span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+  margin-left: 25px;
+}
+/* ----------------------------------------Ongoing Events Card  Editable--------------------------------------------------- */
+.edited-button button {
+  background-color: transparent;
+  border: none;
+}
+.edited-header h6 {
+  margin-right: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "OpenSans-SemiBold";
+  color: #000000;
+}
+.navbar-nav-edited-cards .nav-item:last-child .nav-link {
+  background: transparent;
+  border-radius: 4px;
+  color: #fff;
+  min-width: 73px;
+  min-height: 30px;
+  transition: all 0.3s linear 0s;
+  /* display: flex; */
+  text-align: center;
+  justify-content: center;
+}
+.navbar-nav-edited-cards a.active {
+  border-bottom: none;
+  font-family: "Montserrat-SemiBold";
+}
+.editedservice-deatilcontent-main {
+  margin-top: 70px;
+  /* height: 100vh; */
+}
+/* -------------------------------------  ADD BUSINESS------------------------------------------------------- */
+.add-business-content {
+  padding: 80px 70px 100px;
+  background-color: #fafbfc;
+}
+.business-head h3 {
+  font-size: 30px;
+  line-height: 20px;
+  font-family: "Montserrat-Bold";
+  color: #000000;
+}
+
+.business-info-claim h6 {
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "OpenSans-SemiBold";
+  letter-spacing: 0.34px;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+.business-claim-button button {
+  border: none;
+  background: #1da1f2;
+  border-radius: 4px;
+  width: 147px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+.business-claim-button span {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Roboto-Bold";
+  color: #ffffff;
+}
+.busines-type-select {
+  max-width: 275px;
+  width: 100%;
+}
+.busines-type-select select {
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  color: #8e8e8e;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  background-image: url(../images/dropicon.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  appearance: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.business-info-claim {
+  display: flex;
+  justify-content: flex-end;
+}
+.business-select-claim {
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 15px;
+}
+.navbar-nav-edited-cards li a {
+  font-family: "Montserrat-SemiBold" !important;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.add-business button {
+  background-color: transparent;
+  border: none;
+}
+.create-new-bsns h6 {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Montserrat-Bold";
+  color: #000000;
+}
+.create-new-bsns {
+  margin-top: 60px;
+}
+.add-business {
+  margin-top: 70px;
+}
+.business-card-content {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  max-width: 359px;
+  height: 100%;
+}
+.add-new-bsns-card {
+  border: none;
+}
+.published-status-icon span {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "OpenSans-SemiBold";
+  letter-spacing: -0.165px;
+  color: #1da1f2;
+}
+.published-status-block,
+.added-bsns-images {
+  position: relative;
+}
+.published-status-icon {
+  background: yellow;
+  border-radius: 16px;
+  position: absolute;
+  /* transform: translate(0%, 30%); */
+  top: 0;
+  left: 90%;
+  width: 145px;
+  padding: 10px 8px;
+}
+.business-card {
+  /* background-color: yellow; */
+  padding: 20px;
+}
+.bsns-card-flex-events {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bsns-card-head h5 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-Bold";
+  color: #000000;
+}
+.bsns-card-head h6,
+.card-content-add-event h6 {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  text-decoration-line: underline;
+  color: #1da1f2;
+}
+.card-staus {
+  background-color: #fff;
+  /* max-width: 145px; */
+  height: 27px;
+  border-radius: 16px;
+  left: 52%;
+  position: absolute;
+  top: 3%;
+  padding: 5px;
+  transform: translate(0%, 10%);
+}
+.card-staus span {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "OpenSans-SemiBold";
+  letter-spacing: -0.165px;
+  color: #1da1f2;
+  margin-left: 7px;
+}
+.card-status-pending span {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "OpenSans-SemiBold";
+  letter-spacing: -0.165px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.card-pending {
+  background-color: #fff;
+  /* max-width: 145px; */
+  height: 27px;
+  border-radius: 16px;
+  left: 72%;
+  position: absolute;
+  top: 3%;
+  padding: 5px;
+  transform: translate(0%, 10%);
+}
+.business-card-body {
+  padding: 10px;
+}
+.business-header-wrap h3 {
+  font-size: 30px;
+  line-height: 20px;
+  font-family: "Montserrat-Bold";
+  color: #000000;
+}
+.new-bsns-modal-body h5 {
+  font-size: 20px;
+  line-height: 141.84%;
+  font-family: "Montserrat-Bold";
+  text-align: center;
+  margin-bottom: 60px;
+  color: #000000;
+}
+.create-busines-type-select {
+  max-width: 350px;
+  width: 100%;
+  height: 58px;
+}
+.create-busines-type-select select {
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  color: #8e8e8e;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  background-image: url(../images/dropicon.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  appearance: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.new-bsns-modal-footer,
+.claim-bsns-footer {
+  justify-content: center;
+  border-top: none;
+}
+
+.btn-create-bsns,
+.claim-bsns-btn {
+  color: #fff;
+  background: #1da1f2;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "OpenSans-ExtraBold";
+  width: 144px;
+  height: 38px;
+  border: none;
+}
+.btn-create-bsns:hover {
+  color: #fff;
+}
+.new-bsns-modal-header {
+  border-bottom: none;
+  padding: 10px 20px;
+}
+.new-bsns-model-content {
+  max-width: 470px;
+  margin: auto;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.new-bsns-modal-body {
+  padding: 0px;
+}
+.claim-modal-body h5 {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Montserrat-Bold";
+  text-align: center;
+  color: #1da1f2;
+}
+.claim-modal-body p {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "OpenSans-Bold";
+  color: #000000;
+}
+.claim-modal-content {
+  max-width: 436px;
+  margin: auto;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.claim-modal-body {
+  padding: 20px;
+}
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -4864,6 +5210,21 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 1140px) {
+  .bsns-card-head h6,
+  .card-content-add-event h6,
+  .card-content span {
+    font-size: 10px;
+  }
+  .bsns-card-head h5 {
+    font-size: 15px;
+  }
+  .card-status-pending span,
+  .card-staus span {
+    font-size: 10px;
+  }
+  .events-details-daywise span {
+    margin-left: 10px;
+  }
   .events-filter {
     /* width: 100%; */
   }
@@ -4986,6 +5347,9 @@ video::-webkit-media-controls-panel {
   .ongoing-events-fav-card .carasoul_fav-heart {
     left: 85%;
   }
+  .login-btn-nav {
+    margin-top: 0px;
+  }
   .months-nav-link {
     display: flex !important;
     width: 100%;
@@ -4993,7 +5357,7 @@ video::-webkit-media-controls-panel {
   .ongoing-events-card-title {
     font-size: 15px;
   }
-  ..ongoing-eventslist li {
+  .ongoing-eventslist li {
     font-size: 13px;
   }
   .event-searchbar-block,
@@ -5304,6 +5668,9 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 768px) {
+  .add-business-content {
+    padding: 30px 70px 100px;
+  }
   .nav-tabs .ongoing-event-class.active,
   .nav-tabs .annual-event-class.active,
   .ongoing-event-class,
@@ -5525,7 +5892,35 @@ video::-webkit-media-controls-panel {
   .ongoing-events-fav-card .carasoul_fav-heart {
     left: 90%;
   }
-
+  .service3card-ratings-star {
+    padding: 0 22px;
+  }
+  .service3card-info {
+    padding: 0 20px;
+  }
+  .association-flex-wrap {
+    padding: 0px;
+  }
+  .service-deatil2sub-content {
+    padding: 0 30px;
+  }
+  .service-card-sliderwrap {
+    margin-top: 00px;
+  }
+  .backbutton-wrap {
+    padding: 10px 30px;
+  }
+  .service-deatilcontent-main {
+    height: 100%;
+  }
+  .association-flex-wrap,
+  .member-association,
+  .beaches-card-wrap {
+    padding: 8px 20px;
+  }
+  .service-card-content-list {
+    padding: 0 35px;
+  }
   .social-media-content {
     margin-bottom: 15px !important;
   }
@@ -5731,7 +6126,7 @@ video::-webkit-media-controls-panel {
     font-size: 20px;
     line-height: 32px;
   }
-  ..banner_main_heading h3 {
+  .banner_main_heading h3 {
     font-size: 15px;
   }
   .cus_trial_toggle {
@@ -5783,6 +6178,12 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 425px) {
+  .serviceCard-btn svg {  
+    width: 40px;
+  }
+  .service-card-content-list {
+    padding: 0 25px;
+  }
   .calender-sub-wrap span,
   .month-card-body p {
     font-size: 13px;
@@ -5813,7 +6214,12 @@ video::-webkit-media-controls-panel {
   .banner-text h1 {
     font-size: 50px;
   }
-  .sign-form h6 {
+  .sign-form h6,
+  .servicecard2-head-name p,
+  .my-card-body h5,
+  .service3card-info p,
+  .service4card-info p,
+  .service5card-info p {
     font-size: 12px;
   }
   .carasoul_fav-heart {
@@ -5832,7 +6238,9 @@ video::-webkit-media-controls-panel {
     margin-right: 10px;
     width: 18px;
   }
-  .card-head-name h4 {
+  .card-head-name h4,
+  .servicecard2-head-name h4,
+  .service-card-subgrids h6 {
     font-size: 16px;
   }
   .rating-satr-head h4 {
@@ -5902,7 +6310,8 @@ video::-webkit-media-controls-panel {
   .card-ratings-star .est-span,
   .service-card-content-list li,
   .card-ratings-star span,
-  .backbutton-wrap span {
+  .backbutton-wrap span,
+  .edited-header h6 {
     font-size: 10px;
   }
   .backbutton-wrap img {
