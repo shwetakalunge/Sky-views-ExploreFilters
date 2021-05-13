@@ -83,6 +83,9 @@ a:hover {
 .mr-t10 {
   margin-top: 10px;
 }
+.mr-t15 {
+  margin-top: 15px;
+}
 .mr-t20 {
   margin-top: 20px;
 }
@@ -410,7 +413,7 @@ a:hover {
 }
 .banner_main_heading {
   margin-bottom: 40px;
-  margin-left: 85px;
+  margin-left: 76px;
   padding: 0 0 0 80px;
 }
 
@@ -435,6 +438,7 @@ a:hover {
   line-height: 32px;
   color: #ffffff;
   font-weight: normal;
+  margin-left: 3px;
 }
 
 .about_head h3 {
@@ -567,14 +571,14 @@ a:hover {
 }
 .countriesMap .countryFilters {
   position: absolute;
-  top: 52%;
+  top: 50%;
   left: 0%;
   opacity: 1;
   transform: translate(00%, -50%);
   width: 100%;
 }
 .countryFilters-subwrap {
-  padding: 0 160px;
+  padding: 100px 100px 110px 160px;
   width: 100%;
 }
 .countryFilters h3 {
@@ -614,9 +618,11 @@ a:hover {
 .countryFilters ul li a:hover {
   /* color: #000000; */
 }
+.countryFilters ul li:nth-child(1),
+.countryFilters ul li:nth-child(2),
 .countryFilters ul li:nth-child(3),
 .countryFilters ul li:nth-child(5) {
-  max-width: 100px;
+  max-width: 200px;
 }
 .countryFilters ul li:nth-child(4) {
   max-width: 76px;
@@ -625,6 +631,12 @@ a:hover {
 .countryFilters ul li.active a {
   background-color: #fff;
   color: #000000 !important;
+}
+#barbados-highlight {
+  transform: translateY(31px) translateX(53px);
+}
+#barbados-outline {
+  transform: translateY(41px) translateX(60px);
 }
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -716,7 +728,7 @@ a:hover {
 /* -------------------------------------------------------------------------------------- */
 .section-main {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   width: 100%;
   min-height: 100vh;
 }
@@ -2181,7 +2193,7 @@ input[type="date"] {
   border-bottom: 3px solid white;
 }
 .navbar-nav-custom a.active {
-  border-bottom: 4px solid white;
+  /* border-bottom: 4px solid white; */
   font-family: "Montserrat-ExtraBold";
 }
 
@@ -3283,6 +3295,8 @@ input[type="date"] {
   border-radius: 6px;
   padding: 26px 30px 35px 35px;
   margin-bottom: 20px;
+  margin-left: 28px;
+  margin-right: 32px;
 }
 .events-nav-tab {
   border-bottom: none;
@@ -4912,7 +4926,7 @@ video::-webkit-media-controls-panel {
 }
 /* -------------------------------------  ADD BUSINESS------------------------------------------------------- */
 .add-business-content {
-  padding: 80px 70px 100px;
+  padding: 90px 70px 100px;
   background-color: #fafbfc;
 }
 .business-head h3 {
@@ -5004,7 +5018,7 @@ video::-webkit-media-controls-panel {
   border: 1px solid #e8e8e8;
   box-sizing: border-box;
   border-radius: 4px;
-  max-width: 359px;
+  /* max-width: 359px; */
   height: 100%;
 }
 .add-new-bsns-card {
@@ -5163,7 +5177,7 @@ video::-webkit-media-controls-panel {
   border-radius: 4px;
 }
 .new-bsns-modal-body {
-  padding: 0px;
+  padding: 0px 10px;
 }
 .claim-modal-body h5 {
   font-size: 22px;
@@ -5188,6 +5202,263 @@ video::-webkit-media-controls-panel {
 }
 .claim-modal-body {
   padding: 20px;
+}
+/* -----------------------------------------GETTING THERE-------------------------------------------------- */
+.getting-there-banner {
+  background-image: url(../images/getting-there.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0px 50px 70px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.getting-there-banner h1 {
+  font-size: 70px;
+  line-height: 85px;
+  font-family: "Montserrat-ExtraBold";
+  color: #ffffff;
+  margin-left: -7px;
+}
+.search-flights-head h2 {
+  font-size: 30px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+  margin-left: -15px;
+}
+/* ---------------------------------------------------------------------------------------- */
+.search-flight select {
+  color: #8e8e8e;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  background-image: url(../images/dropicon.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  appearance: none;
+  cursor: pointer;
+}
+
+.search-flight-inner {
+  padding: 18px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  max-width: 100%;
+  width: 305px;
+}
+.search-flight-searchbar {
+  padding: 16px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 305px;
+  max-width: 100%;
+}
+.calender-box-search-flight input[type="text"] {
+  background-image: url(../images/calendar-icon.png);
+  background-repeat: no-repeat;
+  padding: 15px;
+  /* background-color: chartreuse; */
+  max-width: 100%;
+  background-position: 85% 50%;
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 57px;
+  width: 305px;
+  font-size: 14px;
+}
+.calender-box-search-flight input[type="date"] {
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* width: 299px; */
+  height: 57px;
+  background-position: 85% 50%;
+  padding: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #8e8e8e;
+}
+.search-flight-inner option:first-of-type {
+  display: none;
+}
+.flight-search-button {
+  width: 153px;
+  background: #1da1f2;
+  border: 1px solid #1da1f2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flight-search-button span {
+  letter-spacing: 0.02em;
+  font-family: "Lato-ExtraBold";
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+.dropdown-toggle-custom {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "OpenSans-SemiBold";
+  color: #000000;
+  background-image: url(../images/dropicon.svg);
+  background-repeat: no-repeat;
+  background-position: 99% 50%;
+  appearance: none;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+  white-space: normal;
+}
+.notice-dropdown {
+  /* margin-top: -50px; */
+  margin: -50px 50px 0 50px;
+}
+.getting-there-wrap {
+  background-color: #fafbfc;
+}
+.notice-drodown-options {
+  /* max-width: 1137px; */
+  background-color: #fff;
+  margin: auto;
+  padding: 22px 50px;
+  border: 1px solid #f3f3f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  border-top: 1px solid #fff;
+}
+.rides-dropdown-menu.show {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  transform: translate3d(0px, 80px, 0px) !important;
+  text-align: center;
+  padding: 0;
+}
+.ferry-ride-subwrap,
+.plane-ride-subwrap {
+  border: 1px solid #f3f3f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  padding: 5px 13px 10px;
+}
+.ferry-rides-details {
+  text-align: left;
+}
+.ferry-rides-details p a {
+  font-size: 14px;
+  line-height: 20px;
+  /* font-family: "OpenSans-Bold"; */
+  text-decoration-line: underline;
+  color: #8e8e8e;
+}
+
+.ferry-rides-details p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Bold";
+  text-decoration-line: underline;
+  color: #8e8e8e;
+}
+.ferry-rides-details p {
+  text-decoration: none;
+  font-family: "OpenSans-Regular" !important;
+}
+.ride-logo h6 {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+}
+.ferry-rides-details p {
+  margin-bottom: 12px;
+}
+.plane-ferry-ride-details p {
+  margin-bottom: 24px;
+}
+.view-hotel-header h5 {
+  font-size: 30px;
+  line-height: 20px;
+  font-family: "Montserrat-Bold";
+  color: #000000;
+}
+.view-featured-wrap {
+  position: absolute;
+  top: 4%;
+  left: 8%;
+}
+.getting-there.rate {
+  float: left;
+  height: 17px;
+  padding: 0 00px;
+  background-color: #fff;
+  border-radius: 40px;
+  position: absolute;
+  transform: translate(0%, -278%);
+  top: 0%;
+  right: -5%;
+  left: 84%;
+}
+.view-hotel-cardss {
+  width: 358px;
+  padding: 10px 22px;
+}
+.view-hotel-header {
+  padding: 0 8px;
+}
+.view-hotel-header button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+
+  text-align: right;
+  text-decoration-line: underline;
+
+  color: #1da1f2;
+}
+.view-hotels-section {
+  padding: 0 40px;
+}
+.getting-there-card-body {
+  background: #ffffff;
+  border: 1px solid #98b1ff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1px 1px 4px 4px;
+  border-top: none;
+}
+.getting-there-cardimg {
+  width: 100%;
+  border: 1px solid #98b1ff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-bottom: none;
+}
+#st-kitts-iceland1,
+#st-kitts-iceland2 {
+  transform: translate(30px, 0px) !important;
 }
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -5344,6 +5615,26 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 991px) {
+  .business-header-wrap h3 {
+    font-size: 25px;
+  }
+  .card-staus {
+    left: 72%;
+  }
+  .card-staus span,
+  .card-status-pending span {
+    margin-left: 2px;
+    font-size: 8px;
+  }
+  .card-pending {
+    left: 80%;
+  }
+  .add-business-content {
+    padding: 90px 30px 100px;
+  }
+  .business-card {
+    padding: 10px;
+  }
   .ongoing-events-fav-card .carasoul_fav-heart {
     left: 85%;
   }
@@ -5669,8 +5960,21 @@ video::-webkit-media-controls-panel {
 
 @media (max-width: 768px) {
   .add-business-content {
-    padding: 30px 70px 100px;
+    padding: 30px 30px 100px;
   }
+  .card-staus {
+    left: 62%;
+  }
+  .card-pending {
+    left: 75%;
+  }
+  .business-select-claim {
+    justify-content: center;
+  }
+  .business-select-claim {
+    margin-top: 25px;
+  }
+
   .nav-tabs .ongoing-event-class.active,
   .nav-tabs .annual-event-class.active,
   .ongoing-event-class,
@@ -5715,7 +6019,7 @@ video::-webkit-media-controls-panel {
     margin-left: 8px;
   }
   .countriesMap .mapMask {
-    width: 40%;
+    width: 38%;
   }
   .countriesMap .countryFilters {
     /* left: 10%; */
@@ -5887,8 +6191,59 @@ video::-webkit-media-controls-panel {
   .months-nav-item {
     margin-bottom: 5px;
   }
+  .business-info-claim {
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .business-card-content {
+    max-width: 100%;
+  }
+  .business-header-wrap h3 {
+    text-align: center;
+  }
 }
 @media (max-width: 575px) {
+  .create-new-bsns {
+    margin-top: 30px;
+  }
+  .business-claim-button span {
+    font-size: 9px;
+  }
+  .busines-type-select select {
+    font-size: 11px;
+  }
+  .create-new-bsns h6 {
+    font-size: 15px;
+  }
+  .add-business svg {
+    width: 90px;
+  }
+  .business-header-wrap {
+    width: auto !important;
+  }
+  .business-select-claim {
+    /* display: block !important; */
+  }
+  .busines-type-select {
+    max-width: 195px;
+    width: 100%;
+    margin: auto;
+  }
+  .busines-type-select select {
+    /* margin-bottom: 30px; */
+  }
+  .business-claim-button button {
+    width: 111px;
+  }
+  .business-header-wrap h3 {
+    font-size: 20px;
+  }
+  .card-staus {
+    left: 72%;
+  }
+  .card-pending {
+    left: 81%;
+  }
   .ongoing-events-fav-card .carasoul_fav-heart {
     left: 90%;
   }
@@ -6032,15 +6387,14 @@ video::-webkit-media-controls-panel {
   .payble-due-h5 h5,
   .amount-due-header h5,
   .payble-due-span-block h5,
-  .payble-due-span-grey span {
+  .payble-due-span-grey span,
+  .login-radio-types label {
     font-size: 14px;
   }
   .traveller-paypal-para p {
     font-size: 16px;
   }
-  .login-radio-types label {
-    font-size: 14px;
-  }
+
   .main-login-inputs {
     margin: 0px 10px;
   }
@@ -6178,7 +6532,13 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 425px) {
-  .serviceCard-btn svg {  
+  .card-staus {
+    left: 66%;
+  }
+  .card-pending {
+    left: 78%;
+  }
+  .serviceCard-btn svg {
     width: 40px;
   }
   .service-card-content-list {
@@ -6377,6 +6737,9 @@ video::-webkit-media-controls-panel {
   }
   .about_head {
     margin-top: 30px;
+  }
+  .banner_nav {
+    margin-left: 23px;
   }
   .banner_nav svg {
     width: 90px;
