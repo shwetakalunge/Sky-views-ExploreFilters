@@ -4879,6 +4879,9 @@ video::-webkit-media-controls-panel {
   line-height: 20px;
   font-family: "Montserrat-SemiBold";
   color: #000000;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .association-content {
   border-bottom: 1px solid #e6e6e6;
@@ -5282,6 +5285,8 @@ video::-webkit-media-controls-panel {
   font-size: 14px;
   cursor: pointer;
   color: #8e8e8e;
+  width: 305px;
+  max-width: 100%;
 }
 .search-flight-inner option:first-of-type {
   display: none;
@@ -5320,7 +5325,7 @@ video::-webkit-media-controls-panel {
   border: 1px solid #f3f3f3;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 20px;
+  padding: 20px 30px;
   width: 100%;
   margin: auto;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -5350,9 +5355,10 @@ video::-webkit-media-controls-panel {
   width: 100%;
   background: transparent;
   border: none;
-  transform: translate3d(0px, 80px, 0px) !important;
+  transform: translate3d(0px, 60px, 0px) !important;
   text-align: center;
   padding: 0;
+  z-index: 995;
 }
 .ferry-ride-subwrap,
 .plane-ride-subwrap {
@@ -5364,6 +5370,7 @@ video::-webkit-media-controls-panel {
 }
 .ferry-rides-details {
   text-align: left;
+  word-break: break-word;
 }
 .ferry-rides-details p a {
   font-size: 14px;
@@ -5405,26 +5412,48 @@ video::-webkit-media-controls-panel {
 .view-featured-wrap {
   position: absolute;
   top: 4%;
-  left: 8%;
+  left: 5%;
 }
 .getting-there.rate {
-  float: left;
+  float: none;
   height: 17px;
-  padding: 0 00px;
+  padding: 2px 0px;
   background-color: #fff;
   border-radius: 40px;
   position: absolute;
-  transform: translate(0%, -278%);
+  transform: translate(-10%, -185%);
   top: 0%;
-  right: -5%;
-  left: 84%;
+  right: -7%;
+  left: 88%;
+  width: 43px;
+}
+.getting-there.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.getting-there.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 8px;
+  color: transparent;
+}
+.getting-there.rate:not(:checked) > label:before {
+  content: "★ ";
+  -webkit-text-stroke: 0.5px #1da1f2;
+}
+
+.getting-there.rate > input:checked ~ label {
+  color: #1da1f2;
+}
+.view-hotel-header {
+  padding: 0 8px;
 }
 .view-hotel-cardss {
   width: 358px;
   padding: 10px 22px;
-}
-.view-hotel-header {
-  padding: 0 8px;
 }
 .view-hotel-header button {
   border: none;
@@ -5448,6 +5477,7 @@ video::-webkit-media-controls-panel {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 1px 1px 4px 4px;
   border-top: none;
+  padding: 10px;
 }
 .getting-there-cardimg {
   width: 100%;
@@ -5459,6 +5489,32 @@ video::-webkit-media-controls-panel {
 #st-kitts-iceland1,
 #st-kitts-iceland2 {
   transform: translate(30px, 0px) !important;
+}
+.search-flight-searchbar span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+}
+.flight-search-filter {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.search-flight-common {
+  padding: 0;
+  margin-bottom: 15px;
+}
+.gettingthere-trial-star {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.view-events-contacts span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  color: #8e8e8e;
+  margin-left: 10px;
 }
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -5481,6 +5537,15 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 1140px) {
+  .getting-there.rate {
+    left: 86%;
+  }
+  .flight-search-filter {
+    justify-content: flex-start;
+  }
+  .search-flight-common {
+    padding: 0 10px;
+  }
   .bsns-card-head h6,
   .card-content-add-event h6,
   .card-content span {
@@ -5615,6 +5680,19 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 991px) {
+  .dropdown-toggle-custom {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .featured-logo svg {
+    width: 58px;
+  }
+  .getting-there.rate {
+    left: 84%;
+  }
+  .view-hotel-cardss {
+    padding: 10px 5px;
+  }
   .business-header-wrap h3 {
     font-size: 25px;
   }
@@ -5733,7 +5811,7 @@ video::-webkit-media-controls-panel {
   }
 
   .navbar-nav-custom a.active {
-    border-bottom: 3px solid white;
+    /* border-bottom: 3px solid white; */
   }
   .navbar-nav-custom li a {
     padding: 8px;
@@ -5956,9 +6034,30 @@ video::-webkit-media-controls-panel {
   .countryFilters ul li a {
     height: 23px;
   }
+
+  .view-hotels-cards-row {
+    margin: 0px;
+  }
 }
 
 @media (max-width: 768px) {
+  .getting-there-banner {
+    padding: 0px;
+    justify-content: center;
+  }
+  .search-flights-head h2 {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 22px;
+  }
+  .getting-there-banner h1 {
+    font-size: 60px;
+  }
+  .flight-search-filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
   .add-business-content {
     padding: 30px 30px 100px;
   }
@@ -5995,7 +6094,8 @@ video::-webkit-media-controls-panel {
   .events-wrap-main {
     padding: 26px 30px 15px 35px;
   }
-  .event-header-text h3 {
+  .event-header-text h3,
+  .view-hotel-header h5 {
     font-size: 20px;
   }
   .ongoing-eventslist li {
@@ -6040,7 +6140,8 @@ video::-webkit-media-controls-panel {
   .calender-box-plan-to-visit input[type="text"] {
     background-position: 95% 50%;
   }
-  .open-menu-sub-wrap h3 {
+  .open-menu-sub-wrap h3,
+  .view-hotel-header button {
     font-size: 16px;
   }
   .planned-date-wrap {
@@ -6133,7 +6234,7 @@ video::-webkit-media-controls-panel {
     justify-content: space-between;
   }
   .header-wrap {
-    position: relative;
+    position: fixed;
   }
   .map-trial-btn {
     position: absolute;
@@ -6201,8 +6302,46 @@ video::-webkit-media-controls-panel {
   .business-header-wrap h3 {
     text-align: center;
   }
+  .or-subwrap h6 {
+    padding: 10px;
+  }
+  .ride-logo {
+    justify-content: center;
+  }
+  .ferry-rides-details p,
+  .ferry-rides-details p a {
+    font-size: 12px;
+  }
 }
 @media (max-width: 575px) {
+  .dropdown-toggle-custom {
+    font-size: 12px;
+  }
+  .ride-logo h6 {
+    font-size: 14px;
+  }
+  .getting-there-banner {
+    min-height: 60vh;
+  }
+  .dropdown-toggle-custom {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+  .getting-there.rate {
+    left: 91% !important;
+  }
+  .flight-search-button {
+    margin: auto;
+  }
+  .search-flight-inner,
+  .search-flight-searchbar,
+  .calender-box-search-flight input[type="date"],
+  .calender-box-search-flight input[type="text"] {
+    width: 100%;
+  }
+  .flight-search-filter {
+    margin-bottom: 25px;
+  }
   .create-new-bsns {
     margin-top: 30px;
   }
@@ -6235,7 +6374,8 @@ video::-webkit-media-controls-panel {
   .business-claim-button button {
     width: 111px;
   }
-  .business-header-wrap h3 {
+  .business-header-wrap h3,
+  .search-flights-head h2 {
     font-size: 20px;
   }
   .card-staus {
@@ -6302,13 +6442,15 @@ video::-webkit-media-controls-panel {
   .countryFilters-subwrap {
     padding: 0px;
   }
-  .banner-text h1 {
+  .banner-text h1,
+  .getting-there-banner h1 {
     font-size: 60px;
   }
   .ongoing-event-class,
   .annual-event-class {
-    width: 180px;
+    width: 150px;
     font-size: 15px !important;
+    display: flex;
   }
 
   .ongoing-header-wrap {
@@ -6519,6 +6661,9 @@ video::-webkit-media-controls-panel {
   .modal-header-div h5 {
     font-size: 16px;
   }
+  .view-hotels-section {
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 485px) {
@@ -6532,6 +6677,25 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 425px) {
+  .events-wrap-main {
+    margin-left: 10px;
+    margin-right: 8px;
+  }
+  .notice-dropdown {
+    margin: -50px 20px 0 20px;
+  }
+  .dropdown-toggle-custom {
+    font-size: 12px;
+  }
+  .getting-there-banner h1 {
+    font-size: 40px;
+  }
+  .search-flights-head h2 {
+    font-size: 13px;
+  }
+  .getting-there.rate {
+    left: 87% !important;
+  }
   .card-staus {
     left: 66%;
   }
@@ -6568,11 +6732,14 @@ video::-webkit-media-controls-panel {
   }
   .ongoing-event-class,
   .annual-event-class {
-    width: 120px;
+    width: 100px;
     font-size: 12px !important;
+    display: flex;
+    padding: 0px !important;
   }
   .banner-text h1 {
     font-size: 50px;
+    line-height: 44px;
   }
   .sign-form h6,
   .servicecard2-head-name p,
