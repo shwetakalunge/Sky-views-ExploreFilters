@@ -5,31 +5,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SkyViews |Traveller Profile</title>
+    <title>SkyViews | Edit Event</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/2a10ab39d6.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        select {
-            color: #8e8e8e;
-            font-size: 14px;
-            line-height: 20px;
-            font-family: "OpenSans-Regular";
-
-        }
-        option:not(:first-of-type) {
-            color: black;
-        }
-        /* the modification */
-        option:first-of-type {
-            display: none;
-        }
-    </style>
 
 </head>
 
@@ -195,17 +178,13 @@
                                 </div>
                             </a>
 
-
-
-
-                            <ul class="navbar-nav ml-auto   navbar-nav-custom">
-                                <li class="nav-item"><a class="nav-link  ">Explore</a></li>
-                                <li class="nav-item"><a class="nav-link ">Itinerary</a></li>
-                                <li class="nav-item"><a class="nav-link">Events</a></li>
-                                <li class="nav-item"><a class="nav-link">Getting There</a></li>
-                                <li class="nav-item"><a class="nav-link active"><span>John George</span></a></li>
-                                <li class="nav-item login-btn-nav" style="display: none;"><a class="nav-link">Login</a>
-                                </li>
+                            <ul class="navbar-nav navbar-nav-edited-cards ml-auto  navbar-nav-custom">
+                                <li class="nav-item"><a class="nav-link  ">My Invoice</a></li>
+                                <li class="nav-item"><a class="nav-link ">My Analytics</a></li>
+                                <li class="nav-item"><a class="nav-link ">Profile</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link">Getting There</a></li>
+                                                            <li class="nav-item"><a class="nav-link">About</a></li>
+                                                            <li class="nav-item login-btn-nav"><a class="nav-link">Login</a></li> -->
                             </ul>
 
 
@@ -234,204 +213,386 @@
     </header>
 
     <div class="mobile-nav">
-
-        <ul class="navbar-nav-custom">
-            <li class="nav-item"><a class="nav-link  ">Explore</a></li>
-            <li class="nav-item"><a class="nav-link ">Itinerary</a></li>
+        <!-- <ul>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Anguilla
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link active-link">Explore</a></li>
+            <li class="nav-item"><a class="nav-link">Itinerary</a></li>
             <li class="nav-item"><a class="nav-link">Events</a></li>
             <li class="nav-item"><a class="nav-link">Getting There</a></li>
-            <li class="nav-item"><a class="nav-link active"><span>John George</span> </a></li>
-            <li class="nav-item login-btn-nav" style="display: none;"><a class="nav-link">Login</a></li>
+            <li class="nav-item"><a class="nav-link">About</a></li>
+            <li class="nav-item"><a class="nav-link selected-link">Login</a></li>
+        </ul> -->
+        <ul class="navbar-nav-custom">
+            <li class="nav-item"><a class="nav-link  ">My Invoice</a></li>
+            <li class="nav-item"><a class="nav-link ">My Analytics</a></li>
+            <li class="nav-item"><a class="nav-link">Profile</a></li>
+
         </ul>
     </div>
 
 
     <!-- /* ---------------------------------MAIN SECTIOn CONTENT----------------------------------------------------------- */
-    /* -----------------------------------------------Select Pref Dropdown--------------------------------------------- */ -->
-    <section class="section-main">
+    /* --------------------------------------------------------------------------------------- */ -->
+    <section class="add-bsns-section-main">
+        <div class="left_wrap">
+            <div class="add-bsns-parent">
+                <!-- ----------------------------------------------------- -->
+                <div class="backbutton-wrap">
+                    <div class="backbutton-subwrap d-flex justify-content-between align-items-center">
+                        <div class="goback-button">
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.828 10.9997H20V12.9997H7.828L13.192 18.3637L11.778 19.7777L4 11.9997L11.778 4.22168L13.192 5.63568L7.828 10.9997Z"
+                                        fill="black" />
+                                </svg>
 
-        <div class="traveller-profile-main-wrap adv-prof-wrap w-100">
-            <div class="traveller-profile-subwrap">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
+                                <span>Back to Results</span>
+                            </a>
+                        </div>
+                        <div class="edited-button">
+                            <button>
+                                <div class="editing-header-wrap d-flex align-items-center">
+                                    <div class="edited-header">
+                                        <h6>Delete</h6>
+                                    </div>
+                                    <div class="edited-span">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17 6H22V8H20V21C20 21.2652 19.8946 21.5196 19.7071 21.7071C19.5196 21.8946 19.2652 22 19 22H5C4.73478 22 4.48043 21.8946 4.29289 21.7071C4.10536 21.5196 4 21.2652 4 21V8H2V6H7V3C7 2.73478 7.10536 2.48043 7.29289 2.29289C7.48043 2.10536 7.73478 2 8 2H16C16.2652 2 16.5196 2.10536 16.7071 2.29289C16.8946 2.48043 17 2.73478 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z"
+                                                fill="black" />
+                                        </svg>
 
-                            <div class="traveller-profile-flex ">
-                                <div
-                                    class="traveller-profile-head-wrap d-flex justify-content-between align-items-center ">
-                                    <div class="traveller-profile-heading">
-                                        <h3>My Profile</h3>
                                     </div>
 
-                                    <div class="traveller-pro-logout">
-                                        <button>
-                                            Logout
-                                        </button>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ---------------------------------------------------------- -->
+
+                <!-- ------------------------------------------------------------------------------------------------- -->
+                <!-- ------------------------------------------------------------------------------------------------- -->
+                <div class="add-bsns-sub-content">
+                    <!-- ------------------------------------------------------------------------------------------------- -->
+                    <!-- ------------------------------------------------------------------------------------------------- -->
+                    <div class="add-bsns-header mr-b40">
+                        <h3>Edit Event</h3>
+                    </div>
+                    <!-- ------------------------------------------------------------------------------------------------- -->
+                    <!-- ------------------------------------------------------------------------------------------------- -->
+
+                    <div class="add-business-tabs-main">
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-basicInfo" role="tabpanel"
+                                aria-labelledby="pills-basicInfo-tab">
+                                <div class="row basic-info-content-tabs">
+                                    <div class="col-md-6 col-lg-6 col-12 col-sm-6 col-xl-6 basicInfo-tabs-common">
+                                        <input type="text" placeholder="Business Name"
+                                            class="basicInfo-tabs-input-text">
                                     </div>
-                                </div>
-                                <!-- ------------------------------------------------------------------------------------------------- -->
-                                <!-- ------------------------------------------------------------------------------------------------- -->
-                                <!-- ------------------------------------------------------------------------------------------------- -->
+                                    <div class="col-md-6 col-lg-6 col-12 col-sm-6 col-xl-6 basicInfo-tabs-common">
+                                        <input type="text" placeholder="Event Name" class="basicInfo-tabs-input-text">
+                                    </div>
 
-                                <div class="traveller-profile-form">
-                                    <div class="container-fluid">
-                                        <div class="row profile-upload-row">
-                                            <div class="col-12 col-md-3 col-lg-2 col-sm-12 profile-upload-wrap">
-                                                <div class="profile_image">
-                                                    <img src="./images/profile-pic.png" alt="" class="pro_img ">
+                                    <div
+                                        class="col-md-6 col-lg-6 col-12 col-sm-6 col-xl-6 basicInfo-tabs-common edit-event-filter">
+                                        <input type="text" placeholder="Date" onmouseover="(this.type='date')"
+                                            onmouseout="if(this.value==''){this.type='text'}">
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-12 col-sm-6 col-xl-6 basicInfo-tabs-common">
+                                        <input type="text" placeholder="Location" class="basicInfo-tabs-input-text">
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-12 col-sm-6 col-xl-6 basicInfo-tabs-common">
+                                        <input placeholder="Selected time" type="text" id="input-limited-range"
+                                            class="form-control timepicker">
+                                        <label for="input-limited-range">Try me</label>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-12 col-sm-6 col-xl-6 basicInfo-tabs-common">
+                                        <input placeholder="Selected time" type="text" id="input-limited-range"
+                                            class="form-control timepicker" data-open="myTimePicker">
+                                        <label for="input-limited-range">Try me</label>
+                                    </div>
 
-                                                </div>
-                                                <div class="profile-img-up">
-                                                    <span class="btn  btn-file">
-                                                        Change Picture
-                                                        <input type="file">
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-9 col-lg-7 col-sm-12 profile-upload-form">
-                                                <div class="row fname-lname-block">
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 fname-block mr-b15">
-                                                        <input type="text" placeholder="First Name">
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 lname-block mr-b15">
-                                                        <input type="text" placeholder="Last Name">
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 email-block mr-b15">
-                                                        <input type="email" placeholder="Email">
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-6 col-md-6 col-lg-6 traveller-type-block mr-b15">
-                                                        <select id="traveller-type-pro-form"
-                                                            name="traveller-type-pro-form">
-                                                            <option value="traveller-type">Traveller Type</option>
-                                                            <option value="business">Business Traveller</option>
-                                                            <option value="couple">Couple</option>
-                                                            <option value="family">Family</option>
-                                                            <option value="friends">Group of friends</option>
-                                                            <option value="solo">Solo Traveller</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 island-block mr-b15">
-                                                        <input type="text" placeholder="Island">
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 age-block mr-b15">
-                                                        <select id="age-pro-form" name="age-pro-form">
-                                                            <option value="">Age</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
 
-                                                        </select>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-6 col-md-6 col-lg-6 pref-type-block mr-b15">
-                                                        <select id="pref-pro-form" name="pref-type-pro-form">
-                                                            <option value="">Preferences</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
+                                    <div class="col-md-6 col-lg-6 col-12 col-sm-6 col-xl-6 basicInfo-tabs-common">
+                                        <select name="" id="" class="basicInfo-tabs-input-select">
+                                            <option value="">Event Type</option>
+                                            <option value="">Event Type1</option>
+                                            <option value="">Event Type2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-12 col-sm-6 col-xl-6 basicInfo-tabs-common">
+                                        <select name="" id="" class="basicInfo-tabs-input-select">
+                                            <option value="">Level 1 Filter</option>
+                                            <option value="">Filter1</option>
+                                            <option value="">Filter2</option>
+                                        </select>
+                                    </div>
 
-                                                        </select>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-12 col-md-12 col-lg-12 subhead-detail-block mr-b15">
-                                                        <h5>Location Details</h5>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-6 col-md-6 col-lg-6 country-block mr-b15">
-                                                        <select id="country-pro-form" name="country-type-pro-form">
-                                                            <option value="">Country</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
+                                    <div class="col-md-6 col-lg-6 col-12 col-sm-6 col-xl-6 basicInfo-tabs-common ">
+                                        <input type="text" placeholder="Facebook URL"
+                                            class="basicInfo-tabs-input-text ">
+                                    </div>
 
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 state-block mr-b15">
-                                                        <select id="country-pro-form" name="state-pro-form">
-                                                            <option value="">State</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
 
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 city-block mr-b15">
-                                                        <select id="city-pro-form" name="city-pro-form">
-                                                            <option value="">City</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
+                                    <div class="col-md-6 col-lg-6 col-6 col-sm-6 col-xl-6 basicInfo-tabs-radio ">
+                                        <div class="bsns-edits-radio-heads">
+                                            <h6>Drive In Event</h6>
+                                        </div>
+                                        <div class="bsns-edits-radio-btns bsns-edits-black login-radio  d-flex">
+                                            <input type="radio" name="radio-drive" id="drive-yes" value=""
+                                                checked="true" />
+                                            <label class="radio" for="drive-yes">Yes</label>
 
-                                                        </select>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-12 col-md-12 col-lg-12 subhead-detail-block mr-b15">
-                                                        <h5>Budget Per Day</h5>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-6 col-md-6 col-lg-6 accomodatn-block mr-b15">
-                                                        <select id="city-pro-form" name="city-pro-form">
-                                                            <option value="">Accomodation Per Night</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
+                                            <input type="radio" name="radio-drive" id="drive-no" value="" />
+                                            <label class="radio" for="drive-no">No</label>
+                                        </div>
 
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 food-block mr-b15">
-                                                        <select id="city-pro-form" name="city-pro-form">
-                                                            <option value="">Food Per Day</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-6 col-sm-6 col-xl-6 basicInfo-tabs-radio">
+                                        <div class="bsns-edits-radio-heads">
+                                            <h6>Outdoor Event</h6>
+                                        </div>
 
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12  col-sm-6 col-md-6 col-lg-6 exp-block mr-b30">
-                                                        <select id="city-pro-form" name="city-pro-form">
-                                                            <option value="">Experience Per Day</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1</option>
-                                                            <option value="">Text1 </option>
+                                        <div class="bsns-edits-radio-btns bsns-edits-black login-radio  d-flex">
 
-                                                        </select>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-12 col-md-12 col-lg-12 pro-change-pw mr-b30">
-                                                        <button class=" pro-form-change-pw ">Change Password</button>
-                                                    </div>
-                                                    <div
-                                                        class="col-12  col-sm-12 col-md-12 col-lg-12 pro-form-btns  mr-b30">
-                                                        <button class="pro-save-change">Save Changes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <input type="radio" name="radio-outdoor" id="-outdoor-yes" value=""
+                                                checked="true" />
+                                            <label class="radio" for="-outdoor-yes">Yes</label>
+
+                                            <input type="radio" name="radio-outdoor" id="-outdoor-no" value="" />
+                                            <label class="radio" for="-outdoor-no">No</label>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-6 col-6 col-sm-6 col-xl-6 basicInfo-tabs-radio">
+                                        <div class="bsns-edits-radio-heads">
+                                            <h6>Flexible End Time</h6>
+                                        </div>
+
+                                        <div class="bsns-edits-radio-btns bsns-edits-black login-radio  d-flex">
+
+                                            <input type="radio" name="radio-flexEndTime" id="flextime-yes" value=""
+                                                checked="true" />
+                                            <label class="radio" for="flextime-yes">Yes</label>
+
+                                            <input type="radio" name="radio-flexEndTime" id="flextime-no" value="" />
+                                            <label class="radio" for="flextime-no">No</label>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-6 col-6 col-sm-6 col-xl-6 basicInfo-tabs-radio">
+                                        <div class="bsns-edits-radio-heads">
+                                            <h6>Tickets</h6>
+                                        </div>
+
+                                        <div class="bsns-edits-radio-btns bsns-edits-black login-radio  d-flex">
+
+                                            <input type="radio" name="radio-tickets" id="tickets-yes" value=""
+                                                checked="true" />
+                                            <label class="radio" for="tickets-yes">Yes</label>
+
+                                            <input type="radio" name="radio-tickets" id="tickets-no" value="" />
+                                            <label class="radio" for="tickets-no">No</label>
+
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- ------------------------------------------------------------------------------------------------- -->
-                                <!-- ------------------------------------------------------------------------------------------------- -->
-                                <!-- ------------------------------------------------------------------------------------------------- -->
+                                <div class="category-radiohead">
+                                    <h6>Recurring Event</h6>
+                                </div>
+
+                                <div class="row basic-info-content-tabs">
+                                    <div class="col-md-6 col-lg-6 col-6 col-sm-6 col-xl-6 basicInfo-tabs-common">
+                                        <select name="" id="" class="basicInfo-tabs-input-select">
+                                            <option value="">Event Repeats</option>
+                                            <option value="">Event Repeats1</option>
+                                            <option value="">Event Repeats2</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="or-span-event">
+                                        <span>OR</span>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-6 col-sm-6 col-xl-6 basicInfo-tabs-common">
+                                        <select name="" id="" class="basicInfo-tabs-input-select">
+                                            <option value="">Re-occurs</option>
+                                            <option value="">Re-occurs1</option>
+                                            <option value="">Re-occurs2</option>
+                                        </select>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="row basic-info-content-tabs">
+                                    <div class="reoccurs-wrap col-md-6 col-lg-6 col-6 col-sm-6 col-xl-6">
+                                        <div class=" basicInfo-tabs-common">
+                                            <select name="" id="" class="basicInfo-tabs-input-select">
+                                                <option value="">Re-occurs On</option>
+                                                <option value="">Re-occurs1</option>
+                                                <option value="">Re-occurs2</option>
+                                            </select>
+                                        </div>
+                                        <div class=" basicInfo-tabs-common input-number">
+                                            <input type="number" placeholder="After X Times"
+                                                class="basicInfo-tabs-input-text input-number">
+                                        </div>
+
+                                    </div>
+                                    <div class="reoccurs-wrap col-md-6 col-lg-6 col-6 col-sm-6 col-xl-6">
+                                        <div class="bsns-edits-radio-heads">
+                                            <h6>Ends On</h6>
+                                        </div>
+                                        <div class="editevent-radio-btns bsns-edits-black login-radio  d-flex">
+
+                                            <input type="radio" name="radio-no-end-date" id="no-end-date" value=""
+                                                checked="true" />
+                                            <label class="radio" for="no-end-date">No end date</label>
+                                        </div>
+                                        <div class="editevent-radio-btns bsns-edits-black login-radio  d-flex">
+
+                                            <input type="radio" name="radio-no-end-date" id="Until" value="" />
+                                            <label class="radio" for="Until">Until</label>
+                                        </div>
+                                        <div class="editevent-radio-btns bsns-edits-black login-radio  d-flex">
+
+                                            <input type="radio" name="radio-no-end-date" id="afterTimes" value="" />
+                                            <label class="radio" for="afterTimes">After X Times</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="category-radiohead">
+                                    <h6>Other Information</h6>
+                                </div>
+
+                                <div
+                                    class="col-md-12 col-lg-12 col-12 col-sm-12 col-xl-12 basicInfo-tabs-common w-100 p-0">
+
+                                    <textarea class="basicInfo-tabs-input-descriptn"
+                                        placeholder="Description"></textarea>
+                                </div>
+                                <div class="col-md-12 col-lg-12 col-12 col-sm-12 col-xl-12 basicInfo-tabs-common  p-0">
+                                    <div class="bsns-pics-upload">
+
+                                        <label for="bsns-pics-file-input">
+                                            <svg width="43" height="43" viewBox="0 0 43 43" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.79297 25.9789C1.79187 23.9999 2.29539 22.0534 3.25596 20.3231C4.21653 18.5929 5.60241 17.1362 7.28264 16.0907C7.7261 12.6329 9.41436 9.45525 12.0315 7.15234C14.6486 4.84942 18.0152 3.5791 21.5013 3.5791C24.9874 3.5791 28.354 4.84942 30.9711 7.15234C33.5883 9.45525 35.2765 12.6329 35.72 16.0907C37.8041 17.3873 39.4252 19.3092 40.352 21.5821C41.2787 23.855 41.4636 26.3625 40.8802 28.7467C40.2969 31.1309 38.9752 33.2699 37.1038 34.8581C35.2324 36.4464 32.907 37.4028 30.4596 37.5907L12.543 37.6247C6.53014 37.1338 1.79297 32.11 1.79297 25.9789ZM30.1873 34.0181C31.8819 33.8878 33.492 33.2253 34.7876 32.1253C36.0832 31.0252 36.998 29.5439 37.4014 27.8928C37.8048 26.2418 37.6761 24.5055 37.0337 22.9319C36.3913 21.3584 35.268 20.0281 33.8244 19.1311L32.3785 18.2299L32.1635 16.5422C31.8286 13.9509 30.5615 11.5702 28.5991 9.84509C26.6367 8.11998 24.1133 7.16851 21.5004 7.16851C18.8876 7.16851 16.3641 8.11998 14.4017 9.84509C12.4393 11.5702 11.1722 13.9509 10.8373 16.5422L10.6223 18.2299L9.18001 19.1311C7.73646 20.028 6.61324 21.3582 5.97077 22.9315C5.3283 24.5049 5.19945 26.2411 5.60261 27.8921C6.00576 29.543 6.92032 31.0244 8.21565 32.1246C9.51098 33.2248 11.1208 33.8875 12.8153 34.0181L13.1253 34.0414H29.8773L30.1873 34.0181ZM23.293 23.2914V30.4581H19.7096V23.2914H14.3346L21.5013 14.3331L28.668 23.2914H23.293Z"
+                                                    fill="#8E8E8E" />
+                                            </svg>
+
+                                            <p>Upload Images</p>
+                                        </label>
+
+                                        <input id="file-input" type="file">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-12 col-12 col-sm-12 col-xl-12 basicInfo-tabs-common p-0 ">
+                                    <div class="bsns-pics-upload">
+
+                                        <label for="bsns-pics-file-input">
+                                            <svg width="43" height="43" viewBox="0 0 43 43" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.79297 25.9789C1.79187 23.9999 2.29539 22.0534 3.25596 20.3231C4.21653 18.5929 5.60241 17.1362 7.28264 16.0907C7.7261 12.6329 9.41436 9.45525 12.0315 7.15234C14.6486 4.84942 18.0152 3.5791 21.5013 3.5791C24.9874 3.5791 28.354 4.84942 30.9711 7.15234C33.5883 9.45525 35.2765 12.6329 35.72 16.0907C37.8041 17.3873 39.4252 19.3092 40.352 21.5821C41.2787 23.855 41.4636 26.3625 40.8802 28.7467C40.2969 31.1309 38.9752 33.2699 37.1038 34.8581C35.2324 36.4464 32.907 37.4028 30.4596 37.5907L12.543 37.6247C6.53014 37.1338 1.79297 32.11 1.79297 25.9789ZM30.1873 34.0181C31.8819 33.8878 33.492 33.2253 34.7876 32.1253C36.0832 31.0252 36.998 29.5439 37.4014 27.8928C37.8048 26.2418 37.6761 24.5055 37.0337 22.9319C36.3913 21.3584 35.268 20.0281 33.8244 19.1311L32.3785 18.2299L32.1635 16.5422C31.8286 13.9509 30.5615 11.5702 28.5991 9.84509C26.6367 8.11998 24.1133 7.16851 21.5004 7.16851C18.8876 7.16851 16.3641 8.11998 14.4017 9.84509C12.4393 11.5702 11.1722 13.9509 10.8373 16.5422L10.6223 18.2299L9.18001 19.1311C7.73646 20.028 6.61324 21.3582 5.97077 22.9315C5.3283 24.5049 5.19945 26.2411 5.60261 27.8921C6.00576 29.543 6.92032 31.0244 8.21565 32.1246C9.51098 33.2248 11.1208 33.8875 12.8153 34.0181L13.1253 34.0414H29.8773L30.1873 34.0181ZM23.293 23.2914V30.4581H19.7096V23.2914H14.3346L21.5013 14.3331L28.668 23.2914H23.293Z"
+                                                    fill="#8E8E8E" />
+                                            </svg>
+
+                                            <p>Upload Videos</p>
+                                        </label>
+
+                                        <input id="file-input" type="file">
+                                    </div>
+                                </div>
+
+                                <div class="save-event-edit">
+                                    <button type="button" class="save-event-edit-save">Save</button>
+                                </div>
+
+
+
+                                <!-- ---------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
                             </div>
+
+
+                            <!-- ---------------------------------------------------------- -->
+
                         </div>
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- ------------------------------------------------------------------------------------------------- -->
+                    <!-- ------------------------------------------------------------------------------------------------- -->
+
+                    <!-- ------------------------------------------------------------------------------------------------- -->
                 </div>
             </div>
         </div>
+
+
         <!-- ------------------------------------------------------------------------------------------------- -->
         <!-- ------------------------------------------------------------------------------------------------- -->
         <!-- ------------------------------------------------------------------------------------------------- -->
         <!-- ------------------------------------------------------------------------------------------------- -->
+        <div class="right">
+
+            <div class="map-trial-btn">
+                <div class="map-arrow-buttons">
+                    <a><img src="./images/map-left-arrow.png" alt="" class="map-arrow-prev"></a>
+                </div>
+                <div class=" map-arrow-right-buttons">
+                    <a><img src="./images/map-right-arrow.png" alt="" class="map-arrow-next"></a>
+                </div>
+            </div>
+
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
+                width="100%" height="200" frameborder="0" style="border:0" class="explore_map"></iframe>
+
+        </div>
 
     </section>
 
@@ -462,12 +623,10 @@
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <!-- Include the plugin's CSS and JS: -->
-    <!-- <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
-    <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+    <script>
+        $(document).on('click', 'lookingfor_grid button', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        });</script>
 
     <script>
         $(document).ready(function () {
@@ -484,6 +643,32 @@
             $(this).addClass('activeColor');
         });
     </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".wishlist-button").click(function () {
+                $(this).toggleClass("wishlist-color");
+                // $(".wishlist-svg-cls").toggleClass("t-change-btn");
+            });
+        });
+    </script>
+
+
+
+
+
+    <script>
+        // VERSION WITH BOOTSTRAP 4 : https://codepen.io/seltix/pen/XRPrwM
+
+        jQuery('.dropdown-toggle').on('click', function (e) {
+            $(this).next().toggle();
+        });
+        jQuery('.dropdown-menu.keep-open').on('click', function (e) {
+            e.stopPropagation();
+        });
+    </script>
+
+    <script src="js/custom.js"></script>
 
 </body>
 
