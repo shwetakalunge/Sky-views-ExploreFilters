@@ -433,7 +433,7 @@ a:hover {
 }
 
 .banner_main_heading h3 {
-  /* font-family: "OpenSans-Regular"; */
+  font-family: "OpenSans-Regular";
   font-size: 20px;
   line-height: 32px;
   color: #ffffff;
@@ -582,7 +582,7 @@ a:hover {
   width: 100%;
 }
 .countryFilters h3 {
-  /* font-family: "OpenSans-SemiBold" !important; */
+  font-family: "OpenSans-Regular" !important;
   font-size: 20px;
   line-height: 10px;
   color: #ffffff;
@@ -633,10 +633,10 @@ a:hover {
   color: #000000 !important;
 }
 #barbados-highlight {
-  transform: translateY(31px) translateX(53px);
+  transform: translateY(31px) translateX(45px);
 }
 #barbados-outline {
-  transform: translateY(41px) translateX(60px);
+  transform: translateY(41px) translateX(52px);
 }
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -793,6 +793,8 @@ a:hover {
   display: flex;
   justify-content: space-around;
   margin-bottom: 00px;
+  display: -webkit-flex;
+  display: -moz-flex;
 }
 .lookingfor_grid span {
   font-family: "OpenSans-Regular";
@@ -878,8 +880,8 @@ a:hover {
 .switch {
   position: relative;
   display: inline-block;
-  width: 51px;
-  height: 19px;
+  width: 61px;
+  height: 27px;
 }
 .switch input {
   display: none;
@@ -906,17 +908,17 @@ a:hover {
 .switch .slider:before {
   position: absolute;
   background-color: #e6e6e6;
-  height: 15px;
-  width: 15px;
+  height: 21px;
+  width: 21px;
   content: "";
   left: 3px;
-  bottom: 1px;
+  bottom: 2px;
   border-radius: 50%;
   transition: ease-in-out 0.5s;
 }
 
 .switch input:checked + .slider:before {
-  transform: translateX(28px);
+  transform: translateX(31px);
   background-color: #1da1f2;
 }
 input:checked + .slider {
@@ -1060,7 +1062,7 @@ input:checked + .slider {
   justify-content: space-between;
   margin: 0 0;
   overflow-y: scroll;
-  height: 350px;
+  height: 400px;
 }
 
 .card-subgrids-wrap::-webkit-scrollbar {
@@ -1084,7 +1086,7 @@ input:checked + .slider {
   padding: 5px;
 }
 .my-carousel-indicators {
-  bottom: 15px;
+  bottom: 18px;
 }
 .carousel .carousel-indicators li {
   border-radius: 50%;
@@ -1134,7 +1136,7 @@ input:checked + .slider {
   /* display: flex;
   justify-content: space-between; */
   width: 100%;
-  margin: 0px;
+  margin: 0px 00px;
 }
 .card-content-list li {
   background: rgba(0, 0, 0, 0.5);
@@ -1144,14 +1146,18 @@ input:checked + .slider {
 
   color: #ffffff;
   padding: 1px 7px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 14px;
+  height: fit-content;
 }
 .card-content-list li::marker {
   color: #1da1f2;
 }
 
-.card-content-list li:nth-child(odd)::marker {
+.card-content-list li:nth-child(1)::marker {
   color: transparent;
+}
+.card-content-list li:nth-child(1) {
+  margin: 10px 10px 10px 2px;
 }
 .navigate-btn {
   border: none;
@@ -1177,14 +1183,14 @@ input:checked + .slider {
   position: absolute;
   transform: translate(0%, 30%);
   top: 0;
-  left: 90%;
+  left: 86%;
 }
 
-.selected-iceland {
-  fill: #12cde6;
-}
-.unselected-iceland {
-  fill: indigo;
+.carasoul_fav-heart-serviceCard {
+  position: absolute;
+  transform: translate(0%, 30%);
+  top: 0;
+  left: 90%;
 }
 
 .card-footer-fixed {
@@ -1230,13 +1236,25 @@ input:checked + .slider {
   border-radius: 0px;
   border-top-left-radius: 0px;
 }
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  background-color: #f3f3f3;
+  width: 30px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+}
 .my-page-link {
   border: none;
   color: #8e8e8e;
   padding: 5px;
 }
+
 .pagination-nav ul li .active-nav a {
   color: black;
+}
+.my-page-link:focus {
+  box-shadow: none !important;
 }
 .my-form-check-label {
   color: #8e8e8e;
@@ -1245,7 +1263,7 @@ input:checked + .slider {
   font-family: "OpenSans-Regular";
 }
 .dropdown-wrap {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
 }
 
@@ -1310,6 +1328,12 @@ input:checked + .slider {
   margin: 12px 0px;
 }
 .select_pref h6 {
+  color: #262626;
+  font-family: "Montserrat-SemiBold";
+  font-size: 18px;
+  line-height: 20px;
+}
+.adv-filter h6 {
   color: #262626;
   font-family: "Montserrat-SemiBold";
   font-size: 18px;
@@ -1399,14 +1423,14 @@ input[type="checkbox"]:checked + label {
   background-color: white;
 }
 .scroll3::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
   background-color: transparent;
   z-index: 999;
 }
 .scroll3::-webkit-scrollbar-thumb {
   background: #e8e8e8;
   border-radius: 4px;
-  height: 450px;
+  height: 150px;
 }
 /* -------------------------------------------------------------------------------------------- */
 .custom-nav-dropdown {
@@ -1414,8 +1438,11 @@ input[type="checkbox"]:checked + label {
   background-repeat: no-repeat;
   background-position: 99% 50%;
   cursor: pointer;
+  padding-right: 10px;
 }
-
+.reviews-comment-main-wrap {
+  padding: 0 10px;
+}
 .dropdown-toggle::after {
   display: none;
 }
@@ -1435,6 +1462,7 @@ input[type="checkbox"]:checked + label {
   line-height: 20px;
   font-family: "OpenSans-Regular";
   font-weight: bold;
+  margin-left: 7px;
 }
 .dropdown-menu-select-narrow {
   padding: 10px;
@@ -2039,7 +2067,8 @@ input[type="date"] {
 }
 .custom-control {
   display: flex;
-  padding-left: 0;
+  padding-left: 20px;
+  min-height: 10px;
 }
 .dropdown-wrap label {
   display: initial;
@@ -2048,11 +2077,22 @@ input[type="date"] {
   display: initial;
 }
 .narrow-wrap-row {
-  margin-left: 10px;
+  margin-left: -13px;
 }
-
+.narrow-wrap-row-filterMore {
+  margin-left: 0px;
+}
 .card-content-icon-calling {
   margin-right: 25px;
+}
+.evenmore-filter h6 {
+  text-align: left;
+  color: #1da1f2;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "OpenSans-Regular";
+  font-weight: bold;
+  margin-left: 10px;
 }
 /* ----------------------------------------------------------------------------------------------- */
 
@@ -2234,14 +2274,15 @@ input[type="date"] {
 }
 .rate {
   float: left;
-  height: 17px;
-  padding: 0 00px;
+  height: 16px;
+  padding: 1px 00px;
   background-color: #fff;
   border-radius: 40px;
   position: absolute;
-  transform: translate(0%, -148%);
+  transform: translate(0%, -178%);
   top: 0%;
-  left: 79%;
+  left: 81%;
+  width: 44px;
 }
 .nearby-bsns-star {
   float: none;
@@ -2255,6 +2296,7 @@ input[type="date"] {
   left: 00% !important;
   padding: 0 5px;
   margin-bottom: 10px;
+  width: 100px;
 }
 
 .service-cardStar {
@@ -2286,7 +2328,7 @@ input[type="date"] {
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 8px;
   color: transparent;
 }
 .rate:not(:checked) > label:before {
@@ -2836,6 +2878,7 @@ input[type="date"] {
   line-height: 26px;
   font-family: "OpenSans-Regular";
   color: #000000;
+  margin-bottom: 25px;
 }
 .amount-due-span h5,
 .payble-due-span {
@@ -2905,12 +2948,13 @@ input[type="date"] {
 .log-in-wrap {
   display: flex;
   min-height: 100vh;
-  padding: 40px 0px 50px 0px;
+  padding: 90px 0px 50px 0px;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/login-bg.svg);
+  background-image: url(../images/Background-Image.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 0px;
 }
 .log-in-form {
   max-width: 436px;
@@ -3282,9 +3326,11 @@ input[type="date"] {
   font-size: 70px;
   line-height: 84px;
   color: #ffffff;
+  margin-left: -25px;
 }
 .events-tabs-subwrap {
   margin-bottom: 25px;
+  margin-left: -15px;
 }
 .trial-tabs {
   background-color: #fafbfc;
@@ -3480,7 +3526,7 @@ input[type="date"] {
   font-family: "Montserrat-Bold";
 }
 .events-main-tab-content {
-  padding: 16px;
+  padding: 16px 50px;
 }
 .card-imges-subwrap {
   overflow: hidden;
@@ -3813,7 +3859,7 @@ input[type="date"] {
 .association-flex-wrap,
 .member-association,
 .beaches-card-wrap {
-  padding: 8px 00px;
+  padding: 8px 15px;
 }
 .service-card-content-list {
   padding: 0 17px;
@@ -4044,7 +4090,7 @@ input[type="date"] {
   border-radius: 4px;
   font-size: 12px;
   line-height: 16px;
-  padding: 5px;
+  padding: 1px 10px;
   color: #ffffff;
   font-family: "OpenSans-Regular";
 }
@@ -4445,6 +4491,7 @@ video::-webkit-media-controls-panel {
   left: 00% !important;
   padding: 0 0px;
   margin-bottom: 10px;
+  width: max-content;
 }
 .reviwer-btn-star:not(:checked) > label {
   float: right;
@@ -5081,11 +5128,12 @@ video::-webkit-media-controls-panel {
   /* max-width: 145px; */
   height: 27px;
   border-radius: 16px;
-  left: 52%;
+  /* left: 52%; */
   position: absolute;
   top: 3%;
   padding: 5px;
   transform: translate(0%, 10%);
+  right: 4%;
 }
 .card-staus span {
   font-size: 14px;
@@ -5107,11 +5155,12 @@ video::-webkit-media-controls-panel {
   /* max-width: 145px; */
   height: 27px;
   border-radius: 16px;
-  left: 72%;
+  /* left: 72%; */
   position: absolute;
   top: 3%;
   padding: 5px;
   transform: translate(0%, 10%);
+  right: 3%;
 }
 .business-card-body {
   padding: 10px;
@@ -5263,6 +5312,7 @@ video::-webkit-media-controls-panel {
   border-radius: 4px;
   width: 305px;
   max-width: 100%;
+  background-color: #fff;
 }
 .calender-box-search-flight input[type="text"] {
   background-image: url(../images/calendar-icon.png);
@@ -5336,6 +5386,12 @@ video::-webkit-media-controls-panel {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
   max-width: 100%;
   white-space: normal;
+}
+
+.trial-drop-button-up-arrow {
+  background-image: url(../images/animate-dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: 99% 50%;
 }
 .notice-dropdown {
   /* margin-top: -50px; */
@@ -5417,7 +5473,7 @@ video::-webkit-media-controls-panel {
 .view-featured-wrap {
   position: absolute;
   top: 4%;
-  left: 5%;
+  left: 7%;
 }
 .getting-there.rate {
   float: none;
@@ -5820,10 +5876,9 @@ video::-webkit-media-controls-panel {
 }
 
 .profile_logo_image {
+  margin-right: 13px;
 }
 
-.pro_logo_img {
-}
 .profile-before-upload-row input[type="text"],
 .profile-before-upload-row input[type="email"] {
   max-width: 290px;
@@ -5844,16 +5899,16 @@ video::-webkit-media-controls-panel {
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
-  height: 56px;
-  width: 274px;
+  height: 46px;
+  width: 100%;
   font-size: 14px;
 }
 .edit-event-filter input[type="date"] {
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 270px;
-  height: 58px;
+  width: 100%;
+  height: 46px;
   /* background-position: 85% 50%; */
   background-image: none;
   padding: 15px;
@@ -5957,8 +6012,392 @@ video::-webkit-media-controls-panel {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-.bsns-edits-black label{
-margin-bottom:12px
+.bsns-edits-black label {
+  margin-bottom: 12px;
+}
+.trial-image-user {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+/* ------------------------------------------My Invoice Table-------------------------------------------------- */
+.invoice-table-main-wrap {
+  padding: 95px 00px 0px 0px;
+  background-color: #fafbfc;
+}
+.user_table {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 30px 21px;
+}
+.smart-table {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+thead {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+th {
+  padding: 15px 29px;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  line-height: 14px;
+  align-items: center;
+  color: #484848;
+  font-style: normal;
+  font-weight: normal;
+}
+.smart-table thead tr {
+  background: #f6f9fc;
+  border: 0.5px solid #e8eef3;
+}
+.smart-table tbody tr {
+  background-color: white;
+  border-top: 1px solid #e8eef3;
+}
+.smart-table tbody tr td {
+  font-size: 14px;
+  color: #484848;
+  padding: 13px 29px;
+  font-family: "OpenSans-Regular";
+  line-height: 33px;
+}
+.invoice-table-heading h3 {
+  font-family: "Montserrat-Bold";
+  font-size: 30px;
+  line-height: 20px;
+  text-align: right;
+  color: #000000;
+}
+.invoice-table-heading {
+  margin-left: 20px;
+}
+.profile-img-up h3 {
+  font-size: 25px;
+  line-height: 20px;
+  font-family: "OpenSans-Bold";
+  color: #000000;
+}
+/* ----------------------SEARCH FLIGHT--------------------------------------------------------------------- */
+.search-flight-main {
+  margin-top: 0px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+
+  border-radius: 6px;
+  padding: 46px 93px 35px 94px;
+  margin-bottom: 20px;
+}
+.search-flight-banner {
+  padding: 20px 0px 20px 0px;
+}
+.getting-there-wrap-fluid {
+  padding: 0px;
+}
+.flight-detail-notice-dropdown {
+  /* margin-top: -50px; */
+  margin: -50px 30px 0 30px;
+}
+.flight-details-wrap {
+  background-color: #fafbfc;
+}
+.flight-results h5,
+.flight-details-filters h5 {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Montserrat-Bold";
+  color: #000000;
+}
+.show-flights-options-main {
+  padding: 0px 50px;
+}
+.flight-detail-subwrap {
+  padding: 0;
+  max-width: 100%;
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgb(0 0 0 / 25%);
+  /* height: 100%; */
+}
+.flight-start-time span,
+.flight-end-time span {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-SemiBold";
+  color: #000000;
+}
+.flight-img {
+  margin-right: 50px;
+}
+.flight-arrow {
+  margin: 0 12px;
+}
+.flight-booking-btn {
+  background: #1da1f2;
+  border: 1px solid #1da1f2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  width: 153px;
+  height: 58px;
+}
+.flight-booking-btn h6 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.flight-detail-div2 h3 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+  text-align: center;
+}
+.flight-booking-btn h6 {
+  font-family: "OpenSans-Bold";
+}
+.flight-booking-btn h5 {
+  font-size: 15px;
+  font-family: "OpenSans-ExtraBold";
+}
+.trip-amount h6,
+.trip-amount span,
+.flight-arrow h6,
+.trip-amount h5 {
+  color: #1da1f2;
+  margin-bottom: 0px;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+}
+
+.trip-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flight-detail-div1 {
+  padding: 20px 60px;
+  border-right: 1px solid #e1dddd;
+}
+.flight-detail-div2 {
+  padding: 12px 40px;
+}
+.search-flight-main-trial {
+  margin-top: 70px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.search-flight-col {
+  padding: 0px;
+}
+.search-flight-main-trials {
+  padding: 75px 63px 45px 75px;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+.flight-detail-notice-dropdown-trial {
+  /* margin: 20px 30px 0 30px; */
+}
+.search-flight-banner-trial {
+  background-color: #fafbfc;
+}
+.flight-filters {
+  margin-bottom: 0px;
+}
+.flight-filters input[type="radio"]:checked + label {
+  color: #1da1f2;
+  font-family: "OpenSans-Regular";
+}
+.basicInfo-tabs-radio h5 {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Montserrat-Bold";
+  color: #000000;
+}
+.flight-filter-custom-control::before {
+  background-color: transparent;
+}
+.flight-filter-items {
+  margin: 12px 2px;
+}
+.booking-show-more {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSans-SemiBold";
+  color: #1da1f2;
+  background-color: transparent;
+  display: flex;
+}
+
+.show-more-button button {
+  border: none;
+  background-color: transparent;
+  margin: 5px 8px 0px 0px;
+}
+
+.booking-offer-collpse {
+  padding: 0px;
+  border: none;
+}
+.custome-time {
+  padding: 12px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.bootstrap-datetimepicker-widget {
+  inset: 0px;
+  z-index: 10;
+
+  text-align: left;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  width: 100% !important;
+  max-width: calc(100%) !important;
+  background-color: #fff;
+  padding: 0px;
+  text-align: left;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu:hover {
+  background-color: #fff;
+}
+.bootstrap-datetimepicker-widget table td .glyphicon-chevron-up {
+  background-image: url(../images/blue-dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+}
+.bootstrap-datetimepicker-widget table td .glyphicon-chevron-down {
+  background-image: url(../images/blue-dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+  transform: rotate(180deg);
+}
+
+.bootstrap-datetimepicker-widget a[data-action] {
+  padding: 0 !important;
+  font-size: 10px;
+}
+.bootstrap-datetimepicker-widget .timepicker-hour:hover,
+.bootstrap-datetimepicker-widget .timepicker-minute:hover {
+  background-color: transparent !important;
+  background-repeat: no-repeat !important ;
+  background-image: url(../images/white-dropdown.png) !important ;
+  background-position: 40% 50% !important;
+  transform: rotate(00deg) !important ;
+}
+.bootstrap-datetimepicker-widget table td span:hover {
+  background-color: transparent !important;
+  background-repeat: no-repeat !important ;
+  background-image: url(../images/blue-dropdown.svg) !important ;
+  background-position: 60% 50% !important;
+}
+.bootstrap-datetimepicker-widget table td .glyphicon-chevron-down:hover {
+  background-color: transparent !important;
+  background-repeat: no-repeat !important ;
+  background-image: url(../images/blue-dropdown.svg) !important ;
+  background-position: 40% 50% !important;
+  transform: rotate(180deg) !important ;
+}
+.custome-time::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+}
+
+.custome-time:-ms-input-placeholder {
+  color: #8e8e8e;
+}
+
+.custome-time::placeholder {
+  color: #8e8e8e !important;
+}
+.bootstrap-datetimepicker-widget table td {
+  height: 14px !important;
+  line-height: 24px !important;
+  width: 14px !important;
+}
+.bootstrap-datetimepicker-widget table td span {
+  line-height: 24px !important;
+  height: 14px !important;
+}
+.flight-radio-mob {
+  max-width: max-content;
+}
+.explore-my-itinerary {
+  padding: 30px;
+  margin-top: 70px;
+}
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+.cusDD_default {
+  position: relative;
+  width: 200px;
+  margin: auto;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  text-indent: 20px;
+}
+.cusDD_default .cusDD_arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)
+    no-repeat;
+  background-position: 50% 50%;
+}
+.cusDD_default .cusDD_arrow.active {
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_up.png)
+    no-repeat;
+  background-position: 50% 50%;
+}
+.cusDD_default .cusDD_options {
+  background: #fff;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+}
+.trial-drop-button-down-arrow {
+  background-image: url(../images/dropicon.svg);
+  background-repeat: no-repeat;
+  background-position: 99% 50%;
+}
+.custom-control-flight-radio {
+  display: flex;
+  align-items: center;
+}
+.search-flights-heads h2 {
+  font-size: 30px;
+  line-height: 20px;
+  font-family: "Montserrat-SemiBold";
+
+  color: #000000;
 }
 /* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
@@ -5981,6 +6420,46 @@ margin-bottom:12px
 }
 
 @media (max-width: 1140px) {
+  .amenity-list ul li span,
+  .facility-list-ul li span,
+  .facility-list-ul li span,
+  .entertainment-list-ul li span {
+    font-size: 9px;
+  }
+  .hotel-booking-btns {
+    max-width: max-content;
+  }
+  .invoice-table-heading {
+    margin: auto;
+  }
+  .view-featured-wrap {
+    left: 9%;
+  }
+  .smart-table thead {
+    display: none;
+  }
+  .smart-table tr,
+  .smart-table td {
+    display: block;
+  }
+  .smart-table tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8eef3;
+    line-height: 15px;
+    padding: 10px;
+  }
+  .smart-table td::before {
+    content: attr(data-col-title);
+    padding: 00px 0px;
+  }
+  .smart-table tbody tr td:nth-child(6) {
+    border-bottom: 2px solid rgb(211, 211, 211);
+    box-shadow: 0px 3.02783px 7.56957px rgb(0 0 0 / 15%);
+    display: flex;
+    justify-content: space-between;
+  }
   .getting-there.rate {
     left: 86%;
   }
@@ -6064,7 +6543,7 @@ margin-bottom:12px
     text-align: left;
   }
   .select-pref-items {
-    margin: 8px 0px;
+    margin: 4px 0px;
   }
   .my-itinerary-card-btns {
     display: block;
@@ -6124,6 +6603,39 @@ margin-bottom:12px
 }
 
 @media (max-width: 991px) {
+  .flight-radio-mob label,
+  .custom-control-flight-radio {
+    padding: 0 12px;
+  }
+  .flight-detail-mob,
+  .sort-flight-halts h5{
+    padding: 0;
+  }
+  .flight-detailed-results-main {
+    flex-direction: column-reverse;
+  }
+  .flight-detailed-results-row-filter {
+    margin-left: 0px !important;
+    width: auto !important;
+  }
+  .flight-detail-div2 {
+    padding: 12px 10px;
+  }
+  .flight-booking-btn {
+    width: 93px;
+  }
+  .sort-flight-price,
+  .sort-flight-halts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .sort-flight-halts h5 {
+    margin-top: 0px !important;
+  }
+  .bootstrap-datetimepicker-widget button[data-action] {
+    padding: 0px !important;
+  }
   .dropdown-toggle-custom {
     font-size: 16px;
     padding: 15px 30px;
@@ -6147,6 +6659,7 @@ margin-bottom:12px
   .card-status-pending span {
     margin-left: 2px;
     font-size: 8px;
+    line-height: 10px;
   }
   .card-pending {
     left: 80%;
@@ -6482,16 +6995,92 @@ margin-bottom:12px
   .view-hotels-cards-row {
     margin: 0px;
   }
+  .basicInfo-tabs-radio h5 {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
 }
 
+@media (max-width: 1280px) {
+  .carasoul_fav-heart {
+    left: 90%;
+  }
+  .carasoul_fav-heart-serviceCard {
+    left: 89%;
+  }
+}
 @media (max-width: 768px) {
-  /* .basicInfo-tabs-input-text::-webkit-input-placeholder,
-  .basicInfo-tabs-common select,
-  .basicInfo-tabs-common textarea {
-    font-size: 11px;
-  } */
+  .explore-my-itinerary,
+  .editedservice-deatilcontent-main {
+    padding: 50px 20px;
+    margin-top: 0;
+  }
+  .saved-itinerary-back-button {
+    padding-top: 35px;
+  }
+  .basicInfo-tabs-radio h5 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .carasoul_fav-heart {
+    left: 94%;
+  }
+  .carasoul_fav-heart-serviceCard {
+    left: 94%;
+  }
+  .evenmore-filter h6 {
+    padding: 15px 0 5px 0 !important;
+  }
+  .select_pref h6 {
+    padding-top: 45px;
+  }
+  .narrowsearch-sleep h6 {
+    padding-top: 25px;
+  }
+  .flight-start-time span,
+  .flight-end-time span,
+  .flight-arrow span,
+  .trip-amount h6,
+  .trip-amount span,
+  .flight-arrow h6,
+  .trip-amount h5,
+  .flight-booking-btn h6,
+  .flight-booking-btn h5,
+  .booking-show-more,
+  .bsns-edits-radio-btns label {
+    font-size: 12px;
+  }
+  .flight-detail-div1,
+  .flight-detail-div2 {
+    padding: 20px;
+  }
+  .flight-detail-white-block {
+    justify-content: center;
+  }
+
+  .flight-booking-btn {
+    width: 93px;
+    height: 45px;
+  }
+  .flight-detail-div2 {
+    padding: 12px 11px;
+  }
+  .banner-text h1 br {
+    display: none;
+  }
+  .banner-text h1 {
+    text-align: center;
+  }
+  .flight-arrow-class {
+    width: 100%;
+  }
+  .backbutton-wrap {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
   .profile_logo_image {
     text-align: center;
+    margin-right: 0px;
   }
   .adv-prof-wrap {
     padding: 55px 0px 0px 0px !important;
@@ -6636,7 +7225,7 @@ margin-bottom:12px
     max-width: 100%;
   }
   .card-subgrids-wrap {
-    height: 480px;
+    height: 300px;
   }
   .rate {
     left: 90%;
@@ -6736,6 +7325,10 @@ margin-bottom:12px
   }
   .profile-img-up {
     text-align: center;
+    margin-top: 15px;
+  }
+  .profile-img-up h3 {
+    font-size: 20px;
   }
   .profile_image {
     margin: auto;
@@ -6778,11 +7371,37 @@ margin-bottom:12px
   .ferry-rides-details p a {
     font-size: 12px;
   }
+  .flight-detail-div2 {
+    width: 50% !important;
+  }
+
+  .flight-img {
+    margin-right: 20px;
+  }
 }
 @media (max-width: 575px) {
+  .carasoul_fav-heart-serviceCard {
+    left: 91%;
+  }
+  .flight-detail-subwrap {
+    display: block;
+  }
+  .flight-detail-div2 {
+    margin: auto;
+  }
+  .flight-booking-btn {
+    width: 83px;
+  }
+  .flight-detail-div1,
+  .flight-detail-div2 {
+    padding: 12px 10px;
+  }
+  .user_table {
+    margin: 30px 11px;
+  }
   .edit-event-filter input[type="text"],
-  .edit-event-filter input[type="date"]{
-    width:100%
+  .edit-event-filter input[type="date"] {
+    width: 100%;
   }
   .dropdown-toggle-custom {
     font-size: 12px;
@@ -6849,7 +7468,7 @@ margin-bottom:12px
     font-size: 20px;
   }
   .card-staus {
-    left: 72%;
+    left: 77%;
   }
   .card-pending {
     left: 81%;
@@ -6873,10 +7492,10 @@ margin-bottom:12px
     margin-top: 00px;
   }
   .backbutton-wrap {
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
   }
   .service-deatilcontent-main {
-    height: 100%;
+    /* height: 100%; */
   }
   .association-flex-wrap,
   .member-association,
@@ -6955,10 +7574,7 @@ margin-bottom:12px
     width: 75px;
     font-size: 11px;
   }
-  .carasol-trial-star .rate {
-    left: 10%;
-    top: -10%;
-  }
+
   .nearby-bsns-star:not(:checked) > label {
     /* font-size: 21px; */
   }
@@ -7035,7 +7651,7 @@ margin-bottom:12px
     justify-content: start;
   } */
   .rate {
-    left: 80%;
+    left: 88%;
   }
   .Servicereview-star .rate {
     left: 0%;
@@ -7147,11 +7763,21 @@ margin-bottom:12px
 }
 
 @media (max-width: 425px) {
+  .narrowsrch-input {
+    height: 2.25rem !important;
+  }
+  .nearby-bsns-star {
+    width: 77px;
+  }
+  .carasol-trial-star .rate {
+    left: 81%;
+    top: -10%;
+  }
   .bsns-edits-radio-heads h6 {
     font-size: 11px;
   }
-  .bsns-edits-radio-btns{
-    max-width:107px
+  .bsns-edits-radio-btns {
+    max-width: 107px;
   }
   .events-wrap-main {
     margin-left: 10px;
@@ -7173,7 +7799,7 @@ margin-bottom:12px
     left: 87% !important;
   }
   .card-staus {
-    left: 66%;
+    left: 70%;
   }
   .card-pending {
     left: 78%;
@@ -7226,6 +7852,9 @@ margin-bottom:12px
     font-size: 12px;
   }
   .carasoul_fav-heart {
+    left: 88%;
+  }
+  .carasoul_fav-heart-serviceCard {
     left: 88%;
   }
   .header-likebtn-wrap button {
@@ -7329,10 +7958,7 @@ margin-bottom:12px
   .payble-due-span-wrap {
     margin-right: 0px;
   }
-  .carasol-trial-star .rate {
-    left: 14%;
-    top: 10%;
-  }
+
   .login-radio-types input[type="radio"] + label:before,
   .login-radio input[type="radio"] + label:before {
     width: 12px;
@@ -7547,7 +8173,7 @@ margin-bottom:12px
     font-size: 10px;
   }
   .card-subgrids-wrap {
-    height: 350px;
+    height: 300px;
   }
   .carasoul-overlap-stars {
     top: 20%;
@@ -7555,7 +8181,8 @@ margin-bottom:12px
   }
   .select_pref h6,
   .lookingfor_wrap h6,
-  .my-card-body h5 {
+  .my-card-body h5,
+  .adv-filter h6 {
     font-size: 13px;
   }
   .btn-interested,
@@ -7625,7 +8252,16 @@ margin-bottom:12px
 
 @media (max-width: 345px) {
   .my-form-check-label {
-    font-size: 7px;
-    line-height: 20px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .narrowsrch-input-label {
+    font-size: 9px !important;
+  }
+  .carasoul_fav-heart {
+    left: 90%;
+  }
+  .carasoul_fav-heart-serviceCard {
+    left: 89%;
   }
 }
